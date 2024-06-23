@@ -28,6 +28,7 @@ Acest repository este format din:
     - testbench - codul sursă pentru verificare
     - simulation - rapoartele de verificare și formele de undă
 - modelsim - proiectul din modelsim
+- diamond - proiectul din diamond
 
 ### Simularea sistemului
 #### Proiect de design din ModelSim
