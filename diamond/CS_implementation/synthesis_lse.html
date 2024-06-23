@@ -1,0 +1,548 @@
+<HTML>
+<HEAD><TITLE>Synthesis and Ngdbuild Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Syn"></A><B><U><big>Synthesis and Ngdbuild  Report</big></U></B>
+synthesis:  version Diamond (64-bit) 3.13.0.56.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Sun Jun 23 22:57:30 2024
+
+
+Command Line:  synthesis -f CS_project_CS_implementation_lattice.synproj -gui 
+
+Synthesis options:
+The -a option is MachXO3D.
+The -s option is 5.
+The -t option is CABGA256.
+The -d option is LCMXO3D-9400HC.
+Using package CABGA256.
+Using performance grade 5.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO3D
+
+### Device  : LCMXO3D-9400HC
+
+### Package : CABGA256
+
+### Speed   : 5
+
+##########################################################
+
+                                                          
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Balanced
+Top-level module name = CS.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond (searchpath added)
+-p D:/diamond/diamond/3.13/ispfpga/se5c00/data (searchpath added)
+-p C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_implementation (searchpath added)
+-p C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond (searchpath added)
+Verilog design file = C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_implementation/source/CD.v
+Verilog design file = C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_implementation/source/CD_config.v
+Verilog design file = C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_implementation/source/CD_counter.v
+Verilog design file = C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_implementation/source/CM.v
+Verilog design file = C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_implementation/source/CM_Assign_Data.v
+Verilog design file = C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_implementation/source/CM_Config_Manager.v
+Verilog design file = C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_implementation/source/CM_Counter.v
+Verilog design file = C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_implementation/source/CS.v
+Verilog design file = C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_implementation/source/DB.v
+Verilog design file = C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_implementation/source/DB_debouncer.v
+Verilog design file = C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_implementation/source/LM.v
+Verilog design file = C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_implementation/source/LM_decoder.v
+Verilog design file = C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_implementation/source/Sync_Reg.v
+Verilog design file = C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_implementation/source/UART.v
+Verilog design file = C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_implementation/source/UART_config.v
+Verilog design file = C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_implementation/source/UART_sampler.v
+Verilog design file = C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_implementation/source/UART_state.v
+Verilog design file = C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_implementation/source/VGA.v
+Verilog design file = C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_implementation/source/VGA_Assign_color.v
+Verilog design file = C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_implementation/source/VGA_Config.v
+Verilog design file = C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_implementation/source/VGA_Counter.v
+NGD file = CS_project_CS_implementation.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file D:/diamond/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3d.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cd.v. VERI-1482
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cd.v(16): analyzing included file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CD_params.v. VERI-1328
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cd.v(34): analyzing included file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v. VERI-1328
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v(1): parameter declaration becomes local in CD with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v(2): parameter declaration becomes local in CD with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v(3): parameter declaration becomes local in CD with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v(4): parameter declaration becomes local in CD with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v(5): parameter declaration becomes local in CD with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v(6): parameter declaration becomes local in CD with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v(8): parameter declaration becomes local in CD with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v(9): parameter declaration becomes local in CD with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v(10): parameter declaration becomes local in CD with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v(12): parameter declaration becomes local in CD with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v(13): parameter declaration becomes local in CD with formal parameter declaration list. VERI-1199
+Analyzing Verilog file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cd_config.v. VERI-1482
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cd_config.v(14): analyzing included file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CD_params.v. VERI-1328
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cd_config.v(29): analyzing included file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v. VERI-1328
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cd_config.v(30): analyzing included file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v. VERI-1328
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(1): parameter declaration becomes local in CD_config with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(2): parameter declaration becomes local in CD_config with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(3): parameter declaration becomes local in CD_config with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(4): parameter declaration becomes local in CD_config with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(6): parameter declaration becomes local in CD_config with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(7): parameter declaration becomes local in CD_config with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(8): parameter declaration becomes local in CD_config with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(10): parameter declaration becomes local in CD_config with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(11): parameter declaration becomes local in CD_config with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(13): parameter declaration becomes local in CD_config with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(14): parameter declaration becomes local in CD_config with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(15): parameter declaration becomes local in CD_config with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(16): parameter declaration becomes local in CD_config with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(17): parameter declaration becomes local in CD_config with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(18): parameter declaration becomes local in CD_config with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(20): parameter declaration becomes local in CD_config with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(21): parameter declaration becomes local in CD_config with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(22): parameter declaration becomes local in CD_config with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v(1): parameter declaration becomes local in CD_config with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v(2): parameter declaration becomes local in CD_config with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v(3): parameter declaration becomes local in CD_config with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v(4): parameter declaration becomes local in CD_config with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v(5): parameter declaration becomes local in CD_config with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v(6): parameter declaration becomes local in CD_config with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v(8): parameter declaration becomes local in CD_config with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v(9): parameter declaration becomes local in CD_config with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v(10): parameter declaration becomes local in CD_config with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v(12): parameter declaration becomes local in CD_config with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v(13): parameter declaration becomes local in CD_config with formal parameter declaration list. VERI-1199
+Analyzing Verilog file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cd_counter.v. VERI-1482
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cd_counter.v(11): analyzing included file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CD_params.v. VERI-1328
+Analyzing Verilog file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm.v. VERI-1482
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm.v(3): analyzing included file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CM_Width_Parameters.v. VERI-1328
+Analyzing Verilog file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm_assign_data.v. VERI-1482
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm_assign_data.v(5): analyzing included file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CM_Width_Parameters.v. VERI-1328
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm_assign_data.v(6): analyzing included file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CM_Parameters.v. VERI-1328
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm_assign_data.v(7): analyzing included file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CM_Addr_Parameters.v. VERI-1328
+Analyzing Verilog file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm_config_manager.v. VERI-1482
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm_config_manager.v(4): analyzing included file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CM_Width_Parameters.v. VERI-1328
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm_config_manager.v(5): analyzing included file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CM_Addr_Parameters.v. VERI-1328
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm_config_manager.v(6): analyzing included file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CM_Parameters.v. VERI-1328
+Analyzing Verilog file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm_counter.v. VERI-1482
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm_counter.v(4): analyzing included file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CM_Width_Parameters.v. VERI-1328
+Analyzing Verilog file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cs.v. VERI-1482
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cs.v(4): analyzing included file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/LM_params.v. VERI-1328
+Analyzing Verilog file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/db.v. VERI-1482
+Analyzing Verilog file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/db_debouncer.v. VERI-1482
+Analyzing Verilog file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/lm.v. VERI-1482
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/lm.v(11): analyzing included file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/LM_params.v. VERI-1328
+Analyzing Verilog file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/lm_decoder.v. VERI-1482
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/lm_decoder.v(12): analyzing included file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/LM_params.v. VERI-1328
+Analyzing Verilog file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/sync_reg.v. VERI-1482
+Analyzing Verilog file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart.v. VERI-1482
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart.v(14): analyzing included file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/UART_params.v. VERI-1328
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart.v(35): analyzing included file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v. VERI-1328
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(1): parameter declaration becomes local in UART with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(2): parameter declaration becomes local in UART with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(3): parameter declaration becomes local in UART with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(4): parameter declaration becomes local in UART with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(6): parameter declaration becomes local in UART with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(7): parameter declaration becomes local in UART with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(8): parameter declaration becomes local in UART with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(10): parameter declaration becomes local in UART with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(11): parameter declaration becomes local in UART with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(13): parameter declaration becomes local in UART with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(14): parameter declaration becomes local in UART with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(15): parameter declaration becomes local in UART with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(16): parameter declaration becomes local in UART with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(17): parameter declaration becomes local in UART with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(18): parameter declaration becomes local in UART with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(20): parameter declaration becomes local in UART with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(21): parameter declaration becomes local in UART with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(22): parameter declaration becomes local in UART with formal parameter declaration list. VERI-1199
+Analyzing Verilog file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_config.v. VERI-1482
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_config.v(16): analyzing included file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/UART_params.v. VERI-1328
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_config.v(30): analyzing included file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v. VERI-1328
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(1): parameter declaration becomes local in UART_config with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(2): parameter declaration becomes local in UART_config with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(3): parameter declaration becomes local in UART_config with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(4): parameter declaration becomes local in UART_config with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(6): parameter declaration becomes local in UART_config with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(7): parameter declaration becomes local in UART_config with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(8): parameter declaration becomes local in UART_config with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(10): parameter declaration becomes local in UART_config with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(11): parameter declaration becomes local in UART_config with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(13): parameter declaration becomes local in UART_config with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(14): parameter declaration becomes local in UART_config with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(15): parameter declaration becomes local in UART_config with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(16): parameter declaration becomes local in UART_config with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(17): parameter declaration becomes local in UART_config with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(18): parameter declaration becomes local in UART_config with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(20): parameter declaration becomes local in UART_config with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(21): parameter declaration becomes local in UART_config with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(22): parameter declaration becomes local in UART_config with formal parameter declaration list. VERI-1199
+Analyzing Verilog file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_sampler.v. VERI-1482
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_sampler.v(12): analyzing included file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/UART_params.v. VERI-1328
+Analyzing Verilog file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_state.v. VERI-1482
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_state.v(26): analyzing included file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/UART_params.v. VERI-1328
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_state.v(44): analyzing included file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v. VERI-1328
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_state.v(45): analyzing included file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v. VERI-1328
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(1): parameter declaration becomes local in UART_state with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(2): parameter declaration becomes local in UART_state with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(3): parameter declaration becomes local in UART_state with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(4): parameter declaration becomes local in UART_state with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(6): parameter declaration becomes local in UART_state with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(7): parameter declaration becomes local in UART_state with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(8): parameter declaration becomes local in UART_state with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(10): parameter declaration becomes local in UART_state with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(11): parameter declaration becomes local in UART_state with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(13): parameter declaration becomes local in UART_state with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(14): parameter declaration becomes local in UART_state with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(15): parameter declaration becomes local in UART_state with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(16): parameter declaration becomes local in UART_state with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(17): parameter declaration becomes local in UART_state with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(18): parameter declaration becomes local in UART_state with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(20): parameter declaration becomes local in UART_state with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(21): parameter declaration becomes local in UART_state with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(22): parameter declaration becomes local in UART_state with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v(1): parameter declaration becomes local in UART_state with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v(4): parameter declaration becomes local in UART_state with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v(5): parameter declaration becomes local in UART_state with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v(6): parameter declaration becomes local in UART_state with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v(9): parameter declaration becomes local in UART_state with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v(11): parameter declaration becomes local in UART_state with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v(12): parameter declaration becomes local in UART_state with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v(13): parameter declaration becomes local in UART_state with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v(14): parameter declaration becomes local in UART_state with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v(16): parameter declaration becomes local in UART_state with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v(17): parameter declaration becomes local in UART_state with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v(18): parameter declaration becomes local in UART_state with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v(19): parameter declaration becomes local in UART_state with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v(21): parameter declaration becomes local in UART_state with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v(23): parameter declaration becomes local in UART_state with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v(24): parameter declaration becomes local in UART_state with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v(25): parameter declaration becomes local in UART_state with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v(26): parameter declaration becomes local in UART_state with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_state.v(49): parameter declaration becomes local in UART_state with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_state.v(50): parameter declaration becomes local in UART_state with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_state.v(51): parameter declaration becomes local in UART_state with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_state.v(52): parameter declaration becomes local in UART_state with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_state.v(53): parameter declaration becomes local in UART_state with formal parameter declaration list. VERI-1199
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_state.v(54): parameter declaration becomes local in UART_state with formal parameter declaration list. VERI-1199
+Analyzing Verilog file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/vga.v. VERI-1482
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/vga.v(13): analyzing included file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/VGA_Width_Parameters.v. VERI-1328
+Analyzing Verilog file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/vga_assign_color.v. VERI-1482
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/vga_assign_color.v(9): analyzing included file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/VGA_Width_Parameters.v. VERI-1328
+Analyzing Verilog file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/vga_config.v. VERI-1482
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/vga_config.v(19): macro ACTIVE redefined. VERI-1295
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/vga_config.v(22): analyzing included file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/VGA_Width_Parameters.v. VERI-1328
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/vga_config.v(23): analyzing included file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/VGA_Parameters.v. VERI-1328
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/vga_config.v(24): analyzing included file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/VGA_Addr_Parameters.v. VERI-1328
+Analyzing Verilog file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/vga_counter.v. VERI-1482
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/vga_counter.v(12): analyzing included file c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/VGA_Width_Parameters.v. VERI-1328
+Analyzing Verilog file D:/diamond/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3d.v. VERI-1482
+Top module name (Verilog): CS
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cs.v(3): compiling module CS. VERI-1018
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cd.v(15): compiling module CD. VERI-1018
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cd_counter.v(10): compiling module CD_counter(WIDTH=32). VERI-1018
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cd_counter.v(10): compiling module CD_counter(WIDTH=24). VERI-1018
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cd_counter.v(26): expression size 32 truncated to fit in target size 24. VERI-1209
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cd_config.v(13): compiling module CD_config. VERI-1018
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/db.v(3): compiling module DB. VERI-1018
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/db_debouncer.v(3): compiling module DB_debouncer. VERI-1018
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/db_debouncer.v(33): expression size 32 truncated to fit in target size 3. VERI-1209
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart.v(13): compiling module UART. VERI-1018
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_config.v(15): compiling module UART_config. VERI-1018
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_state.v(25): compiling module UART_state. VERI-1018
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_state.v(119): expression size 32 truncated to fit in target size 3. VERI-1209
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_state.v(125): expression size 32 truncated to fit in target size 2. VERI-1209
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_state.v(162): expression size 32 truncated to fit in target size 2. VERI-1209
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_sampler.v(11): compiling module UART_sampler. VERI-1018
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_sampler.v(63): expression size 32 truncated to fit in target size 4. VERI-1209
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_sampler.v(73): expression size 32 truncated to fit in target size 4. VERI-1209
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_sampler.v(74): expression size 32 truncated to fit in target size 4. VERI-1209
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/sync_reg.v(3): compiling module Sync_Reg(SIZE=8). VERI-1018
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm.v(2): compiling module CM. VERI-1018
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm_config_manager.v(3): compiling module CM_Config_Manager. VERI-1018
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm_config_manager.v(135): expression size 2 truncated to fit in target size 1. VERI-1209
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm_assign_data.v(4): compiling module CM_Assign_Data. VERI-1018
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm_counter.v(3): compiling module CM_Counter. VERI-1018
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/vga.v(12): compiling module VGA. VERI-1018
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/vga_config.v(21): compiling module VGA_Config. VERI-1018
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/VGA_Addr_Parameters.v(2): expression size 10 truncated to fit in target size 4. VERI-1209
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/VGA_Addr_Parameters.v(3): expression size 10 truncated to fit in target size 4. VERI-1209
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/VGA_Addr_Parameters.v(4): expression size 10 truncated to fit in target size 4. VERI-1209
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/VGA_Addr_Parameters.v(7): expression size 10 truncated to fit in target size 4. VERI-1209
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/VGA_Addr_Parameters.v(8): expression size 7 truncated to fit in target size 4. VERI-1209
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/vga_counter.v(11): compiling module VGA_Counter. VERI-1018
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/vga_counter.v(44): expression size 32 truncated to fit in target size 12. VERI-1209
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/vga_assign_color.v(8): compiling module VGA_Assign_color. VERI-1018
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/sync_reg.v(3): compiling module Sync_Reg(SIZE=2). VERI-1018
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/sync_reg.v(3): compiling module Sync_Reg. VERI-1018
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/lm.v(10): compiling module LM. VERI-1018
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/lm_decoder.v(11): compiling module LM_decoder(WIDTH=8). VERI-1018
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/lm_decoder.v(11): compiling module LM_decoder(WIDTH=2). VERI-1018
+INFO - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/lm_decoder.v(11): compiling module LM_decoder(WIDTH=4). VERI-1018
+Loading NGL library 'D:/diamond/diamond/3.13/ispfpga/se5c00/data/se5clib.ngl'...
+Loading NGL library 'D:/diamond/diamond/3.13/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'D:/diamond/diamond/3.13/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'D:/diamond/diamond/3.13/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'D:/diamond/diamond/3.13/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'se5c9400.nph' in environment: D:/diamond/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 7.
+Top-level module name = CS.
+INFO - synthesis: Extracted state machine for register '\uart/UART_STATE/state_reg' with one-hot encoding
+original encoding -> new encoding (one-hot encoding)
+
+ 000 -> 00001
+
+ 010 -> 00010
+
+ 011 -> 00100
+
+ 100 -> 01000
+
+ 101 -> 10000
+
+
+
+
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm_assign_data.v(91): Register \cm/assignCM/VGA_Notification_reg_i0_i2 is stuck at Zero. VDB-5013
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cd_config.v(49): Register \cd/CLOCK_DIVIDER_CONFIG/resolution_reg_i0_i31 is stuck at Zero. VDB-5013
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm_assign_data.v(91): Register \cm/assignCM/H_BackPorch_reg_i0_i0 is stuck at One. VDB-5014
+WARNING - synthesis: c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm_config_manager.v(64): Register \cm/configCM/Config_Error_reg_i3 is stuck at Zero. VDB-5013
+GSR instance connected to net rst_n_c.
+Duplicate register/latch removal. \cm/configCM/Config_Notification_reg_i3 is a one-to-one match with \cm/configCM/Config_Notification_reg_i2.
+Duplicate register/latch removal. \cm/assignCM/HalfY_reg_i0_i8 is a one-to-one match with \cm/assignCM/HalfX_reg_i0_i7.
+Duplicate register/latch removal. \cm/assignCM/HalfY_reg_i0_i7 is a one-to-one match with \cm/assignCM/V_FrontPorch_reg_i0_i8.
+Duplicate register/latch removal. \cm/assignCM/HalfY_reg_i0_i6 is a one-to-one match with \cm/assignCM/HalfY_reg_i0_i2.
+Duplicate register/latch removal. \cm/assignCM/HalfY_reg_i0_i4 is a one-to-one match with \cm/assignCM/HalfX_reg_i0_i6.
+Duplicate register/latch removal. \cm/assignCM/HalfX_reg_i0_i5 is a one-to-one match with \cm/assignCM/HalfY_reg_i0_i6.
+Duplicate register/latch removal. \cm/assignCM/HalfX_reg_i0_i4 is a one-to-one match with \cm/assignCM/HalfX_reg_i0_i5.
+Duplicate register/latch removal. \cm/assignCM/V_FrontPorch_reg_i0_i9 is a one-to-one match with \cm/assignCM/HalfY_reg_i0_i8.
+Duplicate register/latch removal. \cm/assignCM/V_FrontPorch_reg_i0_i7 is a one-to-one match with \cm/assignCM/HalfX_reg_i0_i4.
+Duplicate register/latch removal. \cm/assignCM/V_FrontPorch_reg_i0_i5 is a one-to-one match with \cm/assignCM/HalfY_reg_i0_i4.
+Duplicate register/latch removal. \cm/assignCM/V_FrontPorch_reg_i0_i3 is a one-to-one match with \cm/assignCM/V_FrontPorch_reg_i0_i7.
+Duplicate register/latch removal. \cm/assignCM/V_BackPorch_reg_i0_i3 is a one-to-one match with \cm/assignCM/V_FrontPorch_reg_i0_i3.
+Duplicate register/latch removal. \cm/assignCM/H_FrontPorch_reg_i0_i8 is a one-to-one match with \cm/assignCM/V_FrontPorch_reg_i0_i9.
+Duplicate register/latch removal. \cm/assignCM/H_FrontPorch_reg_i0_i7 is a one-to-one match with \cm/assignCM/V_FrontPorch_reg_i0_i5.
+Duplicate register/latch removal. \cm/assignCM/H_FrontPorch_reg_i0_i6 is a one-to-one match with \cm/assignCM/V_BackPorch_reg_i0_i3.
+Duplicate register/latch removal. \cm/assignCM/H_FrontPorch_reg_i0_i5 is a one-to-one match with \cm/assignCM/H_FrontPorch_reg_i0_i6.
+Duplicate register/latch removal. \cm/assignCM/H_BackPorch_reg_i0_i7 is a one-to-one match with \cm/assignCM/H_FrontPorch_reg_i0_i7.
+Duplicate register/latch removal. \cm/assignCM/H_BackPorch_reg_i0_i5 is a one-to-one match with \cm/assignCM/HalfY_reg_i0_i7.
+Duplicate register/latch removal. \cm/assignCM/H_BackPorch_reg_i0_i4 is a one-to-one match with \cm/assignCM/H_FrontPorch_reg_i0_i8.
+Duplicate register/latch removal. \cm/assignCM/H_BackPorch_reg_i0_i3 is a one-to-one match with \cm/assignCM/H_FrontPorch_reg_i0_i5.
+Applying 200.000000 MHz constraint to all clocks
+
+WARNING - synthesis: No user .sdc file.
+Results of NGD DRC are available in CS_drc.log.
+Loading NGL library 'D:/diamond/diamond/3.13/ispfpga/se5c00/data/se5clib.ngl'...
+Loading NGL library 'D:/diamond/diamond/3.13/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'D:/diamond/diamond/3.13/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'D:/diamond/diamond/3.13/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'D:/diamond/diamond/3.13/ispfpga/or5g00/data/orc5glib.ngl'...
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file CS_project_CS_implementation.ngd.
+
+################### Begin Area Report (CS)######################
+Number of register bits => 609 of 10021 (6 % )
+CCU2D => 239
+FD1P3AX => 160
+FD1P3AY => 10
+FD1P3BX => 1
+FD1P3DX => 24
+FD1P3IX => 44
+FD1P3JX => 1
+FD1S1A => 52
+FD1S1D => 1
+FD1S1I => 27
+FD1S3AX => 67
+FD1S3AY => 25
+FD1S3DX => 84
+FD1S3IX => 109
+FD1S3JX => 4
+GSR => 1
+IB => 7
+LUT4 => 530
+OB => 23
+PFUMX => 23
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 9
+  Net : clk_c, loads : 490
+  Net : vga/config1/H_Left_Margin_nxt_8__N_969, loads : 76
+  Net : cd/CNT_UART/clk_UART, loads : 21
+  Net : cd/CNT_LM/clk_LM, loads : 13
+  Net : vga/CounterH/HSYNC_c, loads : 17
+  Net : cd/CNT_DB/clk_DB, loads : 14
+  Net : cd/CNT_VGA/clk_VGA, loads : 10
+  Net : vga/config1/c_data_1_derived_1, loads : 5
+  Net : cm/configCM/State_nxt_2__N_488, loads : 3
+Clock Enable Nets
+Number of Clock Enables: 57
+Top 10 highest fanout Clock Enables:
+  Net : cm/assignCM/clk_c_enable_151, loads : 19
+  Net : cm/configCM/clk_c_enable_69, loads : 16
+  Net : cm/assignCM/clk_c_enable_106, loads : 12
+  Net : cm/assignCM/clk_c_enable_117, loads : 12
+  Net : cm/assignCM/clk_c_enable_128, loads : 12
+  Net : cm/assignCM/clk_c_enable_139, loads : 12
+  Net : cm/configCM/clk_c_enable_60, loads : 11
+  Net : cd/CLOCK_DIVIDER_CONFIG/clk_c_enable_219, loads : 10
+  Net : cm/configCM/clk_c_enable_220, loads : 8
+  Net : FIFO_UART_info/clk_c_enable_186, loads : 8
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : vga/config1/n9153, loads : 74
+  Net : cm/configCM/c_data_1, loads : 67
+  Net : cm/configCM/c_data_0, loads : 60
+  Net : cd/CNT_UART/counter_23_N_178_10, loads : 45
+  Net : cd/CNT_LM/counter_31__N_85, loads : 39
+  Net : cd/CNT_DB/counter_31__N_85, loads : 36
+  Net : cd/CNT_VGA/counter_31__N_85, loads : 35
+  Net : n1801, loads : 33
+  Net : cm/configCM/RXD_Data_reg_11, loads : 32
+  Net : cm/configCM/rst_n_N_52, loads : 31
+################### End Clock Report ##################
+
+<A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk7 [get_nets clk_LM]                  |            -|            -|     0  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk6 [get_nets                          |             |             |
+\cm/configCM/State_nxt_2__N_488]        |            -|            -|     0  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk5 [get_nets clk_UART]                |  200.000 MHz|  212.179 MHz|     3  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk4 [get_nets                          |             |             |
+\vga/config1/H_Left_Margin_nxt_8__N_969]|            -|            -|     0  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk3 [get_nets clk_DB]                  |  200.000 MHz|  644.745 MHz|     1  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk2 [get_nets clk_VGA]                 |            -|            -|     0  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets clk_c]                   |  200.000 MHz|   67.222 MHz|    19 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets HSYNC_c]                 |  200.000 MHz|  139.043 MHz|     6 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+2 constraints not met.
+
+
+Peak Memory Usage: 87.273  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 6.906  secs
+--------------------------------------------------------------
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

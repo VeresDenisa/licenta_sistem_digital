@@ -1,0 +1,155 @@
+COVERGROUP COVERAGE:
+-----------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal    Status               
+                                                                                              
+-----------------------------------------------------------------------------------------------
+ TYPE /CD_coverage_pack/CD_covergroup                 100.00%        100    Covered              
+    covered/total bins:                                    24         24                      
+    missing/total bins:                                     0         24                      
+    % Hit:                                            100.00%        100                      
+    type_option.weight=1
+    type_option.goal=100
+    type_option.comment=
+    type_option.strobe=0
+    type_option.merge_instances=auto(0)
+    Coverpoint CD_covergroup::clk_VGA_cvp             100.00%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                        100.00%        100                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+    Coverpoint CD_covergroup::clk_UART_cvp            100.00%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                        100.00%        100                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+    Coverpoint CD_covergroup::clk_LM_cvp              100.00%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                        100.00%        100                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+    Coverpoint CD_covergroup::clk_DB_cvp              100.00%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                        100.00%        100                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+    Cross CD_covergroup::clks_cross                   100.00%        100    Covered              
+        covered/total bins:                                16         16                      
+        missing/total bins:                                 0         16                      
+        % Hit:                                        100.00%        100                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+ Covergroup instance \/CD_coverage_pack::CD_coverage::CD_cvg  
+                                                      100.00%        100    Covered              
+    covered/total bins:                                    24         24                      
+    missing/total bins:                                     0         24                      
+    % Hit:                                            100.00%        100                      
+    option.name=\/CD_coverage_pack::CD_coverage::CD_cvg 
+    option.weight=1
+    option.goal=100
+    option.comment=
+    option.at_least=1
+    option.auto_bin_max=64
+    option.cross_num_print_missing=0
+    option.detect_overlap=0
+    option.per_instance=0
+    option.get_inst_coverage=0
+    Coverpoint clk_VGA_cvp                            100.00%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                        100.00%        100                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.auto_bin_max=64
+        option.detect_overlap=0
+        bin value_binary[0]                               172          1    Covered              
+        bin value_binary[1]                               202          1    Covered              
+    Coverpoint clk_UART_cvp                           100.00%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                        100.00%        100                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.auto_bin_max=64
+        option.detect_overlap=0
+        bin value_binary[0]                               174          1    Covered              
+        bin value_binary[1]                               200          1    Covered              
+    Coverpoint clk_LM_cvp                             100.00%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                        100.00%        100                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.auto_bin_max=64
+        option.detect_overlap=0
+        bin value_binary[0]                               233          1    Covered              
+        bin value_binary[1]                               141          1    Covered              
+    Coverpoint clk_DB_cvp                             100.00%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                        100.00%        100                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.auto_bin_max=64
+        option.detect_overlap=0
+        bin value_binary[0]                               194          1    Covered              
+        bin value_binary[1]                               180          1    Covered              
+    Cross clks_cross                                  100.00%        100    Covered              
+        covered/total bins:                                16         16                      
+        missing/total bins:                                 0         16                      
+        % Hit:                                        100.00%        100                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.cross_num_print_missing=0
+        bin <value_binary[0],value_binary[0],value_binary[0],value_binary[0]> 
+                                                           17          1    Covered              
+        bin <value_binary[1],value_binary[0],value_binary[0],value_binary[0]> 
+                                                           46          1    Covered              
+        bin <value_binary[0],value_binary[1],value_binary[0],value_binary[0]> 
+                                                           39          1    Covered              
+        bin <value_binary[1],value_binary[1],value_binary[0],value_binary[0]> 
+                                                           41          1    Covered              
+        bin <value_binary[0],value_binary[0],value_binary[1],value_binary[0]> 
+                                                            5          1    Covered              
+        bin <value_binary[1],value_binary[0],value_binary[1],value_binary[0]> 
+                                                            6          1    Covered              
+        bin <value_binary[0],value_binary[1],value_binary[1],value_binary[0]> 
+                                                           21          1    Covered              
+        bin <value_binary[1],value_binary[1],value_binary[1],value_binary[0]> 
+                                                           19          1    Covered              
+        bin <value_binary[0],value_binary[0],value_binary[0],value_binary[1]> 
+                                                           24          1    Covered              
+        bin <value_binary[1],value_binary[0],value_binary[0],value_binary[1]> 
+                                                           26          1    Covered              
+        bin <value_binary[0],value_binary[1],value_binary[0],value_binary[1]> 
+                                                           21          1    Covered              
+        bin <value_binary[1],value_binary[1],value_binary[0],value_binary[1]> 
+                                                           19          1    Covered              
+        bin <value_binary[0],value_binary[0],value_binary[1],value_binary[1]> 
+                                                           25          1    Covered              
+        bin <value_binary[1],value_binary[0],value_binary[1],value_binary[1]> 
+                                                           25          1    Covered              
+        bin <value_binary[0],value_binary[1],value_binary[1],value_binary[1]> 
+                                                           20          1    Covered              
+        bin <value_binary[1],value_binary[1],value_binary[1],value_binary[1]> 
+                                                           20          1    Covered              
+
+TOTAL COVERGROUP COVERAGE: 100.00%  COVERGROUP TYPES: 1

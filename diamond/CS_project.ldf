@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="CS_project" device="LCMXO3D-9400HC-5BG256C" default_implementation="CS_implementation">
+    <Options/>
+    <Implementation title="CS_implementation" dir="CS_implementation" description="CS_implementation" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="CS"/>
+        <Source name="CS_implementation/source/CD.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="CS_implementation/source/CD_config.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="CS_implementation/source/CD_counter.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="CS_implementation/source/CD_params.v" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="CS_implementation/source/CLK_values.v" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="CS_implementation/source/CM.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="CS_implementation/source/CM_Addr_Parameters.v" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="CS_implementation/source/CM_Assign_Data.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="CS_implementation/source/CM_Config_Manager.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="CS_implementation/source/CM_Counter.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="CS_implementation/source/CM_Parameters.v" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="CS_implementation/source/CM_Width_Parameters.v" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="CS_implementation/source/CS.v" type="Verilog" type_short="Verilog">
+            <Options top_module="CS"/>
+        </Source>
+        <Source name="CS_implementation/source/CS_errors.v" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="CS_implementation/source/CS_params.v" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="CS_implementation/source/DB.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="CS_implementation/source/DB_debouncer.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="CS_implementation/source/LM.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="CS_implementation/source/LM_decoder.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="CS_implementation/source/LM_params.v" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="CS_implementation/source/Sync_Reg.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="CS_implementation/source/UART.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="CS_implementation/source/UART_config.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="CS_implementation/source/UART_params.v" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="CS_implementation/source/UART_sampler.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="CS_implementation/source/UART_state.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="CS_implementation/source/VGA.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="CS_implementation/source/VGA_Addr_Parameters.v" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="CS_implementation/source/VGA_Assign_color.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="CS_implementation/source/VGA_Config.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="CS_implementation/source/VGA_Counter.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="CS_implementation/source/VGA_Parameters.v" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="CS_implementation/source/VGA_Width_Parameters.v" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="CS_implementation/CS_implementation.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+        <Source name="CS_project.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="CS_project1.sty"/>
+</BaliProject>

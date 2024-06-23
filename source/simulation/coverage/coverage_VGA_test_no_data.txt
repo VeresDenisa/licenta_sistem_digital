@@ -1,0 +1,141 @@
+COVERGROUP COVERAGE:
+-----------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal    Status               
+                                                                                              
+-----------------------------------------------------------------------------------------------
+ TYPE /VGA_coverage_pack/VGA_covergroup                57.14%        100    Uncovered            
+    covered/total bins:                                    10         25                      
+    missing/total bins:                                    15         25                      
+    % Hit:                                             40.00%        100                      
+    type_option.weight=1
+    type_option.goal=100
+    type_option.comment=
+    type_option.strobe=0
+    type_option.merge_instances=auto(0)
+    Coverpoint VGA_covergroup::RED_cvp                 28.57%        100    Uncovered            
+        covered/total bins:                                 2          7                      
+        missing/total bins:                                 5          7                      
+        % Hit:                                         28.57%        100                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+    Coverpoint VGA_covergroup::GREEN_cvp               28.57%        100    Uncovered            
+        covered/total bins:                                 2          7                      
+        missing/total bins:                                 5          7                      
+        % Hit:                                         28.57%        100                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+    Coverpoint VGA_covergroup::BLUE_cvp                28.57%        100    Uncovered            
+        covered/total bins:                                 2          7                      
+        missing/total bins:                                 5          7                      
+        % Hit:                                         28.57%        100                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+    Coverpoint VGA_covergroup::HSync_cvp              100.00%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                        100.00%        100                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+    Coverpoint VGA_covergroup::VSync_cvp              100.00%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                        100.00%        100                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+ Covergroup instance \/VGA_coverage_pack::VGA_coverage::VGA_cvg  
+                                                       57.14%        100    Uncovered            
+    covered/total bins:                                    10         25                      
+    missing/total bins:                                    15         25                      
+    % Hit:                                             40.00%        100                      
+    option.name=\/VGA_coverage_pack::VGA_coverage::VGA_cvg 
+    option.weight=1
+    option.goal=100
+    option.comment=
+    option.at_least=1
+    option.auto_bin_max=64
+    option.cross_num_print_missing=0
+    option.detect_overlap=0
+    option.per_instance=0
+    option.get_inst_coverage=0
+    Coverpoint RED_cvp                                 28.57%        100    Uncovered            
+        covered/total bins:                                 2          7                      
+        missing/total bins:                                 5          7                      
+        % Hit:                                         28.57%        100                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.auto_bin_max=64
+        option.detect_overlap=0
+        bin limit_values[0]                           2998481          1    Covered              
+        bin limit_values[1]                                 0          1    ZERO                 
+        bin limit_values[2]                                 0          1    ZERO                 
+        bin limit_values[3]                                 0          1    ZERO                 
+        bin inter_values[0]                           2998481          1    Covered              
+        bin inter_values[1]                                 0          1    ZERO                 
+        bin inter_values[2]                                 0          1    ZERO                 
+    Coverpoint GREEN_cvp                               28.57%        100    Uncovered            
+        covered/total bins:                                 2          7                      
+        missing/total bins:                                 5          7                      
+        % Hit:                                         28.57%        100                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.auto_bin_max=64
+        option.detect_overlap=0
+        bin limit_values[0]                           2998481          1    Covered              
+        bin limit_values[1]                                 0          1    ZERO                 
+        bin limit_values[2]                                 0          1    ZERO                 
+        bin limit_values[3]                                 0          1    ZERO                 
+        bin inter_values[0]                           2998481          1    Covered              
+        bin inter_values[1]                                 0          1    ZERO                 
+        bin inter_values[2]                                 0          1    ZERO                 
+    Coverpoint BLUE_cvp                                28.57%        100    Uncovered            
+        covered/total bins:                                 2          7                      
+        missing/total bins:                                 5          7                      
+        % Hit:                                         28.57%        100                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.auto_bin_max=64
+        option.detect_overlap=0
+        bin limit_values[0]                           2998481          1    Covered              
+        bin limit_values[1]                                 0          1    ZERO                 
+        bin limit_values[2]                                 0          1    ZERO                 
+        bin limit_values[3]                                 0          1    ZERO                 
+        bin inter_values[0]                           2998481          1    Covered              
+        bin inter_values[1]                                 0          1    ZERO                 
+        bin inter_values[2]                                 0          1    ZERO                 
+    Coverpoint HSync_cvp                              100.00%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                        100.00%        100                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.auto_bin_max=64
+        option.detect_overlap=0
+        bin value_binary[0]                            358096          1    Covered              
+        bin value_binary[1]                           2640384          1    Covered              
+    Coverpoint VSync_cvp                              100.00%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                        100.00%        100                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.auto_bin_max=64
+        option.detect_overlap=0
+        bin value_binary[0]                             10591          1    Covered              
+        bin value_binary[1]                           2987889          1    Covered              
+
+TOTAL COVERGROUP COVERAGE: 57.14%  COVERGROUP TYPES: 1

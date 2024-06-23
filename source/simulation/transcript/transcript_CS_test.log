@@ -1,0 +1,110 @@
+# vsim -c -voptargs="+acc" "+UVM_TESTNAME=CS_test" "+UVM_VERBOSITY=LOW" -wlf simulation/wave/wave_CS_test.wlf work.testbench_CS -do "log -r /*; coverage save -onexit simulation/ucdb/ucdb_CS_test.ucdb; run -all; quit -f; exit" 
+# Start time: 00:37:34 on Jun 21,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "CM_Config_Manager(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "UART_state(fast)".
+# //  Questa Sim-64
+# //  Version 10.7c linux_x86_64 Aug 17 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.item_pack(fast)
+# Loading work.coverage_pack(fast)
+# Loading work.DB_VIF(fast)
+# Loading work.agent_pack(fast)
+# Loading work.sequence_pack(fast)
+# Loading work.environment_pack(fast)
+# Loading work.test_pack(fast)
+# Loading work.testbench_CS_sv_unit(fast)
+# Loading work.testbench_CS(fast)
+# Loading work.UART_input_VIF_sv_unit(fast)
+# Loading work.UART_input_VIF(fast)
+# Loading work.VGA_output_VIF_sv_unit(fast)
+# Loading work.VGA_output_VIF(fast)
+# Loading work.DB_VIF_sv_unit(fast)
+# Loading work.DB_VIF(fast)
+# Loading work.LM_VIF_sv_unit(fast)
+# Loading work.LM_VIF(fast)
+# Loading work.CS(fast)
+# Loading work.CD(fast)
+# Loading work.CD_counter(fast)
+# Loading work.CD_counter(fast__1)
+# Loading work.CD_config(fast)
+# Loading work.DB(fast)
+# Loading work.DB_debouncer(fast)
+# Loading work.UART(fast)
+# Loading work.UART_config(fast)
+# Loading work.UART_state(fast)
+# Loading work.UART_sampler(fast)
+# Loading work.Sync_Reg(fast)
+# Loading work.CM(fast)
+# Loading work.CM_Config_Manager(fast)
+# Loading work.CM_Assign_Data(fast)
+# Loading work.CM_Counter(fast)
+# Loading work.VGA(fast)
+# Loading work.VGA_Config(fast)
+# Loading work.VGA_Counter(fast)
+# Loading work.VGA_Assign_color(fast)
+# Loading work.Sync_Reg(fast__1)
+# Loading work.Sync_Reg(fast__2)
+# Loading work.LM(fast)
+# Loading work.LM_decoder(fast)
+# Loading work.LM_decoder(fast__1)
+# Loading work.LM_decoder(fast__2)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.UART_input_VIF(fast)
+# Loading work.VGA_output_VIF(fast)
+# Loading work.LM_VIF(fast)
+# Loading /opt/questa/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so
+# log -r /*
+#  coverage save -onexit simulation/ucdb/ucdb_CS_test.ucdb
+#  run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_WARNING @ 0: reporter [BDTYP] Cannot create a component of type 'CS_test' because it is not registered with the factory.
+# UVM_FATAL @ 0: reporter [INVTST] Requested test from command line +UVM_TESTNAME=CS_test not found.
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    0
+# UVM_WARNING :    1
+# UVM_ERROR :    0
+# UVM_FATAL :    1
+# ** Report counts by id
+# [BDTYP]     1
+# [INVTST]     1
+# ** Note: $finish    : /opt/questa/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_report_object.svh(292)
+#    Time: 0 ns  Iteration: 0  Instance: /testbench_CS
+# Saving coverage database on exit...
+# End time: 00:37:40 on Jun 21,2024, Elapsed time: 0:00:06
+# Errors: 0, Warnings: 0

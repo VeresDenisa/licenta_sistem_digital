@@ -1,0 +1,9 @@
+parameter WIDTH_CONFIG_ADDR = 4,
+parameter WIDTH_CONFIG_DATA = 8,
+
+parameter WIDTH_UART_CLK_LIMIT = 24,
+parameter WIDTH_VGA_CLK_LIMIT = 32,
+parameter WIDTH_LED_MANAGER_CLK_LIMIT = 32,
+parameter WIDTH_DEBOUNCER_CLK_LIMIT = 32,
+
+parameter CLK_MAX_WIDTH = 32 

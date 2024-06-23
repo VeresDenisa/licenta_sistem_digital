@@ -1,0 +1,250 @@
+# vsim -c -voptargs="+acc" "+UVM_TESTNAME=UART_test_no_config" "+UVM_VERBOSITY=LOW" -wlf simulation/wave/wave_UART_test_no_config.wlf work.testbench_UART -do "log -r /*; coverage save -onexit simulation/ucdb/ucdb_UART_test_no_config.ucdb; run -all; quit -f; exit" 
+# Start time: 23:21:14 on Jun 21,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# //  Questa Sim-64
+# //  Version 10.7c linux_x86_64 Aug 17 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.item_pack(fast)
+# Loading work.UART_coverage_pack(fast)
+# Loading work.CONF_input_VIF(fast)
+# Loading work.UART_output_VIF(fast)
+# Loading work.UART_agent_pack(fast)
+# Loading work.UART_input_VIF(fast)
+# Loading work.UART_sequence_pack(fast)
+# Loading work.UART_environment_pack(fast)
+# Loading work.UART_test_pack(fast)
+# Loading work.testbench_UART_sv_unit(fast)
+# Loading work.testbench_UART(fast)
+# Loading work.UART_input_VIF_sv_unit(fast)
+# Loading work.UART_input_VIF(fast)
+# Loading work.UART_output_VIF_sv_unit(fast)
+# Loading work.UART_output_VIF(fast)
+# Loading work.CONF_input_VIF_sv_unit(fast)
+# Loading work.CONF_input_VIF(fast)
+# Loading work.UART(fast)
+# Loading work.UART_config(fast)
+# Loading work.UART_state(fast)
+# Loading work.UART_sampler(fast)
+# Loading work.assertion_UART(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (14) for port 'c_data'. The port definition is at: design/UART/UART.v(24).
+#    Time: 0 ns  Iteration: 0  Instance: /testbench_UART/UART_DUT File: testbench/UART/testbench_UART.sv Line: 34
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (14) for port 'c_data'. The port definition is at: testbench/UART/assertion_UART.sv(13).
+#    Time: 0 ns  Iteration: 0  Instance: /testbench_UART/UART_DUT/ass_UART File: testbench/UART/testbench_UART.sv Line: 49
+# ** Warning: (vsim-3839) Variable '/testbench_UART/UART_output_i/error', driven via a port connection, is multiply driven. See testbench/UART/testbench_UART.sv(34).
+#    Time: 0 ns  Iteration: 0  Instance: /testbench_UART/UART_output_i File: testbench/UART/interface/UART_output_VIF.sv Line: 4
+# ** Warning: (vsim-3839) Variable '/testbench_UART/UART_output_i/valid_error', driven via a port connection, is multiply driven. See testbench/UART/testbench_UART.sv(34).
+#    Time: 0 ns  Iteration: 0  Instance: /testbench_UART/UART_output_i File: testbench/UART/interface/UART_output_VIF.sv Line: 5
+# ** Warning: (vsim-3839) Variable '/testbench_UART/UART_output_i/out', driven via a port connection, is multiply driven. See testbench/UART/testbench_UART.sv(34).
+#    Time: 0 ns  Iteration: 0  Instance: /testbench_UART/UART_output_i File: testbench/UART/interface/UART_output_VIF.sv Line: 6
+# ** Warning: (vsim-3839) Variable '/testbench_UART/UART_output_i/valid_out', driven via a port connection, is multiply driven. See testbench/UART/testbench_UART.sv(34).
+#    Time: 0 ns  Iteration: 0  Instance: /testbench_UART/UART_output_i File: testbench/UART/interface/UART_output_VIF.sv Line: 7
+# Loading /opt/questa/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so
+# log -r /*
+#  coverage save -onexit simulation/ucdb/ucdb_UART_test_no_config.ucdb
+#  run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test UART_test_no_config...
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# ---------------------------------------------------------------------------
+# Name                              Type                          Size  Value
+# ---------------------------------------------------------------------------
+# uvm_test_top                      UART_test_no_config           -     @483 
+#   env                             UART_environment              -     @494 
+#     CONF_agent_h                  CONF_input_agent              -     @639 
+#       CONF_input_driver           CONF_input_driver             -     @832 
+#         rsp_port                  uvm_analysis_port             -     @847 
+#         seq_item_port             uvm_seq_item_pull_port        -     @839 
+#       CONF_input_monitor          CONF_input_monitor            -     @857 
+#         an_port                   uvm_analysis_port             -     @874 
+#       CONF_input_seqr             CONF_input_sequencer          -     @668 
+#         export_port               uvm_analysis_export           -     @777 
+#         fifo                      uvm_tlm_analysis_fifo #(T)    -     @785 
+#           analysis_export         uvm_analysis_imp              -     @824 
+#           get_ap                  uvm_analysis_port             -     @816 
+#           get_peek_export         uvm_get_peek_imp              -     @800 
+#           put_ap                  uvm_analysis_port             -     @808 
+#           put_export              uvm_put_imp                   -     @792 
+#         rsp_export                uvm_analysis_export           -     @675 
+#         seq_item_export           uvm_seq_item_pull_imp         -     @769 
+#         arbitration_queue         array                         0     -    
+#         lock_queue                array                         0     -    
+#         num_last_reqs             integral                      32    'd1  
+#         num_last_rsps             integral                      32    'd1  
+#     CONF_input_virtual_sequencer  CONF_input_virtual_sequencer  -     @520 
+#       rsp_export                  uvm_analysis_export           -     @527 
+#       seq_item_export             uvm_seq_item_pull_imp         -     @621 
+#       arbitration_queue           array                         0     -    
+#       lock_queue                  array                         0     -    
+#       num_last_reqs               integral                      32    'd1  
+#       num_last_rsps               integral                      32    'd1  
+#     UART_input_agent_h            UART_input_agent              -     @513 
+#       UART_input_driver           UART_input_driver             -     @1005
+#         rsp_port                  uvm_analysis_port             -     @1020
+#         seq_item_port             uvm_seq_item_pull_port        -     @1012
+#       UART_input_monitor          UART_input_monitor            -     @1030
+#         an_port                   uvm_analysis_port             -     @1047
+#       UART_input_seqr             uvm_sequencer                 -     @896 
+#         rsp_export                uvm_analysis_export           -     @903 
+#         seq_item_export           uvm_seq_item_pull_imp         -     @997 
+#         arbitration_queue         array                         0     -    
+#         lock_queue                array                         0     -    
+#         num_last_reqs             integral                      32    'd1  
+#         num_last_rsps             integral                      32    'd1  
+#     UART_output_agent_h           UART_output_agent             -     @632 
+#       UART_output_monitor         UART_output_monitor           -     @1064
+#         an_port                   uvm_analysis_port             -     @1081
+#     cov                           UART_coverage                 -     @646 
+#       an_port                     uvm_analysis_imp              -     @653 
+# ---------------------------------------------------------------------------
+# 
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 31920 ns Started: 26640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 67760 ns Started: 62640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 103760 ns Started: 98640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 139760 ns Started: 134640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 175760 ns Started: 170640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 211760 ns Started: 206640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 247760 ns Started: 242640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 283760 ns Started: 278640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 319760 ns Started: 314640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 355760 ns Started: 350640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 391760 ns Started: 386640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 427760 ns Started: 422640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 463760 ns Started: 458640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 499760 ns Started: 494640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 535760 ns Started: 530640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 571760 ns Started: 566640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 607760 ns Started: 602640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 643760 ns Started: 638640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 679760 ns Started: 674640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 715760 ns Started: 710640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 751760 ns Started: 746640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 787760 ns Started: 782640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 823760 ns Started: 818640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 859760 ns Started: 854640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 895760 ns Started: 890640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 931760 ns Started: 926640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 967760 ns Started: 962640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 1003760 ns Started: 998640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 1039760 ns Started: 1034640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 1075760 ns Started: 1070640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 1111760 ns Started: 1106640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 1147760 ns Started: 1142640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 1183760 ns Started: 1178640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 1219760 ns Started: 1214640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 1255760 ns Started: 1250640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 1291760 ns Started: 1286640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 1327760 ns Started: 1322640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 1363760 ns Started: 1358640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 1399760 ns Started: 1394640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 1435760 ns Started: 1430640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 1471760 ns Started: 1466640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 1507760 ns Started: 1502640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 1543760 ns Started: 1538640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 1579760 ns Started: 1574640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 1615760 ns Started: 1610640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 1651760 ns Started: 1646640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 1687760 ns Started: 1682640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 1723760 ns Started: 1718640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 1759760 ns Started: 1754640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# ** Info: PASS ASSERTION: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT: ASSERTION 1: VALID_OUT!
+#    Time: 1795760 ns Started: 1790640 ns  Scope: testbench_UART.UART_DUT.ass_UART.ASSERTION_1_VALID_OUT File: testbench/UART/assertion_UART.sv Line: 104
+# UVM_INFO testbench/UART/test/environment/coverage/UART_coverage.svh(35) @ 1801560: uvm_test_top.env.cov [cov] UART coverage: 50.79%
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    3
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [RNTST]     1
+# [UVMTOP]     1
+# [cov]     1
+# ** Note: $finish    : /opt/questa/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 1801560 ns  Iteration: 96  Instance: /testbench_UART
+# Saving coverage database on exit...
+# End time: 23:21:33 on Jun 21,2024, Elapsed time: 0:00:19
+# Errors: 0, Warnings: 6

@@ -1,0 +1,364 @@
+[ START MERGED ]
+cm/configCM/n9160 cm/configCM/State_reg_0
+uart/n4180 data
+c_valid_N_785 c_valid
+n4196 VSYNC_c
+n4198 HSYNC_c
+[ END MERGED ]
+[ START CLIPPED ]
+GND_net
+n9390
+cd/CNT_DB/counter_1252_add_4_33/S1
+cd/CNT_DB/counter_1252_add_4_33/CO
+cd/CNT_DB/sub_1028_add_2_2/S1
+cd/CNT_DB/sub_1028_add_2_2/S0
+cd/CNT_DB/sub_1028_add_2_2/CI
+cd/CNT_DB/sub_1028_add_2_4/S1
+cd/CNT_DB/sub_1028_add_2_4/S0
+cd/CNT_DB/sub_1028_add_2_6/S1
+cd/CNT_DB/sub_1028_add_2_6/S0
+cd/CNT_DB/sub_1028_add_2_8/S1
+cd/CNT_DB/sub_1028_add_2_8/S0
+cd/CNT_DB/sub_1028_add_2_10/S1
+cd/CNT_DB/sub_1028_add_2_10/S0
+cd/CNT_DB/sub_1028_add_2_12/S1
+cd/CNT_DB/sub_1028_add_2_12/S0
+cd/CNT_DB/sub_1028_add_2_14/S1
+cd/CNT_DB/sub_1028_add_2_14/S0
+cd/CNT_DB/sub_1028_add_2_16/S1
+cd/CNT_DB/sub_1028_add_2_16/S0
+cd/CNT_DB/sub_1028_add_2_18/S1
+cd/CNT_DB/sub_1028_add_2_18/S0
+cd/CNT_DB/sub_1028_add_2_20/S1
+cd/CNT_DB/sub_1028_add_2_20/S0
+cd/CNT_DB/sub_1028_add_2_22/S1
+cd/CNT_DB/sub_1028_add_2_22/S0
+cd/CNT_DB/sub_1028_add_2_24/S1
+cd/CNT_DB/sub_1028_add_2_24/S0
+cd/CNT_DB/sub_1028_add_2_26/S1
+cd/CNT_DB/sub_1028_add_2_26/S0
+cd/CNT_DB/sub_1028_add_2_28/S1
+cd/CNT_DB/sub_1028_add_2_28/S0
+cd/CNT_DB/sub_1028_add_2_30/S1
+cd/CNT_DB/sub_1028_add_2_30/S0
+cd/CNT_DB/counter_1252_add_4_1/S0
+cd/CNT_DB/counter_1252_add_4_1/CI
+cd/CNT_DB/sub_1028_add_2_32/S1
+cd/CNT_DB/sub_1028_add_2_32/S0
+cd/CNT_DB/sub_1028_add_2_cout/S1
+cd/CNT_DB/sub_1028_add_2_cout/CO
+cd/CNT_LM/sub_1027_add_2_6/S1
+cd/CNT_LM/sub_1027_add_2_6/S0
+cd/CNT_LM/counter_1251_add_4_1/S0
+cd/CNT_LM/counter_1251_add_4_1/CI
+cd/CNT_LM/sub_1027_add_2_8/S1
+cd/CNT_LM/sub_1027_add_2_8/S0
+cd/CNT_LM/sub_1027_add_2_4/S1
+cd/CNT_LM/sub_1027_add_2_4/S0
+cd/CNT_LM/sub_1027_add_2_2/S1
+cd/CNT_LM/sub_1027_add_2_2/S0
+cd/CNT_LM/sub_1027_add_2_2/CI
+cd/CNT_LM/sub_1027_add_2_12/S1
+cd/CNT_LM/sub_1027_add_2_12/S0
+cd/CNT_LM/sub_1027_add_2_14/S1
+cd/CNT_LM/sub_1027_add_2_14/S0
+cd/CNT_LM/sub_1027_add_2_16/S1
+cd/CNT_LM/sub_1027_add_2_16/S0
+cd/CNT_LM/sub_1027_add_2_18/S1
+cd/CNT_LM/sub_1027_add_2_18/S0
+cd/CNT_LM/sub_1027_add_2_20/S1
+cd/CNT_LM/sub_1027_add_2_20/S0
+cd/CNT_LM/sub_1027_add_2_22/S1
+cd/CNT_LM/sub_1027_add_2_22/S0
+cd/CNT_LM/counter_1251_add_4_33/S1
+cd/CNT_LM/counter_1251_add_4_33/CO
+cd/CNT_LM/sub_1027_add_2_24/S1
+cd/CNT_LM/sub_1027_add_2_24/S0
+cd/CNT_LM/sub_1027_add_2_26/S1
+cd/CNT_LM/sub_1027_add_2_26/S0
+cd/CNT_LM/sub_1027_add_2_28/S1
+cd/CNT_LM/sub_1027_add_2_28/S0
+cd/CNT_LM/sub_1027_add_2_30/S0
+cd/CNT_LM/sub_1027_add_2_30/CO
+cd/CNT_LM/sub_1027_add_2_10/S1
+cd/CNT_LM/sub_1027_add_2_10/S0
+cd/CNT_UART/counter_1250_add_4_1/S0
+cd/CNT_UART/counter_1250_add_4_1/CI
+cd/CNT_UART/counter_1250_add_4_25/S1
+cd/CNT_UART/counter_1250_add_4_25/CO
+cd/CNT_UART/limit_23__I_0_add_2_1/S0
+cd/CNT_UART/limit_23__I_0_add_2_1/CI
+cd/CNT_UART/limit_23__I_0_add_2_11/S1
+cd/CNT_UART/limit_23__I_0_add_2_11/CO
+cd/CNT_VGA/counter_1249_add_4_33/S1
+cd/CNT_VGA/counter_1249_add_4_33/CO
+cd/CNT_VGA/sub_1026_add_2_2/S1
+cd/CNT_VGA/sub_1026_add_2_2/S0
+cd/CNT_VGA/sub_1026_add_2_2/CI
+cd/CNT_VGA/sub_1026_add_2_4/S1
+cd/CNT_VGA/sub_1026_add_2_4/S0
+cd/CNT_VGA/sub_1026_add_2_6/S1
+cd/CNT_VGA/sub_1026_add_2_6/S0
+cd/CNT_VGA/sub_1026_add_2_8/S1
+cd/CNT_VGA/sub_1026_add_2_8/S0
+cd/CNT_VGA/sub_1026_add_2_10/S1
+cd/CNT_VGA/sub_1026_add_2_10/S0
+cd/CNT_VGA/sub_1026_add_2_12/S1
+cd/CNT_VGA/sub_1026_add_2_12/S0
+cd/CNT_VGA/sub_1026_add_2_14/S1
+cd/CNT_VGA/sub_1026_add_2_14/S0
+cd/CNT_VGA/sub_1026_add_2_16/S1
+cd/CNT_VGA/sub_1026_add_2_16/S0
+cd/CNT_VGA/sub_1026_add_2_18/S1
+cd/CNT_VGA/sub_1026_add_2_18/S0
+cd/CNT_VGA/sub_1026_add_2_20/S1
+cd/CNT_VGA/sub_1026_add_2_20/S0
+cd/CNT_VGA/sub_1026_add_2_22/S1
+cd/CNT_VGA/sub_1026_add_2_22/S0
+cd/CNT_VGA/sub_1026_add_2_24/S1
+cd/CNT_VGA/sub_1026_add_2_24/S0
+cd/CNT_VGA/sub_1026_add_2_26/S1
+cd/CNT_VGA/sub_1026_add_2_26/S0
+cd/CNT_VGA/sub_1026_add_2_28/S1
+cd/CNT_VGA/sub_1026_add_2_28/S0
+cd/CNT_VGA/sub_1026_add_2_30/S1
+cd/CNT_VGA/sub_1026_add_2_30/S0
+cd/CNT_VGA/sub_1026_add_2_32/S1
+cd/CNT_VGA/sub_1026_add_2_32/S0
+cd/CNT_VGA/sub_1026_add_2_cout/S1
+cd/CNT_VGA/sub_1026_add_2_cout/CO
+cd/CNT_VGA/counter_1249_add_4_1/S0
+cd/CNT_VGA/counter_1249_add_4_1/CI
+cm/assignCM/sub_1032_add_2_2/S1
+cm/assignCM/sub_1032_add_2_2/S0
+cm/assignCM/sub_1032_add_2_2/CI
+cm/assignCM/sub_1032_add_2_4/S1
+cm/assignCM/sub_1032_add_2_4/S0
+cm/assignCM/sub_1032_add_2_6/S1
+cm/assignCM/sub_1032_add_2_6/S0
+cm/assignCM/sub_1032_add_2_8/S1
+cm/assignCM/sub_1032_add_2_8/S0
+cm/assignCM/sub_1032_add_2_10/S1
+cm/assignCM/sub_1032_add_2_10/S0
+cm/assignCM/sub_1032_add_2_cout/S1
+cm/assignCM/sub_1032_add_2_cout/CO
+cm/assignCM/sub_1030_add_2_2/S1
+cm/assignCM/sub_1030_add_2_2/S0
+cm/assignCM/sub_1030_add_2_2/CI
+cm/assignCM/sub_1030_add_2_4/S1
+cm/assignCM/sub_1030_add_2_4/S0
+cm/assignCM/sub_1030_add_2_6/S1
+cm/assignCM/sub_1030_add_2_6/S0
+cm/assignCM/sub_1030_add_2_8/S1
+cm/assignCM/sub_1030_add_2_8/S0
+cm/assignCM/sub_1030_add_2_10/S1
+cm/assignCM/sub_1030_add_2_10/S0
+cm/assignCM/sub_1030_add_2_cout/S1
+cm/assignCM/sub_1030_add_2_cout/CO
+cm/counterH/sub_1033_add_2_cout/S1
+cm/counterH/sub_1033_add_2_cout/CO
+cm/counterH/sub_1035_add_2_1/S1
+cm/counterH/sub_1035_add_2_1/S0
+cm/counterH/sub_1035_add_2_1/CI
+cm/counterH/sub_1035_add_2_3/S1
+cm/counterH/sub_1035_add_2_3/S0
+cm/counterH/sub_1035_add_2_5/S1
+cm/counterH/sub_1035_add_2_5/S0
+cm/counterH/sub_1035_add_2_7/S1
+cm/counterH/sub_1035_add_2_7/S0
+cm/counterH/sub_1035_add_2_cout/S1
+cm/counterH/sub_1035_add_2_cout/CO
+cm/counterH/sub_1033_add_2_2/S1
+cm/counterH/sub_1033_add_2_2/S0
+cm/counterH/sub_1033_add_2_2/CI
+cm/counterH/Count_reg_1269_add_4_1/S0
+cm/counterH/Count_reg_1269_add_4_1/CI
+cm/counterH/Count_reg_1269_add_4_11/S1
+cm/counterH/Count_reg_1269_add_4_11/CO
+cm/counterH/Count_intern_reg_1267_add_4_1/S0
+cm/counterH/Count_intern_reg_1267_add_4_1/CI
+cm/counterH/sub_1033_add_2_4/S1
+cm/counterH/sub_1033_add_2_4/S0
+cm/counterH/sub_1033_add_2_6/S1
+cm/counterH/sub_1033_add_2_6/S0
+cm/counterH/Count_intern_reg_1267_add_4_11/S1
+cm/counterH/Count_intern_reg_1267_add_4_11/CO
+cm/counterH/sub_1033_add_2_8/S1
+cm/counterH/sub_1033_add_2_8/S0
+cm/counterH/sub_1033_add_2_10/S1
+cm/counterH/sub_1033_add_2_10/S0
+cm/counterV/sub_1039_add_2_1/S1
+cm/counterV/sub_1039_add_2_1/S0
+cm/counterV/sub_1039_add_2_1/CI
+cm/counterV/sub_1039_add_2_3/S1
+cm/counterV/sub_1039_add_2_3/S0
+cm/counterV/sub_1039_add_2_5/S1
+cm/counterV/sub_1039_add_2_5/S0
+cm/counterV/sub_1039_add_2_7/S1
+cm/counterV/sub_1039_add_2_7/S0
+cm/counterV/sub_1039_add_2_9/S1
+cm/counterV/sub_1039_add_2_9/S0
+cm/counterV/sub_1039_add_2_11/S0
+cm/counterV/sub_1039_add_2_11/CO
+cm/counterV/sub_1037_add_2_2/S1
+cm/counterV/sub_1037_add_2_2/S0
+cm/counterV/sub_1037_add_2_2/CI
+cm/counterV/sub_1037_add_2_4/S1
+cm/counterV/sub_1037_add_2_4/S0
+cm/counterV/sub_1037_add_2_6/S1
+cm/counterV/sub_1037_add_2_6/S0
+cm/counterV/sub_1037_add_2_8/S1
+cm/counterV/sub_1037_add_2_8/S0
+cm/counterV/sub_1037_add_2_10/S1
+cm/counterV/sub_1037_add_2_10/S0
+cm/counterV/sub_1037_add_2_cout/S1
+cm/counterV/sub_1037_add_2_cout/CO
+cm/counterV/Count_reg_1273_add_4_1/S0
+cm/counterV/Count_reg_1273_add_4_1/CI
+cm/counterV/Count_reg_1273_add_4_11/S1
+cm/counterV/Count_reg_1273_add_4_11/CO
+cm/counterV/Count_intern_reg_1271_add_4_1/S0
+cm/counterV/Count_intern_reg_1271_add_4_1/CI
+cm/counterV/Count_intern_reg_1271_add_4_11/S1
+cm/counterV/Count_intern_reg_1271_add_4_11/CO
+vga/CounterH/sub_1041_add_2_1/S1
+vga/CounterH/sub_1041_add_2_1/S0
+vga/CounterH/sub_1041_add_2_1/CI
+vga/CounterH/sub_1041_add_2_3/S1
+vga/CounterH/sub_1041_add_2_3/S0
+vga/CounterH/sub_1041_add_2_5/S1
+vga/CounterH/sub_1041_add_2_5/S0
+vga/CounterH/sub_1041_add_2_7/S1
+vga/CounterH/sub_1041_add_2_7/S0
+vga/CounterH/sub_1041_add_2_9/S1
+vga/CounterH/sub_1041_add_2_9/S0
+vga/CounterH/sub_1041_add_2_11/S1
+vga/CounterH/sub_1041_add_2_11/S0
+vga/CounterH/sub_1041_add_2_13/S0
+vga/CounterH/sub_1041_add_2_13/CO
+vga/CounterH/Count_reg_1274_add_4_1/S0
+vga/CounterH/Count_reg_1274_add_4_1/CI
+vga/CounterH/Count_reg_1274_add_4_13/S1
+vga/CounterH/Count_reg_1274_add_4_13/CO
+vga/CounterV/sub_1043_add_2_1/S1
+vga/CounterV/sub_1043_add_2_1/S0
+vga/CounterV/sub_1043_add_2_1/CI
+vga/CounterV/sub_1043_add_2_3/S1
+vga/CounterV/sub_1043_add_2_3/S0
+vga/CounterV/sub_1043_add_2_5/S1
+vga/CounterV/sub_1043_add_2_5/S0
+vga/CounterV/sub_1043_add_2_7/S1
+vga/CounterV/sub_1043_add_2_7/S0
+vga/CounterV/sub_1043_add_2_9/S1
+vga/CounterV/sub_1043_add_2_9/S0
+vga/CounterV/sub_1043_add_2_11/S1
+vga/CounterV/sub_1043_add_2_11/S0
+vga/CounterV/sub_1043_add_2_13/S0
+vga/CounterV/sub_1043_add_2_13/CO
+vga/CounterV/Count_reg_1275_add_4_1/S0
+vga/CounterV/Count_reg_1275_add_4_1/CI
+vga/CounterV/Count_reg_1275_add_4_13/S1
+vga/CounterV/Count_reg_1275_add_4_13/CO
+vga/assgncolor/sub_1046_add_2_1/S1
+vga/assgncolor/sub_1046_add_2_1/S0
+vga/assgncolor/sub_1046_add_2_1/CI
+vga/assgncolor/sub_1046_add_2_3/S1
+vga/assgncolor/sub_1046_add_2_3/S0
+vga/assgncolor/sub_1046_add_2_5/S1
+vga/assgncolor/sub_1046_add_2_5/S0
+vga/assgncolor/sub_1046_add_2_7/S1
+vga/assgncolor/sub_1046_add_2_7/S0
+vga/assgncolor/sub_1046_add_2_9/S1
+vga/assgncolor/sub_1046_add_2_9/S0
+vga/assgncolor/sub_1046_add_2_11/S1
+vga/assgncolor/sub_1046_add_2_11/S0
+vga/assgncolor/sub_1046_add_2_13/S0
+vga/assgncolor/sub_1046_add_2_13/CO
+vga/assgncolor/sub_1045_add_2_1/S1
+vga/assgncolor/sub_1045_add_2_1/S0
+vga/assgncolor/sub_1045_add_2_1/CI
+vga/assgncolor/sub_1045_add_2_3/S1
+vga/assgncolor/sub_1045_add_2_3/S0
+vga/assgncolor/sub_1045_add_2_5/S1
+vga/assgncolor/sub_1045_add_2_5/S0
+vga/assgncolor/sub_1045_add_2_7/S1
+vga/assgncolor/sub_1045_add_2_7/S0
+vga/assgncolor/sub_1045_add_2_9/S1
+vga/assgncolor/sub_1045_add_2_9/S0
+vga/assgncolor/sub_1045_add_2_11/S1
+vga/assgncolor/sub_1045_add_2_11/S0
+vga/assgncolor/sub_1045_add_2_13/S0
+vga/assgncolor/sub_1045_add_2_13/CO
+sub_1047_add_2_cout/S1
+sub_1047_add_2_cout/CO
+sub_1047_add_2_1/S1
+sub_1047_add_2_1/S0
+sub_1047_add_2_1/CI
+sub_1029_add_2_2/S1
+sub_1029_add_2_2/S0
+sub_1029_add_2_2/CI
+sub_1029_add_2_4/S1
+sub_1029_add_2_4/S0
+sub_1029_add_2_6/S1
+sub_1029_add_2_6/S0
+sub_1029_add_2_8/S1
+sub_1029_add_2_8/S0
+sub_1029_add_2_10/S1
+sub_1029_add_2_10/S0
+sub_1029_add_2_12/S1
+sub_1029_add_2_12/S0
+sub_1029_add_2_14/S1
+sub_1029_add_2_14/S0
+sub_1029_add_2_16/S1
+sub_1029_add_2_16/S0
+sub_1029_add_2_18/S1
+sub_1029_add_2_18/S0
+sub_1047_add_2_3/S1
+sub_1047_add_2_3/S0
+sub_1047_add_2_5/S1
+sub_1047_add_2_5/S0
+sub_1029_add_2_20/S1
+sub_1029_add_2_20/S0
+sub_1029_add_2_22/S1
+sub_1029_add_2_22/S0
+sub_1029_add_2_24/S1
+sub_1029_add_2_24/S0
+sub_1029_add_2_cout/S1
+sub_1029_add_2_cout/CO
+sub_1047_add_2_7/S1
+sub_1047_add_2_7/S0
+sub_1047_add_2_9/S1
+sub_1047_add_2_9/S0
+[ END CLIPPED ]
+[ START DESIGN PREFS ]
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 3.13.0.56.2 -- WARNING: Map write only section -- Sun Jun 23 22:57:44 2024
+
+SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=ENABLE I2C_PORT=DISABLE I2C_GLITCH_FILTER=DISABLE I2C_GLITCH_FILTER_RANGE=R_16_50NS MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF CONFIG_SECURE=OFF MCCLK_FREQ=66.5 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF BACKGROUND_RECONFIG_SECURITY=OFF SPIM_ADDRESS_32BIT=DISABLE SFDP_CHECK=DISABLE PRIMARY_BOOT=IMAGE_0 SECONDARY_BOOT=NONE SLAVE_IDLE_TIMER=0 MASTER_PREAMBLE_DETECTION_TIMER=0 MASTER_PREAMBLE_DETECTION_RETRY=0 CUR_DESIGN_BOOT_LOCATION=IMAGE_0 INBUF=ON ROLLBACK_CONTROL=DISABLE ;
+LOCATE COMP "GREEN[0]" SITE "G2" ;
+LOCATE COMP "GREEN[1]" SITE "H2" ;
+LOCATE COMP "GREEN[2]" SITE "J3" ;
+LOCATE COMP "RED[0]" SITE "G1" ;
+LOCATE COMP "RED[1]" SITE "H1" ;
+LOCATE COMP "RED[2]" SITE "H3" ;
+LOCATE COMP "LEDS[0]" SITE "H11" ;
+LOCATE COMP "LEDS[1]" SITE "J13" ;
+LOCATE COMP "LEDS[2]" SITE "J11" ;
+LOCATE COMP "LEDS[3]" SITE "L12" ;
+LOCATE COMP "LEDS[4]" SITE "K11" ;
+LOCATE COMP "LEDS[5]" SITE "L13" ;
+LOCATE COMP "LEDS[6]" SITE "N15" ;
+LOCATE COMP "LEDS[7]" SITE "P16" ;
+LOCATE COMP "VSYNC" SITE "J2" ;
+LOCATE COMP "HSYNC" SITE "J1" ;
+LOCATE COMP "out" SITE "E3" ;
+LOCATE COMP "BLUE[1]" SITE "F1" ;
+LOCATE COMP "BLUE[0]" SITE "F2" ;
+LOCATE COMP "clk" SITE "C8" ;
+LOCATE COMP "btnHS" SITE "P1" ;
+LOCATE COMP "btnVS" SITE "P2" ;
+LOCATE COMP "btnUART" SITE "N2" ;
+LOCATE COMP "btnVGA" SITE "R1" ;
+LOCATE COMP "in" SITE "F5" ;
+SCHEMATIC END ;
+[ END DESIGN PREFS ]

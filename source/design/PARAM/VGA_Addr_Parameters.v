@@ -1,0 +1,8 @@
+parameter ADDR_WIDTH = 4,
+parameter [ADDR_WIDTH-1:0] ADDR_VGA_CONFIG 		=  1011,
+parameter [ADDR_WIDTH-1:0] ADDR_VGA_QUADRAN		=  1010,
+parameter [ADDR_WIDTH-1:0] ADDR_VGA_COLOR 		=  1000,
+
+parameter ADDR_UART_BOUDRATE 				=  0100,
+parameter [ADDR_WIDTH-1:0] ADDR_UART_PARITY = 1001,
+parameter [ADDR_WIDTH-1:0] ADDR_UART_STOP 	= 0110 

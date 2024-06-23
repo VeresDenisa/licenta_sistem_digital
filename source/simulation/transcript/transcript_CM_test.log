@@ -1,0 +1,155 @@
+# vsim -c -voptargs="+acc" "+UVM_TESTNAME=CM_test" "+UVM_VERBOSITY=LOW" -wlf simulation/wave/wave_CM_test.wlf work.testbench_CM -do "log -r /*; coverage save -onexit simulation/ucdb/ucdb_CM_test.ucdb; run -all; quit -f; exit" 
+# Start time: 23:27:15 on Jun 21,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim-64
+# //  Version 10.7c linux_x86_64 Aug 17 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.item_pack(fast)
+# Loading work.CM_coverage_pack(fast)
+# Loading work.CM_input_VIF(fast)
+# Loading work.CONF_output_VIF(fast)
+# Loading work.CM_agent_pack(fast)
+# Loading work.CM_output_VIF(fast)
+# Loading work.CM_sequence_pack(fast)
+# Loading work.CM_environment_pack(fast)
+# Loading work.CM_test_pack(fast)
+# Loading work.testbench_CM_sv_unit(fast)
+# Loading work.testbench_CM(fast)
+# Loading work.CM_input_VIF_sv_unit(fast)
+# Loading work.CM_input_VIF(fast)
+# Loading work.CM_output_VIF_sv_unit(fast)
+# Loading work.CM_output_VIF(fast)
+# Loading work.CONF_output_VIF_sv_unit(fast)
+# Loading work.CONF_output_VIF(fast)
+# Loading work.CM(fast)
+# Loading work.CM_Config_Manager(fast)
+# Loading work.CM_Assign_Data(fast)
+# Loading work.CM_Counter(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# ** Warning: (vsim-3839) Variable '/testbench_CM/CM_output_i/Config_Status', driven via a port connection, is multiply driven. See testbench/CM/testbench_CM.sv(27).
+#    Time: 0 ns  Iteration: 0  Instance: /testbench_CM/CM_output_i File: testbench/CM/interface/CM_output_VIF.sv Line: 5
+# ** Warning: (vsim-3839) Variable '/testbench_CM/CM_output_i/Config_Notification', driven via a port connection, is multiply driven. See testbench/CM/testbench_CM.sv(27).
+#    Time: 0 ns  Iteration: 0  Instance: /testbench_CM/CM_output_i File: testbench/CM/interface/CM_output_VIF.sv Line: 7
+# ** Warning: (vsim-3839) Variable '/testbench_CM/CM_output_i/Config_Notification_Valid', driven via a port connection, is multiply driven. See testbench/CM/testbench_CM.sv(27).
+#    Time: 0 ns  Iteration: 0  Instance: /testbench_CM/CM_output_i File: testbench/CM/interface/CM_output_VIF.sv Line: 8
+# ** Warning: (vsim-3839) Variable '/testbench_CM/CM_output_i/Config_Error', driven via a port connection, is multiply driven. See testbench/CM/testbench_CM.sv(27).
+#    Time: 0 ns  Iteration: 0  Instance: /testbench_CM/CM_output_i File: testbench/CM/interface/CM_output_VIF.sv Line: 10
+# ** Warning: (vsim-3839) Variable '/testbench_CM/CM_output_i/Error_Valid', driven via a port connection, is multiply driven. See testbench/CM/testbench_CM.sv(27).
+#    Time: 0 ns  Iteration: 0  Instance: /testbench_CM/CM_output_i File: testbench/CM/interface/CM_output_VIF.sv Line: 11
+# ** Warning: (vsim-3839) Variable '/testbench_CM/CM_output_i/VGA_Notification', driven via a port connection, is multiply driven. See testbench/CM/testbench_CM.sv(27).
+#    Time: 0 ns  Iteration: 0  Instance: /testbench_CM/CM_output_i File: testbench/CM/interface/CM_output_VIF.sv Line: 13
+# ** Warning: (vsim-3839) Variable '/testbench_CM/CM_output_i/VGA_Notification_Valid', driven via a port connection, is multiply driven. See testbench/CM/testbench_CM.sv(27).
+#    Time: 0 ns  Iteration: 0  Instance: /testbench_CM/CM_output_i File: testbench/CM/interface/CM_output_VIF.sv Line: 14
+# ** Warning: (vsim-3839) Variable '/testbench_CM/CM_output_i/Data_VGA', driven via a port connection, is multiply driven. See testbench/CM/testbench_CM.sv(27).
+#    Time: 0 ns  Iteration: 0  Instance: /testbench_CM/CM_output_i File: testbench/CM/interface/CM_output_VIF.sv Line: 16
+# Loading /opt/questa/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so
+# log -r /*
+#  coverage save -onexit simulation/ucdb/ucdb_CM_test.ucdb
+#  run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test CM_test...
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# -----------------------------------------------------------------------------
+# Name                               Type                           Size  Value
+# -----------------------------------------------------------------------------
+# uvm_test_top                       CM_test                        -     @483 
+#   env                              CM_environment                 -     @494 
+#     CM_input_agent_h               CM_input_agent                 -     @625 
+#       CM_input_driver              CM_input_driver                -     @789 
+#         rsp_port                   uvm_analysis_port              -     @804 
+#         seq_item_port              uvm_seq_item_pull_port         -     @796 
+#       CM_input_monitor             CM_input_monitor               -     @814 
+#         an_port                    uvm_analysis_port              -     @831 
+#       CM_input_seqr                uvm_sequencer                  -     @680 
+#         rsp_export                 uvm_analysis_export            -     @687 
+#         seq_item_export            uvm_seq_item_pull_imp          -     @781 
+#         arbitration_queue          array                          0     -    
+#         lock_queue                 array                          0     -    
+#         num_last_reqs              integral                       32    'd1  
+#         num_last_rsps              integral                       32    'd1  
+#     CM_output_agent_h              CM_output_agent                -     @632 
+#       CM_output_monitor            CM_output_monitor              -     @848 
+#         an_port                    uvm_analysis_port              -     @865 
+#     CONF_agent_h                   CONF_output_agent              -     @639 
+#       CONF_output_driver           CONF_output_driver             -     @1041
+#         rsp_port                   uvm_analysis_port              -     @1056
+#         seq_item_port              uvm_seq_item_pull_port         -     @1048
+#       CONF_output_monitor          CONF_output_monitor            -     @1066
+#         an_port                    uvm_analysis_port              -     @1083
+#       CONF_output_seqr             CONF_output_sequencer          -     @877 
+#         export_port                uvm_analysis_export            -     @986 
+#         fifo                       uvm_tlm_analysis_fifo #(T)     -     @994 
+#           analysis_export          uvm_analysis_imp               -     @1033
+#           get_ap                   uvm_analysis_port              -     @1025
+#           get_peek_export          uvm_get_peek_imp               -     @1009
+#           put_ap                   uvm_analysis_port              -     @1017
+#           put_export               uvm_put_imp                    -     @1001
+#         rsp_export                 uvm_analysis_export            -     @884 
+#         seq_item_export            uvm_seq_item_pull_imp          -     @978 
+#         arbitration_queue          array                          0     -    
+#         lock_queue                 array                          0     -    
+#         num_last_reqs              integral                       32    'd1  
+#         num_last_rsps              integral                       32    'd1  
+#     CONF_output_virtual_sequencer  CONF_output_virtual_sequencer  -     @510 
+#       rsp_export                   uvm_analysis_export            -     @517 
+#       seq_item_export              uvm_seq_item_pull_imp          -     @611 
+#       arbitration_queue            array                          0     -    
+#       lock_queue                   array                          0     -    
+#       num_last_reqs                integral                       32    'd1  
+#       num_last_rsps                integral                       32    'd1  
+#     cov                            CM_coverage                    -     @646 
+#       an_port_CM_input             uvm_analysis_imp_CM_input      -     @653 
+#       an_port_CM_output            uvm_analysis_imp_CM_output     -     @661 
+# -----------------------------------------------------------------------------
+# 
+# UVM_INFO testbench/CM/test/environment/coverage/CM_coverage.svh(52) @ 1135: uvm_test_top.env.cov [cov] Input CM coverage:  100.00%
+# UVM_INFO testbench/CM/test/environment/coverage/CM_coverage.svh(53) @ 1135: uvm_test_top.env.cov [cov] Output CM coverage: 76.56%
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    4
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [RNTST]     1
+# [UVMTOP]     1
+# [cov]     2
+# ** Note: $finish    : /opt/questa/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 1135 ns  Iteration: 96  Instance: /testbench_CM
+# Saving coverage database on exit...
+# End time: 23:27:20 on Jun 21,2024, Elapsed time: 0:00:05
+# Errors: 0, Warnings: 8

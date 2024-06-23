@@ -1,0 +1,1524 @@
+
+              Lattice Mapping Report File for Design Module 'CS'
+
+
+Design Information
+------------------
+
+Command line:   map -a MachXO3D -p LCMXO3D-9400HC -t CABGA256 -s 5 -oc
+     Commercial CS_project_CS_implementation.ngd -o
+     CS_project_CS_implementation_map.ncd -pr CS_project_CS_implementation.prf
+     -mp CS_project_CS_implementation.mrp -lpf C:/Users/Denisa/Desktop/GITHUB/li
+     centa_sistem_digital/diamond/CS_implementation/CS_project_CS_implementation
+     .lpf -lpf C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_
+     project.lpf -c 0 -gui 
+Target Vendor:  LATTICE
+Target Device:  LCMXO3D-9400HCCABGA256
+Target Performance:   5
+Mapper:  se5c00,  version:  Diamond (64-bit) 3.13.0.56.2
+Mapped on:  06/23/24  22:57:41
+
+Design Summary
+--------------
+
+   Number of registers:    609 out of 10021 (6%)
+      PFU registers:          609 out of  9400 (6%)
+      PIO registers:            0 out of   621 (0%)
+   Number of SLICEs:       511 out of  4700 (11%)
+      SLICEs as Logic/ROM:    511 out of  4700 (11%)
+      SLICEs as RAM:            0 out of  3525 (0%)
+      SLICEs as Carry:        239 out of  4700 (5%)
+   Number of LUT4s:        1004 out of  9400 (11%)
+      Number used as logic LUTs:        526
+      Number used as distributed RAM:     0
+      Number used as ripple logic:      478
+      Number used as shift registers:     0
+   Number of PIO sites used: 30 + 4(JTAG) out of 207 (16%)
+   Number of block RAMs:  0 out of 48 (0%)
+   Number of GSRs:        1 out of 1 (100%)
+   EFB used :        No
+   JTAG used :       No
+   Readback used :   No
+   Oscillator used : No
+   Security used :   No
+   Startup used :    No
+   POR :             On
+   Bandgap :         On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCSLEWRATEA):  0 out of 6 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+
+                                    Page 1
+
+
+
+
+Design:  CS                                            Date:  06/23/24  22:57:41
+
+Design Summary (cont)
+---------------------
+   Number of clocks:  9
+     Net HSYNC_c: 7 loads, 7 rising, 0 falling (Driver:
+     vga/CounterH/Sync_State_reg_13 )
+     Net clk_VGA: 5 loads, 5 rising, 0 falling (Driver: cd/CNT_VGA/clkout_17 )
+     Net clk_DB: 6 loads, 6 rising, 0 falling (Driver: cd/CNT_DB/clkout_17 )
+     Net clk_c: 273 loads, 273 rising, 0 falling (Driver: PIO clk )
+     Net clk_LM: 4 loads, 4 rising, 0 falling (Driver: cd/CNT_LM/clkout_17 )
+     Net clk_UART: 9 loads, 9 rising, 0 falling (Driver: cd/CNT_UART/clkout_17 )
+     
+     Net vga/config1/H_Left_Margin_nxt_8__N_969: 41 loads, 41 rising, 0 falling
+     (Driver: vga/config1/i7502_2_lut_2_lut_4_lut )
+     Net c_data_1_derived_1: 1 loads, 1 rising, 0 falling (Driver:
+     vga/config1/i7491_2_lut_rep_213 )
+     Net cm/configCM/State_nxt_2__N_488: 3 loads, 3 rising, 0 falling (Driver:
+     cm/configCM/i1_2_lut_adj_51 )
+   Number of Clock Enables:  57
+     Net VSYNC_c: 1 loads, 1 LSLICEs
+     Net HSYNC_c: 1 loads, 1 LSLICEs
+     Net clk_c_enable_19: 1 loads, 1 LSLICEs
+     Net clk_c_enable_198: 4 loads, 4 LSLICEs
+     Net clk_c_enable_222: 1 loads, 1 LSLICEs
+     Net db/DB_VS/clk_DB_enable_1: 1 loads, 1 LSLICEs
+     Net db/DB_HS/clk_DB_enable_3: 1 loads, 1 LSLICEs
+     Net db/DB_DF_VGA/clk_DB_enable_2: 1 loads, 1 LSLICEs
+     Net db/DB_DF_UART/clk_DB_enable_4: 1 loads, 1 LSLICEs
+     Net clk_c_enable_81: 7 loads, 7 LSLICEs
+     Net clk_UART_enable_1: 1 loads, 1 LSLICEs
+     Net FIFO_UART_CM/clk_c_enable_166: 4 loads, 4 LSLICEs
+     Net FIFO_UART_CM/clk_LM_enable_3: 1 loads, 1 LSLICEs
+     Net FIFO_UART_CM/clk_c_enable_221: 4 loads, 4 LSLICEs
+     Net clk_c_enable_224: 6 loads, 6 LSLICEs
+     Net clk_c_enable_87: 3 loads, 3 LSLICEs
+     Net clk_c_enable_187: 1 loads, 1 LSLICEs
+     Net clk_UART_enable_4: 1 loads, 1 LSLICEs
+     Net clk_c_enable_176: 1 loads, 1 LSLICEs
+     Net clk_LM_enable_2: 1 loads, 1 LSLICEs
+     Net clk_UART_enable_3: 1 loads, 1 LSLICEs
+     Net uart/UART_STATE/clk_UART_enable_2: 1 loads, 1 LSLICEs
+     Net uart/clk_c_enable_215: 2 loads, 2 LSLICEs
+     Net uart/UART_STATE/clk_UART_enable_5: 1 loads, 1 LSLICEs
+     Net uart/clk_c_enable_212: 1 loads, 1 LSLICEs
+     Net uart/clk_c_enable_218: 1 loads, 1 LSLICEs
+     Net clk_VGA_enable_1: 1 loads, 1 LSLICEs
+     Net clk_c_enable_154: 2 loads, 2 LSLICEs
+     Net clk_c_enable_168: 2 loads, 2 LSLICEs
+     Net clk_c_enable_93: 4 loads, 4 LSLICEs
+     Net FIFO_CM_error/clk_c_enable_210: 3 loads, 3 LSLICEs
+     Net FIFO_CM_error/clk_c_enable_170: 2 loads, 2 LSLICEs
+     Net FIFO_CM_error/clk_LM_enable_4: 1 loads, 1 LSLICEs
+     Net FIFO_UART_info/clk_c_enable_186: 4 loads, 4 LSLICEs
+     Net FIFO_UART_info/clk_LM_enable_1: 1 loads, 1 LSLICEs
+     Net FIFO_UART_info/clk_c_enable_206: 4 loads, 4 LSLICEs
+     Net cm/configCM/clk_c_enable_220: 4 loads, 4 LSLICEs
+     Net cm/configCM/clk_c_enable_69: 4 loads, 4 LSLICEs
+     Net cm/configCM/clk_c_enable_208: 3 loads, 3 LSLICEs
+     Net cm/configCM/clk_c_enable_30: 1 loads, 1 LSLICEs
+
+                                    Page 2
+
+
+
+
+Design:  CS                                            Date:  06/23/24  22:57:41
+
+Design Summary (cont)
+---------------------
+     Net cm/configCM/clk_c_enable_25: 1 loads, 1 LSLICEs
+     Net cm/configCM/clk_c_enable_27: 1 loads, 1 LSLICEs
+     Net cm/configCM/clk_c_enable_48: 1 loads, 1 LSLICEs
+     Net cm/configCM/clk_c_enable_33: 1 loads, 1 LSLICEs
+     Net cm/configCM/clk_c_enable_34: 1 loads, 1 LSLICEs
+     Net cm/configCM/clk_c_enable_207: 1 loads, 1 LSLICEs
+     Net cm/configCM/clk_c_enable_49: 1 loads, 1 LSLICEs
+     Net cm/configCM/clk_c_enable_60: 6 loads, 6 LSLICEs
+     Net cm/assignCM/clk_c_enable_157: 2 loads, 2 LSLICEs
+     Net cm/assignCM/clk_c_enable_151: 9 loads, 9 LSLICEs
+     Net cm/assignCM/clk_c_enable_139: 6 loads, 6 LSLICEs
+     Net cm/assignCM/clk_c_enable_128: 6 loads, 6 LSLICEs
+     Net cm/assignCM/clk_c_enable_117: 6 loads, 6 LSLICEs
+     Net cm/assignCM/clk_c_enable_106: 6 loads, 6 LSLICEs
+     Net cm/assignCM/clk_c_enable_95: 3 loads, 3 LSLICEs
+     Net cd/CLOCK_DIVIDER_CONFIG/clk_c_enable_158: 1 loads, 1 LSLICEs
+     Net cd/CLOCK_DIVIDER_CONFIG/clk_c_enable_219: 6 loads, 6 LSLICEs
+   Number of LSRs:  35
+     Net VSYNC_c: 6 loads, 6 LSLICEs
+     Net HSYNC_c: 6 loads, 6 LSLICEs
+     Net c_valid: 2 loads, 2 LSLICEs
+     Net n8439: 1 loads, 1 LSLICEs
+     Net counter_31__N_85_adj_1141: 17 loads, 17 LSLICEs
+     Net n4194: 1 loads, 1 LSLICEs
+     Net n4202: 1 loads, 1 LSLICEs
+     Net n4203: 1 loads, 1 LSLICEs
+     Net n4204: 1 loads, 1 LSLICEs
+     Net button_signal_DEBUG_VGA: 2 loads, 2 LSLICEs
+     Net counter_31__N_85_adj_1140: 17 loads, 17 LSLICEs
+     Net n2266: 2 loads, 2 LSLICEs
+     Net n2262: 1 loads, 1 LSLICEs
+     Net n2268: 4 loads, 4 LSLICEs
+     Net clk_UART_enable_1: 1 loads, 1 LSLICEs
+     Net n5755: 4 loads, 4 LSLICEs
+     Net rst_n_N_350: 15 loads, 15 LSLICEs
+     Net n9153: 13 loads, 13 LSLICEs
+     Net vga/config1/Load_nxt_N_1044: 1 loads, 1 LSLICEs
+     Net rst_n_N_1047: 14 loads, 14 LSLICEs
+     Net cm/counterV/n4195: 6 loads, 6 LSLICEs
+     Net cm/counterH/n4197: 6 loads, 6 LSLICEs
+     Net cm/configCM/clk_c_enable_69: 4 loads, 4 LSLICEs
+     Net cm/configCM/n4942: 1 loads, 1 LSLICEs
+     Net cm/configCM/State_reg_0: 1 loads, 1 LSLICEs
+     Net cm/configCM/n9140: 1 loads, 1 LSLICEs
+     Net cm/configCM/n32: 1 loads, 1 LSLICEs
+     Net rst_n_N_52: 17 loads, 17 LSLICEs
+     Net rst_n_N_144: 13 loads, 13 LSLICEs
+     Net cm/configCM/n39: 1 loads, 1 LSLICEs
+     Net cd/CLOCK_DIVIDER_CONFIG/n9142: 1 loads, 1 LSLICEs
+     Net cd/CLOCK_DIVIDER_CONFIG/n4223: 1 loads, 1 LSLICEs
+     Net cd/CLOCK_DIVIDER_CONFIG/n4221: 1 loads, 1 LSLICEs
+     Net cd/CLOCK_DIVIDER_CONFIG/n4220: 1 loads, 1 LSLICEs
+     Net cd/CLOCK_DIVIDER_CONFIG/n4225: 1 loads, 1 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net c_data_1: 69 loads
+
+                                    Page 3
+
+
+
+
+Design:  CS                                            Date:  06/23/24  22:57:41
+
+Design Summary (cont)
+---------------------
+     Net n9153: 63 loads
+     Net c_data_0: 62 loads
+     Net counter_23_N_178_10: 47 loads
+     Net counter_31__N_85: 37 loads
+     Net n1801: 33 loads
+     Net cd/resolution_0: 32 loads
+     Net cm/configCM/RXD_Data_reg_11: 32 loads
+     Net cd/resolution_1: 31 loads
+     Net counter_31__N_85_adj_1140: 26 loads
+
+
+
+
+   Number of warnings:  2
+   Number of errors:    0
+     
+
+Design Errors/Warnings
+----------------------
+
+WARNING - map: C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_
+     project.lpf(5): Semantic error in "LOCATE COMP "rst" SITE "B3" ;": COMP
+     "rst" cannot be found in design. This preference has been disabled.
+WARNING - map: C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_
+     project.lpf(47): Semantic error in "IOBUF PORT "rst" PULLMODE=UP
+     IO_TYPE=LVCMOS33 ;": Port "rst" does not exist in the design. This
+     preference has been disabled.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| BLUE[3]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| GREEN[0]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| GREEN[1]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| GREEN[2]            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| GREEN[3]            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| RED[0]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| RED[1]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| RED[2]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| RED[3]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LEDS[0]             | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| LEDS[1]             | OUTPUT    | LVCMOS33  |            |
+
+                                    Page 4
+
+
+
+
+Design:  CS                                            Date:  06/23/24  22:57:41
+
+IO (PIO) Attributes (cont)
+--------------------------
++---------------------+-----------+-----------+------------+
+| LEDS[2]             | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| LEDS[3]             | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| LEDS[4]             | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| LEDS[5]             | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| LEDS[6]             | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| LEDS[7]             | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| VSYNC               | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| HSYNC               | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| out                 | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| BLUE[2]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| BLUE[1]             | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| BLUE[0]             | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| clk                 | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| rst_n               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| btnHS               | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| btnVS               | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| btnUART             | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| btnVGA              | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| in                  | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Signal c_valid_N_785 was merged into signal c_valid
+Signal cm/configCM/n9160 was merged into signal cm/configCM/State_reg_0
+Signal n4198 was merged into signal HSYNC_c
+Signal n4196 was merged into signal VSYNC_c
+Signal uart/n4180 was merged into signal data
+Signal GND_net undriven or does not drive anything - clipped.
+Signal n9390 undriven or does not drive anything - clipped.
+Signal cd/CNT_DB/counter_1252_add_4_33/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_DB/counter_1252_add_4_33/CO undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_DB/sub_1028_add_2_2/S1 undriven or does not drive anything -
+     clipped.
+
+                                    Page 5
+
+
+
+
+Design:  CS                                            Date:  06/23/24  22:57:41
+
+Removed logic (cont)
+--------------------
+Signal cd/CNT_DB/sub_1028_add_2_2/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_DB/sub_1028_add_2_2/CI undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_DB/sub_1028_add_2_4/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_DB/sub_1028_add_2_4/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_DB/sub_1028_add_2_6/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_DB/sub_1028_add_2_6/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_DB/sub_1028_add_2_8/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_DB/sub_1028_add_2_8/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_DB/sub_1028_add_2_10/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_DB/sub_1028_add_2_10/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_DB/sub_1028_add_2_12/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_DB/sub_1028_add_2_12/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_DB/sub_1028_add_2_14/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_DB/sub_1028_add_2_14/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_DB/sub_1028_add_2_16/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_DB/sub_1028_add_2_16/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_DB/sub_1028_add_2_18/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_DB/sub_1028_add_2_18/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_DB/sub_1028_add_2_20/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_DB/sub_1028_add_2_20/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_DB/sub_1028_add_2_22/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_DB/sub_1028_add_2_22/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_DB/sub_1028_add_2_24/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_DB/sub_1028_add_2_24/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_DB/sub_1028_add_2_26/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_DB/sub_1028_add_2_26/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_DB/sub_1028_add_2_28/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_DB/sub_1028_add_2_28/S0 undriven or does not drive anything -
+     clipped.
+
+                                    Page 6
+
+
+
+
+Design:  CS                                            Date:  06/23/24  22:57:41
+
+Removed logic (cont)
+--------------------
+Signal cd/CNT_DB/sub_1028_add_2_30/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_DB/sub_1028_add_2_30/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_DB/counter_1252_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_DB/counter_1252_add_4_1/CI undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_DB/sub_1028_add_2_32/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_DB/sub_1028_add_2_32/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_DB/sub_1028_add_2_cout/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_DB/sub_1028_add_2_cout/CO undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_LM/sub_1027_add_2_6/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_LM/sub_1027_add_2_6/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_LM/counter_1251_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_LM/counter_1251_add_4_1/CI undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_LM/sub_1027_add_2_8/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_LM/sub_1027_add_2_8/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_LM/sub_1027_add_2_4/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_LM/sub_1027_add_2_4/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_LM/sub_1027_add_2_2/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_LM/sub_1027_add_2_2/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_LM/sub_1027_add_2_2/CI undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_LM/sub_1027_add_2_12/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_LM/sub_1027_add_2_12/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_LM/sub_1027_add_2_14/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_LM/sub_1027_add_2_14/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_LM/sub_1027_add_2_16/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_LM/sub_1027_add_2_16/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_LM/sub_1027_add_2_18/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_LM/sub_1027_add_2_18/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_LM/sub_1027_add_2_20/S1 undriven or does not drive anything -
+     clipped.
+
+                                    Page 7
+
+
+
+
+Design:  CS                                            Date:  06/23/24  22:57:41
+
+Removed logic (cont)
+--------------------
+Signal cd/CNT_LM/sub_1027_add_2_20/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_LM/sub_1027_add_2_22/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_LM/sub_1027_add_2_22/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_LM/counter_1251_add_4_33/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_LM/counter_1251_add_4_33/CO undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_LM/sub_1027_add_2_24/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_LM/sub_1027_add_2_24/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_LM/sub_1027_add_2_26/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_LM/sub_1027_add_2_26/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_LM/sub_1027_add_2_28/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_LM/sub_1027_add_2_28/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_LM/sub_1027_add_2_30/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_LM/sub_1027_add_2_30/CO undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_LM/sub_1027_add_2_10/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_LM/sub_1027_add_2_10/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_UART/counter_1250_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_UART/counter_1250_add_4_1/CI undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_UART/counter_1250_add_4_25/S1 undriven or does not drive anything
+     - clipped.
+Signal cd/CNT_UART/counter_1250_add_4_25/CO undriven or does not drive anything
+     - clipped.
+Signal cd/CNT_UART/limit_23__I_0_add_2_1/S0 undriven or does not drive anything
+     - clipped.
+Signal cd/CNT_UART/limit_23__I_0_add_2_1/CI undriven or does not drive anything
+     - clipped.
+Signal cd/CNT_UART/limit_23__I_0_add_2_11/S1 undriven or does not drive anything
+     - clipped.
+Signal cd/CNT_UART/limit_23__I_0_add_2_11/CO undriven or does not drive anything
+     - clipped.
+Signal cd/CNT_VGA/counter_1249_add_4_33/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_VGA/counter_1249_add_4_33/CO undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_VGA/sub_1026_add_2_2/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_VGA/sub_1026_add_2_2/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_VGA/sub_1026_add_2_2/CI undriven or does not drive anything -
+     clipped.
+
+                                    Page 8
+
+
+
+
+Design:  CS                                            Date:  06/23/24  22:57:41
+
+Removed logic (cont)
+--------------------
+Signal cd/CNT_VGA/sub_1026_add_2_4/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_VGA/sub_1026_add_2_4/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_VGA/sub_1026_add_2_6/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_VGA/sub_1026_add_2_6/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_VGA/sub_1026_add_2_8/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_VGA/sub_1026_add_2_8/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_VGA/sub_1026_add_2_10/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_VGA/sub_1026_add_2_10/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_VGA/sub_1026_add_2_12/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_VGA/sub_1026_add_2_12/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_VGA/sub_1026_add_2_14/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_VGA/sub_1026_add_2_14/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_VGA/sub_1026_add_2_16/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_VGA/sub_1026_add_2_16/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_VGA/sub_1026_add_2_18/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_VGA/sub_1026_add_2_18/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_VGA/sub_1026_add_2_20/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_VGA/sub_1026_add_2_20/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_VGA/sub_1026_add_2_22/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_VGA/sub_1026_add_2_22/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_VGA/sub_1026_add_2_24/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_VGA/sub_1026_add_2_24/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_VGA/sub_1026_add_2_26/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_VGA/sub_1026_add_2_26/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_VGA/sub_1026_add_2_28/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_VGA/sub_1026_add_2_28/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_VGA/sub_1026_add_2_30/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_VGA/sub_1026_add_2_30/S0 undriven or does not drive anything -
+     clipped.
+
+                                    Page 9
+
+
+
+
+Design:  CS                                            Date:  06/23/24  22:57:41
+
+Removed logic (cont)
+--------------------
+Signal cd/CNT_VGA/sub_1026_add_2_32/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_VGA/sub_1026_add_2_32/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_VGA/sub_1026_add_2_cout/S1 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_VGA/sub_1026_add_2_cout/CO undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_VGA/counter_1249_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+Signal cd/CNT_VGA/counter_1249_add_4_1/CI undriven or does not drive anything -
+     clipped.
+Signal cm/assignCM/sub_1032_add_2_2/S1 undriven or does not drive anything -
+     clipped.
+Signal cm/assignCM/sub_1032_add_2_2/S0 undriven or does not drive anything -
+     clipped.
+Signal cm/assignCM/sub_1032_add_2_2/CI undriven or does not drive anything -
+     clipped.
+Signal cm/assignCM/sub_1032_add_2_4/S1 undriven or does not drive anything -
+     clipped.
+Signal cm/assignCM/sub_1032_add_2_4/S0 undriven or does not drive anything -
+     clipped.
+Signal cm/assignCM/sub_1032_add_2_6/S1 undriven or does not drive anything -
+     clipped.
+Signal cm/assignCM/sub_1032_add_2_6/S0 undriven or does not drive anything -
+     clipped.
+Signal cm/assignCM/sub_1032_add_2_8/S1 undriven or does not drive anything -
+     clipped.
+Signal cm/assignCM/sub_1032_add_2_8/S0 undriven or does not drive anything -
+     clipped.
+Signal cm/assignCM/sub_1032_add_2_10/S1 undriven or does not drive anything -
+     clipped.
+Signal cm/assignCM/sub_1032_add_2_10/S0 undriven or does not drive anything -
+     clipped.
+Signal cm/assignCM/sub_1032_add_2_cout/S1 undriven or does not drive anything -
+     clipped.
+Signal cm/assignCM/sub_1032_add_2_cout/CO undriven or does not drive anything -
+     clipped.
+Signal cm/assignCM/sub_1030_add_2_2/S1 undriven or does not drive anything -
+     clipped.
+Signal cm/assignCM/sub_1030_add_2_2/S0 undriven or does not drive anything -
+     clipped.
+Signal cm/assignCM/sub_1030_add_2_2/CI undriven or does not drive anything -
+     clipped.
+Signal cm/assignCM/sub_1030_add_2_4/S1 undriven or does not drive anything -
+     clipped.
+Signal cm/assignCM/sub_1030_add_2_4/S0 undriven or does not drive anything -
+     clipped.
+Signal cm/assignCM/sub_1030_add_2_6/S1 undriven or does not drive anything -
+     clipped.
+Signal cm/assignCM/sub_1030_add_2_6/S0 undriven or does not drive anything -
+     clipped.
+Signal cm/assignCM/sub_1030_add_2_8/S1 undriven or does not drive anything -
+     clipped.
+Signal cm/assignCM/sub_1030_add_2_8/S0 undriven or does not drive anything -
+     clipped.
+
+                                   Page 10
+
+
+
+
+Design:  CS                                            Date:  06/23/24  22:57:41
+
+Removed logic (cont)
+--------------------
+Signal cm/assignCM/sub_1030_add_2_10/S1 undriven or does not drive anything -
+     clipped.
+Signal cm/assignCM/sub_1030_add_2_10/S0 undriven or does not drive anything -
+     clipped.
+Signal cm/assignCM/sub_1030_add_2_cout/S1 undriven or does not drive anything -
+     clipped.
+Signal cm/assignCM/sub_1030_add_2_cout/CO undriven or does not drive anything -
+     clipped.
+Signal cm/counterH/sub_1033_add_2_cout/S1 undriven or does not drive anything -
+     clipped.
+Signal cm/counterH/sub_1033_add_2_cout/CO undriven or does not drive anything -
+     clipped.
+Signal cm/counterH/sub_1035_add_2_1/S1 undriven or does not drive anything -
+     clipped.
+Signal cm/counterH/sub_1035_add_2_1/S0 undriven or does not drive anything -
+     clipped.
+Signal cm/counterH/sub_1035_add_2_1/CI undriven or does not drive anything -
+     clipped.
+Signal cm/counterH/sub_1035_add_2_3/S1 undriven or does not drive anything -
+     clipped.
+Signal cm/counterH/sub_1035_add_2_3/S0 undriven or does not drive anything -
+     clipped.
+Signal cm/counterH/sub_1035_add_2_5/S1 undriven or does not drive anything -
+     clipped.
+Signal cm/counterH/sub_1035_add_2_5/S0 undriven or does not drive anything -
+     clipped.
+Signal cm/counterH/sub_1035_add_2_7/S1 undriven or does not drive anything -
+     clipped.
+Signal cm/counterH/sub_1035_add_2_7/S0 undriven or does not drive anything -
+     clipped.
+Signal cm/counterH/sub_1035_add_2_cout/S1 undriven or does not drive anything -
+     clipped.
+Signal cm/counterH/sub_1035_add_2_cout/CO undriven or does not drive anything -
+     clipped.
+Signal cm/counterH/sub_1033_add_2_2/S1 undriven or does not drive anything -
+     clipped.
+Signal cm/counterH/sub_1033_add_2_2/S0 undriven or does not drive anything -
+     clipped.
+Signal cm/counterH/sub_1033_add_2_2/CI undriven or does not drive anything -
+     clipped.
+Signal cm/counterH/Count_reg_1269_add_4_1/S0 undriven or does not drive anything
+     - clipped.
+Signal cm/counterH/Count_reg_1269_add_4_1/CI undriven or does not drive anything
+     - clipped.
+Signal cm/counterH/Count_reg_1269_add_4_11/S1 undriven or does not drive
+     anything - clipped.
+Signal cm/counterH/Count_reg_1269_add_4_11/CO undriven or does not drive
+     anything - clipped.
+Signal cm/counterH/Count_intern_reg_1267_add_4_1/S0 undriven or does not drive
+     anything - clipped.
+Signal cm/counterH/Count_intern_reg_1267_add_4_1/CI undriven or does not drive
+     anything - clipped.
+Signal cm/counterH/sub_1033_add_2_4/S1 undriven or does not drive anything -
+     clipped.
+Signal cm/counterH/sub_1033_add_2_4/S0 undriven or does not drive anything -
+     clipped.
+
+                                   Page 11
+
+
+
+
+Design:  CS                                            Date:  06/23/24  22:57:41
+
+Removed logic (cont)
+--------------------
+Signal cm/counterH/sub_1033_add_2_6/S1 undriven or does not drive anything -
+     clipped.
+Signal cm/counterH/sub_1033_add_2_6/S0 undriven or does not drive anything -
+     clipped.
+Signal cm/counterH/Count_intern_reg_1267_add_4_11/S1 undriven or does not drive
+     anything - clipped.
+Signal cm/counterH/Count_intern_reg_1267_add_4_11/CO undriven or does not drive
+     anything - clipped.
+Signal cm/counterH/sub_1033_add_2_8/S1 undriven or does not drive anything -
+     clipped.
+Signal cm/counterH/sub_1033_add_2_8/S0 undriven or does not drive anything -
+     clipped.
+Signal cm/counterH/sub_1033_add_2_10/S1 undriven or does not drive anything -
+     clipped.
+Signal cm/counterH/sub_1033_add_2_10/S0 undriven or does not drive anything -
+     clipped.
+Signal cm/counterV/sub_1039_add_2_1/S1 undriven or does not drive anything -
+     clipped.
+Signal cm/counterV/sub_1039_add_2_1/S0 undriven or does not drive anything -
+     clipped.
+Signal cm/counterV/sub_1039_add_2_1/CI undriven or does not drive anything -
+     clipped.
+Signal cm/counterV/sub_1039_add_2_3/S1 undriven or does not drive anything -
+     clipped.
+Signal cm/counterV/sub_1039_add_2_3/S0 undriven or does not drive anything -
+     clipped.
+Signal cm/counterV/sub_1039_add_2_5/S1 undriven or does not drive anything -
+     clipped.
+Signal cm/counterV/sub_1039_add_2_5/S0 undriven or does not drive anything -
+     clipped.
+Signal cm/counterV/sub_1039_add_2_7/S1 undriven or does not drive anything -
+     clipped.
+Signal cm/counterV/sub_1039_add_2_7/S0 undriven or does not drive anything -
+     clipped.
+Signal cm/counterV/sub_1039_add_2_9/S1 undriven or does not drive anything -
+     clipped.
+Signal cm/counterV/sub_1039_add_2_9/S0 undriven or does not drive anything -
+     clipped.
+Signal cm/counterV/sub_1039_add_2_11/S0 undriven or does not drive anything -
+     clipped.
+Signal cm/counterV/sub_1039_add_2_11/CO undriven or does not drive anything -
+     clipped.
+Signal cm/counterV/sub_1037_add_2_2/S1 undriven or does not drive anything -
+     clipped.
+Signal cm/counterV/sub_1037_add_2_2/S0 undriven or does not drive anything -
+     clipped.
+Signal cm/counterV/sub_1037_add_2_2/CI undriven or does not drive anything -
+     clipped.
+Signal cm/counterV/sub_1037_add_2_4/S1 undriven or does not drive anything -
+     clipped.
+Signal cm/counterV/sub_1037_add_2_4/S0 undriven or does not drive anything -
+     clipped.
+Signal cm/counterV/sub_1037_add_2_6/S1 undriven or does not drive anything -
+     clipped.
+Signal cm/counterV/sub_1037_add_2_6/S0 undriven or does not drive anything -
+     clipped.
+
+                                   Page 12
+
+
+
+
+Design:  CS                                            Date:  06/23/24  22:57:41
+
+Removed logic (cont)
+--------------------
+Signal cm/counterV/sub_1037_add_2_8/S1 undriven or does not drive anything -
+     clipped.
+Signal cm/counterV/sub_1037_add_2_8/S0 undriven or does not drive anything -
+     clipped.
+Signal cm/counterV/sub_1037_add_2_10/S1 undriven or does not drive anything -
+     clipped.
+Signal cm/counterV/sub_1037_add_2_10/S0 undriven or does not drive anything -
+     clipped.
+Signal cm/counterV/sub_1037_add_2_cout/S1 undriven or does not drive anything -
+     clipped.
+Signal cm/counterV/sub_1037_add_2_cout/CO undriven or does not drive anything -
+     clipped.
+Signal cm/counterV/Count_reg_1273_add_4_1/S0 undriven or does not drive anything
+     - clipped.
+Signal cm/counterV/Count_reg_1273_add_4_1/CI undriven or does not drive anything
+     - clipped.
+Signal cm/counterV/Count_reg_1273_add_4_11/S1 undriven or does not drive
+     anything - clipped.
+Signal cm/counterV/Count_reg_1273_add_4_11/CO undriven or does not drive
+     anything - clipped.
+Signal cm/counterV/Count_intern_reg_1271_add_4_1/S0 undriven or does not drive
+     anything - clipped.
+Signal cm/counterV/Count_intern_reg_1271_add_4_1/CI undriven or does not drive
+     anything - clipped.
+Signal cm/counterV/Count_intern_reg_1271_add_4_11/S1 undriven or does not drive
+     anything - clipped.
+Signal cm/counterV/Count_intern_reg_1271_add_4_11/CO undriven or does not drive
+     anything - clipped.
+Signal vga/CounterH/sub_1041_add_2_1/S1 undriven or does not drive anything -
+     clipped.
+Signal vga/CounterH/sub_1041_add_2_1/S0 undriven or does not drive anything -
+     clipped.
+Signal vga/CounterH/sub_1041_add_2_1/CI undriven or does not drive anything -
+     clipped.
+Signal vga/CounterH/sub_1041_add_2_3/S1 undriven or does not drive anything -
+     clipped.
+Signal vga/CounterH/sub_1041_add_2_3/S0 undriven or does not drive anything -
+     clipped.
+Signal vga/CounterH/sub_1041_add_2_5/S1 undriven or does not drive anything -
+     clipped.
+Signal vga/CounterH/sub_1041_add_2_5/S0 undriven or does not drive anything -
+     clipped.
+Signal vga/CounterH/sub_1041_add_2_7/S1 undriven or does not drive anything -
+     clipped.
+Signal vga/CounterH/sub_1041_add_2_7/S0 undriven or does not drive anything -
+     clipped.
+Signal vga/CounterH/sub_1041_add_2_9/S1 undriven or does not drive anything -
+     clipped.
+Signal vga/CounterH/sub_1041_add_2_9/S0 undriven or does not drive anything -
+     clipped.
+Signal vga/CounterH/sub_1041_add_2_11/S1 undriven or does not drive anything -
+     clipped.
+Signal vga/CounterH/sub_1041_add_2_11/S0 undriven or does not drive anything -
+     clipped.
+Signal vga/CounterH/sub_1041_add_2_13/S0 undriven or does not drive anything -
+     clipped.
+
+                                   Page 13
+
+
+
+
+Design:  CS                                            Date:  06/23/24  22:57:41
+
+Removed logic (cont)
+--------------------
+Signal vga/CounterH/sub_1041_add_2_13/CO undriven or does not drive anything -
+     clipped.
+Signal vga/CounterH/Count_reg_1274_add_4_1/S0 undriven or does not drive
+     anything - clipped.
+Signal vga/CounterH/Count_reg_1274_add_4_1/CI undriven or does not drive
+     anything - clipped.
+Signal vga/CounterH/Count_reg_1274_add_4_13/S1 undriven or does not drive
+     anything - clipped.
+Signal vga/CounterH/Count_reg_1274_add_4_13/CO undriven or does not drive
+     anything - clipped.
+Signal vga/CounterV/sub_1043_add_2_1/S1 undriven or does not drive anything -
+     clipped.
+Signal vga/CounterV/sub_1043_add_2_1/S0 undriven or does not drive anything -
+     clipped.
+Signal vga/CounterV/sub_1043_add_2_1/CI undriven or does not drive anything -
+     clipped.
+Signal vga/CounterV/sub_1043_add_2_3/S1 undriven or does not drive anything -
+     clipped.
+Signal vga/CounterV/sub_1043_add_2_3/S0 undriven or does not drive anything -
+     clipped.
+Signal vga/CounterV/sub_1043_add_2_5/S1 undriven or does not drive anything -
+     clipped.
+Signal vga/CounterV/sub_1043_add_2_5/S0 undriven or does not drive anything -
+     clipped.
+Signal vga/CounterV/sub_1043_add_2_7/S1 undriven or does not drive anything -
+     clipped.
+Signal vga/CounterV/sub_1043_add_2_7/S0 undriven or does not drive anything -
+     clipped.
+Signal vga/CounterV/sub_1043_add_2_9/S1 undriven or does not drive anything -
+     clipped.
+Signal vga/CounterV/sub_1043_add_2_9/S0 undriven or does not drive anything -
+     clipped.
+Signal vga/CounterV/sub_1043_add_2_11/S1 undriven or does not drive anything -
+     clipped.
+Signal vga/CounterV/sub_1043_add_2_11/S0 undriven or does not drive anything -
+     clipped.
+Signal vga/CounterV/sub_1043_add_2_13/S0 undriven or does not drive anything -
+     clipped.
+Signal vga/CounterV/sub_1043_add_2_13/CO undriven or does not drive anything -
+     clipped.
+Signal vga/CounterV/Count_reg_1275_add_4_1/S0 undriven or does not drive
+     anything - clipped.
+Signal vga/CounterV/Count_reg_1275_add_4_1/CI undriven or does not drive
+     anything - clipped.
+Signal vga/CounterV/Count_reg_1275_add_4_13/S1 undriven or does not drive
+     anything - clipped.
+Signal vga/CounterV/Count_reg_1275_add_4_13/CO undriven or does not drive
+     anything - clipped.
+Signal vga/assgncolor/sub_1046_add_2_1/S1 undriven or does not drive anything -
+     clipped.
+Signal vga/assgncolor/sub_1046_add_2_1/S0 undriven or does not drive anything -
+     clipped.
+Signal vga/assgncolor/sub_1046_add_2_1/CI undriven or does not drive anything -
+     clipped.
+Signal vga/assgncolor/sub_1046_add_2_3/S1 undriven or does not drive anything -
+     clipped.
+
+                                   Page 14
+
+
+
+
+Design:  CS                                            Date:  06/23/24  22:57:41
+
+Removed logic (cont)
+--------------------
+Signal vga/assgncolor/sub_1046_add_2_3/S0 undriven or does not drive anything -
+     clipped.
+Signal vga/assgncolor/sub_1046_add_2_5/S1 undriven or does not drive anything -
+     clipped.
+Signal vga/assgncolor/sub_1046_add_2_5/S0 undriven or does not drive anything -
+     clipped.
+Signal vga/assgncolor/sub_1046_add_2_7/S1 undriven or does not drive anything -
+     clipped.
+Signal vga/assgncolor/sub_1046_add_2_7/S0 undriven or does not drive anything -
+     clipped.
+Signal vga/assgncolor/sub_1046_add_2_9/S1 undriven or does not drive anything -
+     clipped.
+Signal vga/assgncolor/sub_1046_add_2_9/S0 undriven or does not drive anything -
+     clipped.
+Signal vga/assgncolor/sub_1046_add_2_11/S1 undriven or does not drive anything -
+     clipped.
+Signal vga/assgncolor/sub_1046_add_2_11/S0 undriven or does not drive anything -
+     clipped.
+Signal vga/assgncolor/sub_1046_add_2_13/S0 undriven or does not drive anything -
+     clipped.
+Signal vga/assgncolor/sub_1046_add_2_13/CO undriven or does not drive anything -
+     clipped.
+Signal vga/assgncolor/sub_1045_add_2_1/S1 undriven or does not drive anything -
+     clipped.
+Signal vga/assgncolor/sub_1045_add_2_1/S0 undriven or does not drive anything -
+     clipped.
+Signal vga/assgncolor/sub_1045_add_2_1/CI undriven or does not drive anything -
+     clipped.
+Signal vga/assgncolor/sub_1045_add_2_3/S1 undriven or does not drive anything -
+     clipped.
+Signal vga/assgncolor/sub_1045_add_2_3/S0 undriven or does not drive anything -
+     clipped.
+Signal vga/assgncolor/sub_1045_add_2_5/S1 undriven or does not drive anything -
+     clipped.
+Signal vga/assgncolor/sub_1045_add_2_5/S0 undriven or does not drive anything -
+     clipped.
+Signal vga/assgncolor/sub_1045_add_2_7/S1 undriven or does not drive anything -
+     clipped.
+Signal vga/assgncolor/sub_1045_add_2_7/S0 undriven or does not drive anything -
+     clipped.
+Signal vga/assgncolor/sub_1045_add_2_9/S1 undriven or does not drive anything -
+     clipped.
+Signal vga/assgncolor/sub_1045_add_2_9/S0 undriven or does not drive anything -
+     clipped.
+Signal vga/assgncolor/sub_1045_add_2_11/S1 undriven or does not drive anything -
+     clipped.
+Signal vga/assgncolor/sub_1045_add_2_11/S0 undriven or does not drive anything -
+     clipped.
+Signal vga/assgncolor/sub_1045_add_2_13/S0 undriven or does not drive anything -
+     clipped.
+Signal vga/assgncolor/sub_1045_add_2_13/CO undriven or does not drive anything -
+     clipped.
+Signal sub_1047_add_2_cout/S1 undriven or does not drive anything - clipped.
+Signal sub_1047_add_2_cout/CO undriven or does not drive anything - clipped.
+Signal sub_1047_add_2_1/S1 undriven or does not drive anything - clipped.
+Signal sub_1047_add_2_1/S0 undriven or does not drive anything - clipped.
+
+                                   Page 15
+
+
+
+
+Design:  CS                                            Date:  06/23/24  22:57:41
+
+Removed logic (cont)
+--------------------
+Signal sub_1047_add_2_1/CI undriven or does not drive anything - clipped.
+Signal sub_1029_add_2_2/S1 undriven or does not drive anything - clipped.
+Signal sub_1029_add_2_2/S0 undriven or does not drive anything - clipped.
+Signal sub_1029_add_2_2/CI undriven or does not drive anything - clipped.
+Signal sub_1029_add_2_4/S1 undriven or does not drive anything - clipped.
+Signal sub_1029_add_2_4/S0 undriven or does not drive anything - clipped.
+Signal sub_1029_add_2_6/S1 undriven or does not drive anything - clipped.
+Signal sub_1029_add_2_6/S0 undriven or does not drive anything - clipped.
+Signal sub_1029_add_2_8/S1 undriven or does not drive anything - clipped.
+Signal sub_1029_add_2_8/S0 undriven or does not drive anything - clipped.
+Signal sub_1029_add_2_10/S1 undriven or does not drive anything - clipped.
+Signal sub_1029_add_2_10/S0 undriven or does not drive anything - clipped.
+Signal sub_1029_add_2_12/S1 undriven or does not drive anything - clipped.
+Signal sub_1029_add_2_12/S0 undriven or does not drive anything - clipped.
+Signal sub_1029_add_2_14/S1 undriven or does not drive anything - clipped.
+Signal sub_1029_add_2_14/S0 undriven or does not drive anything - clipped.
+Signal sub_1029_add_2_16/S1 undriven or does not drive anything - clipped.
+Signal sub_1029_add_2_16/S0 undriven or does not drive anything - clipped.
+Signal sub_1029_add_2_18/S1 undriven or does not drive anything - clipped.
+Signal sub_1029_add_2_18/S0 undriven or does not drive anything - clipped.
+Signal sub_1047_add_2_3/S1 undriven or does not drive anything - clipped.
+Signal sub_1047_add_2_3/S0 undriven or does not drive anything - clipped.
+Signal sub_1047_add_2_5/S1 undriven or does not drive anything - clipped.
+Signal sub_1047_add_2_5/S0 undriven or does not drive anything - clipped.
+Signal sub_1029_add_2_20/S1 undriven or does not drive anything - clipped.
+Signal sub_1029_add_2_20/S0 undriven or does not drive anything - clipped.
+Signal sub_1029_add_2_22/S1 undriven or does not drive anything - clipped.
+Signal sub_1029_add_2_22/S0 undriven or does not drive anything - clipped.
+Signal sub_1029_add_2_24/S1 undriven or does not drive anything - clipped.
+Signal sub_1029_add_2_24/S0 undriven or does not drive anything - clipped.
+Signal sub_1029_add_2_cout/S1 undriven or does not drive anything - clipped.
+Signal sub_1029_add_2_cout/CO undriven or does not drive anything - clipped.
+Signal sub_1047_add_2_7/S1 undriven or does not drive anything - clipped.
+Signal sub_1047_add_2_7/S0 undriven or does not drive anything - clipped.
+Signal sub_1047_add_2_9/S1 undriven or does not drive anything - clipped.
+Signal sub_1047_add_2_9/S0 undriven or does not drive anything - clipped.
+Block cm/assignCM/c_valid_I_0_1_lut was optimized away.
+Block cm/configCM/i1669_1_lut_rep_207 was optimized away.
+Block vga/CounterH/i3180_1_lut was optimized away.
+Block vga/CounterV/i3178_1_lut was optimized away.
+Block uart/SAMPLER/i4144_2_lut_3_lut_4_lut_1_lut was optimized away.
+Block i1 was optimized away.
+Block m0_lut was optimized away.
+
+     
+
+GSR Usage
+---------
+
+GSR Component:
+   The Global Set Reset (GSR) resource has been used to implement a global reset
+        of the design. The reset signal used for GSR control is 'rst_n_c'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+
+                                   Page 16
+
+
+
+
+Design:  CS                                            Date:  06/23/24  22:57:41
+
+GSR Usage (cont)
+----------------
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+     Components with disabled GSR Property
+-------------------------------------
+
+     These components have the GSR property set to DISABLED. The components will
+     not respond to the reset signal 'rst_n_c' via the GSR component.
+
+     Type and number of components of the type: 
+   Register = 189 
+
+     Type and instance name of component: 
+   Register : uart/UART_STATE/state_reg_FSM__i1
+   Register : uart/UART_STATE/valid_error_reg_82
+   Register : uart/UART_STATE/out_reg__i7
+   Register : uart/UART_STATE/parity_check_reg_85
+   Register : uart/UART_STATE/wait_iteration_step_reg_1265__i0
+   Register : uart/UART_STATE/data_iteration_step_reg_1260__i0
+   Register : uart/UART_STATE/stop_iteration_step_reg_1259__i0
+   Register : uart/UART_STATE/state_reg_FSM__i5
+   Register : uart/UART_STATE/state_reg_FSM__i4
+   Register : uart/UART_STATE/state_reg_FSM__i3
+   Register : uart/UART_STATE/state_reg_FSM__i2
+   Register : uart/UART_STATE/valid_out_reg_83
+   Register : uart/UART_STATE/out_reg__i1
+   Register : uart/UART_STATE/out_reg__i2
+   Register : uart/UART_STATE/error_reg__i1
+   Register : uart/UART_STATE/out_reg__i3
+   Register : uart/UART_STATE/out_reg__i0
+   Register : uart/UART_STATE/out_reg__i4
+   Register : uart/UART_STATE/wait_iteration_step_reg_1265__i1
+   Register : uart/UART_STATE/data_iteration_step_reg_1260__i1
+   Register : uart/UART_STATE/data_iteration_step_reg_1260__i2
+   Register : uart/UART_STATE/stop_iteration_step_reg_1259__i1
+   Register : uart/UART_STATE/error_reg__i0
+   Register : uart/UART_STATE/out_reg__i5
+   Register : uart/UART_STATE/out_reg__i6
+   Register : vga/config1/V_Count_Max_nxt_11__I_0_i1
+   Register : vga/config1/H_Count_Max_nxt_11__I_0_i1
+   Register : vga/config1/H_Left_Margin_nxt_8__I_0_i1
+   Register : vga/config1/V_Right_Margin_nxt_9__I_0_i1
+   Register : vga/config1/V_Sync_Pulse_nxt_7__I_0_i1
+   Register : vga/config1/H_Sync_Pulse_nxt_7__I_0_i1
+   Register : vga/config1/H_Right_Margin_nxt_10__I_0_i1
+   Register : vga/config1/V_Left_Margin_nxt_5__I_0_i1
+   Register : vga/config1/V_Left_Margin_nxt_5__N_981_I_0
+   Register : vga/config1/V_Count_Max_nxt_11__I_0_i2
+   Register : vga/config1/V_Count_Max_nxt_11__I_0_i3
+   Register : vga/config1/V_Count_Max_nxt_11__I_0_i4
+   Register : vga/config1/V_Count_Max_nxt_11__I_0_i5
+   Register : vga/config1/V_Count_Max_nxt_11__I_0_i6
+   Register : vga/config1/V_Count_Max_nxt_11__I_0_i7
+   Register : vga/config1/V_Count_Max_nxt_11__I_0_i8
+   Register : vga/config1/V_Count_Max_nxt_11__I_0_i9
+
+                                   Page 17
+
+
+
+
+Design:  CS                                            Date:  06/23/24  22:57:41
+
+GSR Usage (cont)
+----------------
+   Register : vga/config1/V_Count_Max_nxt_11__I_0_i10
+   Register : vga/config1/V_Count_Max_nxt_11__I_0_i11
+   Register : vga/config1/V_Count_Max_nxt_11__I_0_i12
+   Register : vga/config1/H_Count_Max_nxt_11__I_0_i2
+   Register : vga/config1/H_Count_Max_nxt_11__I_0_i3
+   Register : vga/config1/H_Count_Max_nxt_11__I_0_i4
+   Register : vga/config1/H_Count_Max_nxt_11__I_0_i5
+   Register : vga/config1/H_Count_Max_nxt_11__I_0_i6
+   Register : vga/config1/H_Count_Max_nxt_11__I_0_i7
+   Register : vga/config1/H_Count_Max_nxt_11__I_0_i8
+   Register : vga/config1/H_Count_Max_nxt_11__I_0_i9
+   Register : vga/config1/H_Count_Max_nxt_11__I_0_i10
+   Register : vga/config1/H_Count_Max_nxt_11__I_0_i11
+   Register : vga/config1/H_Count_Max_nxt_11__I_0_i12
+   Register : vga/config1/H_Left_Margin_nxt_8__I_0_i2
+   Register : vga/config1/H_Left_Margin_nxt_8__I_0_i3
+   Register : vga/config1/H_Left_Margin_nxt_8__I_0_i4
+   Register : vga/config1/H_Left_Margin_nxt_8__I_0_i5
+   Register : vga/config1/H_Left_Margin_nxt_8__I_0_i6
+   Register : vga/config1/H_Left_Margin_nxt_8__I_0_i7
+   Register : vga/config1/H_Left_Margin_nxt_8__I_0_i8
+   Register : vga/config1/H_Left_Margin_nxt_8__I_0_i9
+   Register : vga/config1/V_Right_Margin_nxt_9__I_0_i2
+   Register : vga/config1/V_Right_Margin_nxt_9__I_0_i3
+   Register : vga/config1/V_Right_Margin_nxt_9__I_0_i4
+   Register : vga/config1/V_Right_Margin_nxt_9__I_0_i5
+   Register : vga/config1/V_Right_Margin_nxt_9__I_0_i6
+   Register : vga/config1/V_Right_Margin_nxt_9__I_0_i7
+   Register : vga/config1/V_Right_Margin_nxt_9__I_0_i8
+   Register : vga/config1/V_Right_Margin_nxt_9__I_0_i9
+   Register : vga/config1/V_Right_Margin_nxt_9__I_0_i10
+   Register : vga/config1/V_Sync_Pulse_nxt_7__I_0_i2
+   Register : vga/config1/V_Sync_Pulse_nxt_7__I_0_i3
+   Register : vga/config1/V_Sync_Pulse_nxt_7__I_0_i4
+   Register : vga/config1/V_Sync_Pulse_nxt_7__I_0_i5
+   Register : vga/config1/V_Sync_Pulse_nxt_7__I_0_i6
+   Register : vga/config1/V_Sync_Pulse_nxt_7__I_0_i7
+   Register : vga/config1/V_Sync_Pulse_nxt_7__I_0_i8
+   Register : vga/config1/H_Sync_Pulse_nxt_7__I_0_i2
+   Register : vga/config1/H_Sync_Pulse_nxt_7__I_0_i3
+   Register : vga/config1/H_Sync_Pulse_nxt_7__I_0_i4
+   Register : vga/config1/H_Sync_Pulse_nxt_7__I_0_i5
+   Register : vga/config1/H_Sync_Pulse_nxt_7__I_0_i6
+   Register : vga/config1/H_Sync_Pulse_nxt_7__I_0_i7
+   Register : vga/config1/H_Sync_Pulse_nxt_7__I_0_i8
+   Register : vga/config1/H_Right_Margin_nxt_10__I_0_i2
+   Register : vga/config1/H_Right_Margin_nxt_10__I_0_i3
+   Register : vga/config1/H_Right_Margin_nxt_10__I_0_i4
+   Register : vga/config1/H_Right_Margin_nxt_10__I_0_i5
+   Register : vga/config1/H_Right_Margin_nxt_10__I_0_i6
+   Register : vga/config1/H_Right_Margin_nxt_10__I_0_i7
+   Register : vga/config1/H_Right_Margin_nxt_10__I_0_i8
+   Register : vga/config1/H_Right_Margin_nxt_10__I_0_i9
+   Register : vga/config1/H_Right_Margin_nxt_10__I_0_i10
+   Register : vga/config1/H_Right_Margin_nxt_10__I_0_i11
+   Register : vga/config1/V_Left_Margin_nxt_5__I_0_i2
+
+                                   Page 18
+
+
+
+
+Design:  CS                                            Date:  06/23/24  22:57:41
+
+GSR Usage (cont)
+----------------
+   Register : vga/config1/V_Left_Margin_nxt_5__I_0_i3
+   Register : vga/config1/V_Left_Margin_nxt_5__I_0_i4
+   Register : vga/config1/V_Left_Margin_nxt_5__I_0_i5
+   Register : vga/config1/V_Left_Margin_nxt_5__I_0_i6
+   Register : vga/CounterV/Sync_State_reg_13
+   Register : vga/CounterV/Count_reg_1275__i0
+   Register : vga/CounterV/Count_reg_1275__i1
+   Register : vga/CounterV/Count_reg_1275__i2
+   Register : vga/CounterV/Count_reg_1275__i3
+   Register : vga/CounterV/Count_reg_1275__i4
+   Register : vga/CounterV/Count_reg_1275__i5
+   Register : vga/CounterV/Count_reg_1275__i6
+   Register : vga/CounterV/Count_reg_1275__i7
+   Register : vga/CounterV/Count_reg_1275__i8
+   Register : vga/CounterV/Count_reg_1275__i9
+   Register : vga/CounterV/Count_reg_1275__i10
+   Register : vga/CounterV/Count_reg_1275__i11
+   Register : vga/CounterH/Sync_State_reg_13
+   Register : vga/CounterH/Count_reg_1274__i0
+   Register : vga/CounterH/Count_reg_1274__i1
+   Register : vga/CounterH/Count_reg_1274__i2
+   Register : vga/CounterH/Count_reg_1274__i3
+   Register : vga/CounterH/Count_reg_1274__i4
+   Register : vga/CounterH/Count_reg_1274__i5
+   Register : vga/CounterH/Count_reg_1274__i6
+   Register : vga/CounterH/Count_reg_1274__i7
+   Register : vga/CounterH/Count_reg_1274__i8
+   Register : vga/CounterH/Count_reg_1274__i9
+   Register : vga/CounterH/Count_reg_1274__i10
+   Register : vga/CounterH/Count_reg_1274__i11
+   Register : cm/configCM/State_nxt_2__I_0_i1
+   Register : cm/configCM/State_nxt_2__I_0_i3
+   Register : cm/configCM/State_nxt_2__I_0_i2
+   Register : cd/CNT_VGA/clkout_17
+   Register : cd/CNT_VGA/counter_1249__i0
+   Register : cd/CNT_VGA/counter_1249__i1
+   Register : cd/CNT_VGA/counter_1249__i2
+   Register : cd/CNT_VGA/counter_1249__i3
+   Register : cd/CNT_VGA/counter_1249__i4
+   Register : cd/CNT_VGA/counter_1249__i5
+   Register : cd/CNT_VGA/counter_1249__i6
+   Register : cd/CNT_VGA/counter_1249__i7
+   Register : cd/CNT_VGA/counter_1249__i8
+   Register : cd/CNT_VGA/counter_1249__i9
+   Register : cd/CNT_VGA/counter_1249__i10
+   Register : cd/CNT_VGA/counter_1249__i11
+   Register : cd/CNT_VGA/counter_1249__i12
+   Register : cd/CNT_VGA/counter_1249__i13
+   Register : cd/CNT_VGA/counter_1249__i14
+   Register : cd/CNT_VGA/counter_1249__i15
+   Register : cd/CNT_VGA/counter_1249__i16
+   Register : cd/CNT_VGA/counter_1249__i17
+   Register : cd/CNT_VGA/counter_1249__i18
+   Register : cd/CNT_VGA/counter_1249__i19
+   Register : cd/CNT_VGA/counter_1249__i20
+   Register : cd/CNT_VGA/counter_1249__i21
+
+                                   Page 19
+
+
+
+
+Design:  CS                                            Date:  06/23/24  22:57:41
+
+GSR Usage (cont)
+----------------
+   Register : cd/CNT_VGA/counter_1249__i22
+   Register : cd/CNT_VGA/counter_1249__i23
+   Register : cd/CNT_VGA/counter_1249__i24
+   Register : cd/CNT_VGA/counter_1249__i25
+   Register : cd/CNT_VGA/counter_1249__i26
+   Register : cd/CNT_VGA/counter_1249__i27
+   Register : cd/CNT_VGA/counter_1249__i28
+   Register : cd/CNT_VGA/counter_1249__i29
+   Register : cd/CNT_VGA/counter_1249__i30
+   Register : cd/CNT_VGA/counter_1249__i31
+   Register : cd/CNT_UART/clkout_17
+   Register : cd/CNT_UART/counter_1250__i0
+   Register : cd/CNT_UART/counter_1250__i1
+   Register : cd/CNT_UART/counter_1250__i2
+   Register : cd/CNT_UART/counter_1250__i3
+   Register : cd/CNT_UART/counter_1250__i4
+   Register : cd/CNT_UART/counter_1250__i5
+   Register : cd/CNT_UART/counter_1250__i6
+   Register : cd/CNT_UART/counter_1250__i7
+   Register : cd/CNT_UART/counter_1250__i8
+   Register : cd/CNT_UART/counter_1250__i9
+   Register : cd/CNT_UART/counter_1250__i10
+   Register : cd/CNT_UART/counter_1250__i11
+   Register : cd/CNT_UART/counter_1250__i12
+   Register : cd/CNT_UART/counter_1250__i13
+   Register : cd/CNT_UART/counter_1250__i14
+   Register : cd/CNT_UART/counter_1250__i15
+   Register : cd/CNT_UART/counter_1250__i16
+   Register : cd/CNT_UART/counter_1250__i17
+   Register : cd/CNT_UART/counter_1250__i18
+   Register : cd/CNT_UART/counter_1250__i19
+   Register : cd/CNT_UART/counter_1250__i20
+   Register : cd/CNT_UART/counter_1250__i21
+   Register : cd/CNT_UART/counter_1250__i22
+   Register : cd/CNT_UART/counter_1250__i23
+
+     Components with synchronous local reset also reset by asynchronous GSR
+----------------------------------------------------------------------
+
+     These components have the GSR property set to ENABLED and the local reset
+     is synchronous. The components will respond to the synchronous local reset
+     and to the unrelated asynchronous reset signal 'rst_n_c' via the GSR
+     component.
+
+     Type and number of components of the type: 
+   Register = 158 
+
+     Type and instance name of component: 
+   Register : db/DB_VS/ctr_ff_1253_1254__i2
+   Register : db/DB_VS/ctr_ff_1253_1254__i1
+   Register : db/DB_HS/ctr_ff_1276_1277__i2
+   Register : db/DB_HS/ctr_ff_1276_1277__i1
+   Register : db/DB_DF_VGA/ctr_ff_1257_1258__i1
+   Register : db/DB_DF_VGA/ctr_ff_1257_1258__i2
+   Register : db/DB_DF_UART/ctr_ff_1255_1256__i2
+   Register : db/DB_DF_UART/ctr_ff_1255_1256__i1
+
+                                   Page 20
+
+
+
+
+Design:  CS                                            Date:  06/23/24  22:57:41
+
+GSR Usage (cont)
+----------------
+   Register : uart/UART_CONFIG/c_ready_reg_22
+   Register : uart/SAMPLER/valid_reg_45
+   Register : uart/SAMPLER/nr_1_reg_1262__i0
+   Register : uart/SAMPLER/nr_0_reg_1263__i0
+   Register : uart/SAMPLER/nr_1_reg_1262__i3
+   Register : uart/SAMPLER/nr_1_reg_1262__i2
+   Register : uart/SAMPLER/nr_1_reg_1262__i1
+   Register : uart/SAMPLER/nr_0_reg_1263__i3
+   Register : uart/SAMPLER/nr_0_reg_1263__i2
+   Register : uart/SAMPLER/nr_0_reg_1263__i1
+   Register : FIFO_CM_error/w_data_reg_i0_i2
+   Register : lm/UART_info/leds_reg__i0
+   Register : lm/UART_info/leds_reg__i7
+   Register : lm/UART_info/leds_reg__i6
+   Register : lm/UART_info/leds_reg__i5
+   Register : lm/UART_info/leds_reg__i4
+   Register : lm/UART_info/leds_reg__i3
+   Register : lm/UART_info/leds_reg__i2
+   Register : lm/UART_info/leds_reg__i1
+   Register : lm/UART_error/leds_reg__i0
+   Register : lm/UART_error/leds_reg__i1
+   Register : lm/CM_error/leds_reg__i0
+   Register : lm/CM_error/leds_reg__i3
+   Register : lm/CM_error/leds_reg__i2
+   Register : lm/CM_error/leds_reg__i1
+   Register : cm/counterV/Count_intern_reg_1271__i0
+   Register : cm/counterV/Count_reg_1273__i0
+   Register : cm/counterV/Count_reg_1273__i1
+   Register : cm/counterV/Count_reg_1273__i2
+   Register : cm/counterV/Count_reg_1273__i3
+   Register : cm/counterV/Count_reg_1273__i4
+   Register : cm/counterV/Count_reg_1273__i5
+   Register : cm/counterV/Count_reg_1273__i6
+   Register : cm/counterV/Count_reg_1273__i7
+   Register : cm/counterV/Count_reg_1273__i8
+   Register : cm/counterV/Count_reg_1273__i9
+   Register : cm/counterV/Count_intern_reg_1271__i1
+   Register : cm/counterV/Count_intern_reg_1271__i2
+   Register : cm/counterV/Count_intern_reg_1271__i3
+   Register : cm/counterV/Count_intern_reg_1271__i4
+   Register : cm/counterV/Count_intern_reg_1271__i5
+   Register : cm/counterV/Count_intern_reg_1271__i6
+   Register : cm/counterV/Count_intern_reg_1271__i7
+   Register : cm/counterV/Count_intern_reg_1271__i8
+   Register : cm/counterV/Count_intern_reg_1271__i9
+   Register : cm/counterH/Count_intern_reg_1267__i0
+   Register : cm/counterH/Count_reg_1269__i0
+   Register : cm/counterH/Count_reg_1269__i1
+   Register : cm/counterH/Count_reg_1269__i2
+   Register : cm/counterH/Count_reg_1269__i3
+   Register : cm/counterH/Count_reg_1269__i4
+   Register : cm/counterH/Count_reg_1269__i5
+   Register : cm/counterH/Count_reg_1269__i6
+   Register : cm/counterH/Count_reg_1269__i7
+   Register : cm/counterH/Count_reg_1269__i8
+   Register : cm/counterH/Count_reg_1269__i9
+
+                                   Page 21
+
+
+
+
+Design:  CS                                            Date:  06/23/24  22:57:41
+
+GSR Usage (cont)
+----------------
+   Register : cm/counterH/Count_intern_reg_1267__i1
+   Register : cm/counterH/Count_intern_reg_1267__i2
+   Register : cm/counterH/Count_intern_reg_1267__i3
+   Register : cm/counterH/Count_intern_reg_1267__i4
+   Register : cm/counterH/Count_intern_reg_1267__i5
+   Register : cm/counterH/Count_intern_reg_1267__i6
+   Register : cm/counterH/Count_intern_reg_1267__i7
+   Register : cm/counterH/Count_intern_reg_1267__i8
+   Register : cm/counterH/Count_intern_reg_1267__i9
+   Register : cm/configCM/RXD_Data_reg_i6
+   Register : cm/configCM/RXD_Data_reg_i7
+   Register : cm/configCM/c_addr_reg_i1
+   Register : cm/configCM/c_addr_reg_i2
+   Register : cm/configCM/Err_reg_144
+   Register : cm/configCM/c_valid_reg_148
+   Register : cm/configCM/Error_Valid_reg_154
+   Register : cm/configCM/RXD_Data_reg_i3
+   Register : cm/configCM/RXD_Data_reg_i4
+   Register : cm/configCM/RXD_Data_reg_i1
+   Register : cm/configCM/RXD_Data_reg_i2
+   Register : cm/configCM/RXD_Data_reg_i0
+   Register : cm/configCM/RXD_Data_reg_i5
+   Register : cm/assignCM/c_ready_reg_118
+   Register : cm/assignCM/VGA_Notification_Valid_reg_119
+   Register : cd/CNT_LM/counter_1251__i0
+   Register : cd/CNT_LM/counter_1251__i1
+   Register : cd/CNT_LM/counter_1251__i2
+   Register : cd/CNT_LM/counter_1251__i3
+   Register : cd/CNT_LM/counter_1251__i4
+   Register : cd/CNT_LM/counter_1251__i5
+   Register : cd/CNT_LM/counter_1251__i6
+   Register : cd/CNT_LM/counter_1251__i7
+   Register : cd/CNT_LM/counter_1251__i8
+   Register : cd/CNT_LM/counter_1251__i9
+   Register : cd/CNT_LM/counter_1251__i10
+   Register : cd/CNT_LM/counter_1251__i11
+   Register : cd/CNT_LM/counter_1251__i12
+   Register : cd/CNT_LM/counter_1251__i13
+   Register : cd/CNT_LM/counter_1251__i14
+   Register : cd/CNT_LM/counter_1251__i15
+   Register : cd/CNT_LM/counter_1251__i16
+   Register : cd/CNT_LM/counter_1251__i17
+   Register : cd/CNT_LM/counter_1251__i18
+   Register : cd/CNT_LM/counter_1251__i19
+   Register : cd/CNT_LM/counter_1251__i20
+   Register : cd/CNT_LM/counter_1251__i21
+   Register : cd/CNT_LM/counter_1251__i22
+   Register : cd/CNT_LM/counter_1251__i23
+   Register : cd/CNT_LM/counter_1251__i24
+   Register : cd/CNT_LM/counter_1251__i25
+   Register : cd/CNT_LM/counter_1251__i26
+   Register : cd/CNT_LM/counter_1251__i27
+   Register : cd/CNT_LM/counter_1251__i28
+   Register : cd/CNT_LM/counter_1251__i29
+   Register : cd/CNT_LM/counter_1251__i30
+   Register : cd/CNT_LM/counter_1251__i31
+
+                                   Page 22
+
+
+
+
+Design:  CS                                            Date:  06/23/24  22:57:41
+
+GSR Usage (cont)
+----------------
+   Register : cd/CNT_DB/counter_1252__i0
+   Register : cd/CNT_DB/counter_1252__i1
+   Register : cd/CNT_DB/counter_1252__i2
+   Register : cd/CNT_DB/counter_1252__i3
+   Register : cd/CNT_DB/counter_1252__i4
+   Register : cd/CNT_DB/counter_1252__i5
+   Register : cd/CNT_DB/counter_1252__i6
+   Register : cd/CNT_DB/counter_1252__i7
+   Register : cd/CNT_DB/counter_1252__i8
+   Register : cd/CNT_DB/counter_1252__i9
+   Register : cd/CNT_DB/counter_1252__i10
+   Register : cd/CNT_DB/counter_1252__i11
+   Register : cd/CNT_DB/counter_1252__i12
+   Register : cd/CNT_DB/counter_1252__i13
+   Register : cd/CNT_DB/counter_1252__i14
+   Register : cd/CNT_DB/counter_1252__i15
+   Register : cd/CNT_DB/counter_1252__i16
+   Register : cd/CNT_DB/counter_1252__i17
+   Register : cd/CNT_DB/counter_1252__i18
+   Register : cd/CNT_DB/counter_1252__i19
+   Register : cd/CNT_DB/counter_1252__i20
+   Register : cd/CNT_DB/counter_1252__i21
+   Register : cd/CNT_DB/counter_1252__i22
+   Register : cd/CNT_DB/counter_1252__i23
+   Register : cd/CNT_DB/counter_1252__i24
+   Register : cd/CNT_DB/counter_1252__i25
+   Register : cd/CNT_DB/counter_1252__i26
+   Register : cd/CNT_DB/counter_1252__i27
+   Register : cd/CNT_DB/counter_1252__i28
+   Register : cd/CNT_DB/counter_1252__i29
+   Register : cd/CNT_DB/counter_1252__i30
+   Register : cd/CNT_DB/counter_1252__i31
+   Register : cd/CLOCK_DIVIDER_CONFIG/c_VGA_ready_reg_27
+   Register : cd/CLOCK_DIVIDER_CONFIG/c_UART_ready_reg_28
+   Register : cd/CLOCK_DIVIDER_CONFIG/baudrate_reg_i0_i2
+   Register : cd/CLOCK_DIVIDER_CONFIG/baudrate_reg_i0_i5
+   Register : cd/CLOCK_DIVIDER_CONFIG/baudrate_reg_i0_i8
+   Register : cd/CLOCK_DIVIDER_CONFIG/baudrate_reg_i0_i1
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 2 secs  
+   Total REAL Time: 5 secs  
+   Peak Memory Usage: 76 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+                                   Page 23
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights
+     reserved.

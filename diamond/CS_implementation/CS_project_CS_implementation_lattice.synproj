@@ -1,0 +1,62 @@
+-a "MachXO3D"
+-d LCMXO3D-9400HC
+-t CABGA256
+-s 5
+-frequency 200
+-optimization_goal Balanced
+-bram_utilization 100
+-ramstyle Auto
+-romstyle auto
+-dsp_utilization 100
+-use_dsp 1
+-use_carry_chain 1
+-carry_chain_length 0
+-force_gsr Auto
+-resource_sharing 1
+-propagate_constants 1
+-remove_duplicate_regs 1
+-mux_style Auto
+-max_fanout 1000
+-fsm_encoding_style Auto
+-twr_paths 3
+-fix_gated_clocks 1
+-loop_limit 1950
+
+
+
+
+-use_io_insertion 1
+-resolve_mixed_drivers 0
+-use_io_reg auto
+
+
+-lpf 1
+-p "C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond"
+-ver "C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_implementation/source/CD.v"
+"C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_implementation/source/CD_config.v"
+"C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_implementation/source/CD_counter.v"
+"C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_implementation/source/CM.v"
+"C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_implementation/source/CM_Assign_Data.v"
+"C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_implementation/source/CM_Config_Manager.v"
+"C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_implementation/source/CM_Counter.v"
+"C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_implementation/source/CS.v"
+"C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_implementation/source/DB.v"
+"C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_implementation/source/DB_debouncer.v"
+"C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_implementation/source/LM.v"
+"C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_implementation/source/LM_decoder.v"
+"C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_implementation/source/Sync_Reg.v"
+"C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_implementation/source/UART.v"
+"C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_implementation/source/UART_config.v"
+"C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_implementation/source/UART_sampler.v"
+"C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_implementation/source/UART_state.v"
+"C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_implementation/source/VGA.v"
+"C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_implementation/source/VGA_Assign_color.v"
+"C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_implementation/source/VGA_Config.v"
+"C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_implementation/source/VGA_Counter.v"
+-top CS
+
+
+-p "D:/diamond/diamond/3.13/ispfpga/se5c00/data" "C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_implementation" "C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond"
+
+-ngd "CS_project_CS_implementation.ngd"
+

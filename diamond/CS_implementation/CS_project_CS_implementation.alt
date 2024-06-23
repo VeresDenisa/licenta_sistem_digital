@@ -1,0 +1,42 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Sun Jun 23 23:00:40 2024 *
+NOTE DESIGN NAME: CS *
+NOTE DEVICE NAME: LCMXO3D-9400HC-5CABGA256 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS BLUE[3] : N7 : out *
+NOTE PINS GREEN[0] : G2 : out *
+NOTE PINS GREEN[1] : H2 : out *
+NOTE PINS GREEN[2] : J3 : out *
+NOTE PINS GREEN[3] : L7 : out *
+NOTE PINS RED[0] : G1 : out *
+NOTE PINS RED[1] : H1 : out *
+NOTE PINS RED[2] : H3 : out *
+NOTE PINS RED[3] : P7 : out *
+NOTE PINS LEDS[0] : H11 : out *
+NOTE PINS LEDS[1] : J13 : out *
+NOTE PINS LEDS[2] : J11 : out *
+NOTE PINS LEDS[3] : L12 : out *
+NOTE PINS LEDS[4] : K11 : out *
+NOTE PINS LEDS[5] : L13 : out *
+NOTE PINS LEDS[6] : N15 : out *
+NOTE PINS LEDS[7] : P16 : out *
+NOTE PINS VSYNC : J2 : out *
+NOTE PINS HSYNC : J1 : out *
+NOTE PINS out : E3 : out *
+NOTE PINS BLUE[2] : N6 : out *
+NOTE PINS BLUE[1] : F1 : out *
+NOTE PINS BLUE[0] : F2 : out *
+NOTE PINS clk : C8 : in *
+NOTE PINS rst_n : L8 : in *
+NOTE PINS btnHS : P1 : in *
+NOTE PINS btnVS : P2 : in *
+NOTE PINS btnUART : N2 : in *
+NOTE PINS btnVGA : R1 : in *
+NOTE PINS in : F5 : in *
+NOTE PINS SYSCONFIG_PIN_MCLK : P6 : inout *
+NOTE PINS SYSCONFIG_PIN_SO : T6 : inout *
+NOTE PINS SYSCONFIG_PIN_SN : R12 : in *
+NOTE PINS SYSCONFIG_PIN_SI : P13 : inout *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *

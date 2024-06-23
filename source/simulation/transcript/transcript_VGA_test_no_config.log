@@ -1,0 +1,944 @@
+# vsim -c -voptargs="+acc" "+UVM_TESTNAME=VGA_test_no_config" "+UVM_VERBOSITY=LOW" -wlf simulation/wave/wave_VGA_test_no_config.wlf work.testbench_VGA -do "log -r /*; coverage save -onexit simulation/ucdb/ucdb_VGA_test_no_config.ucdb; run -all; quit -f; exit" 
+# Start time: 21:50:44 on Jun 21,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim-64
+# //  Version 10.7c linux_x86_64 Aug 17 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.item_pack(fast)
+# Loading work.VGA_coverage_pack(fast)
+# Loading work.CONF_input_VIF(fast)
+# Loading work.VGA_output_VIF(fast)
+# Loading work.VGA_agent_pack(fast)
+# Loading work.VGA_input_VIF(fast)
+# Loading work.VGA_sequence_pack(fast)
+# Loading work.VGA_environment_pack(fast)
+# Loading work.VGA_test_pack(fast)
+# Loading work.testbench_VGA_sv_unit(fast)
+# Loading work.testbench_VGA(fast)
+# Loading work.VGA_input_VIF_sv_unit(fast)
+# Loading work.VGA_input_VIF(fast)
+# Loading work.VGA_output_VIF_sv_unit(fast)
+# Loading work.VGA_output_VIF(fast)
+# Loading work.CONF_input_VIF_sv_unit(fast)
+# Loading work.CONF_input_VIF(fast)
+# Loading work.VGA(fast)
+# Loading work.VGA_Config(fast)
+# Loading work.VGA_Counter(fast)
+# Loading work.VGA_Assign_color(fast)
+# Loading work.assertion_VGA(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (4) for port 'c_addr'. The port definition is at: design/VGA/VGA.v(17).
+#    Time: 0 ns  Iteration: 0  Instance: /testbench_VGA/VGA_DUT File: testbench/VGA/testbench_VGA.sv Line: 28
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (14) for port 'c_data'. The port definition is at: design/VGA/VGA.v(18).
+#    Time: 0 ns  Iteration: 0  Instance: /testbench_VGA/VGA_DUT File: testbench/VGA/testbench_VGA.sv Line: 28
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (4) for port 'c_addr'. The port definition is at: testbench/VGA/assertion_VGA.sv(9).
+#    Time: 0 ns  Iteration: 0  Instance: /testbench_VGA/VGA_DUT/ass_VGA File: testbench/VGA/testbench_VGA.sv Line: 44
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (14) for port 'c_data'. The port definition is at: testbench/VGA/assertion_VGA.sv(10).
+#    Time: 0 ns  Iteration: 0  Instance: /testbench_VGA/VGA_DUT/ass_VGA File: testbench/VGA/testbench_VGA.sv Line: 44
+# Loading /opt/questa/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so
+# log -r /*
+#  coverage save -onexit simulation/ucdb/ucdb_VGA_test_no_config.ucdb
+#  run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test VGA_test_no_config...
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# ---------------------------------------------------------------------------
+# Name                              Type                          Size  Value
+# ---------------------------------------------------------------------------
+# uvm_test_top                      VGA_test_no_config            -     @483 
+#   env                             VGA_environment               -     @494 
+#     CONF_agent_h                  CONF_input_agent              -     @638 
+#       CONF_input_driver           CONF_input_driver             -     @831 
+#         rsp_port                  uvm_analysis_port             -     @846 
+#         seq_item_port             uvm_seq_item_pull_port        -     @838 
+#       CONF_input_monitor          CONF_input_monitor            -     @856 
+#         an_port                   uvm_analysis_port             -     @873 
+#       CONF_input_seqr             CONF_input_sequencer          -     @667 
+#         export_port               uvm_analysis_export           -     @776 
+#         fifo                      uvm_tlm_analysis_fifo #(T)    -     @784 
+#           analysis_export         uvm_analysis_imp              -     @823 
+#           get_ap                  uvm_analysis_port             -     @815 
+#           get_peek_export         uvm_get_peek_imp              -     @799 
+#           put_ap                  uvm_analysis_port             -     @807 
+#           put_export              uvm_put_imp                   -     @791 
+#         rsp_export                uvm_analysis_export           -     @674 
+#         seq_item_export           uvm_seq_item_pull_imp         -     @768 
+#         arbitration_queue         array                         0     -    
+#         lock_queue                array                         0     -    
+#         num_last_reqs             integral                      32    'd1  
+#         num_last_rsps             integral                      32    'd1  
+#     CONF_input_virtual_sequencer  CONF_input_virtual_sequencer  -     @517 
+#       rsp_export                  uvm_analysis_export           -     @524 
+#       seq_item_export             uvm_seq_item_pull_imp         -     @618 
+#       arbitration_queue           array                         0     -    
+#       lock_queue                  array                         0     -    
+#       num_last_reqs               integral                      32    'd1  
+#       num_last_rsps               integral                      32    'd1  
+#     VGA_input_agent_h             VGA_input_agent               -     @631 
+#       VGA_input_driver            VGA_input_driver              -     @1004
+#         rsp_port                  uvm_analysis_port             -     @1019
+#         seq_item_port             uvm_seq_item_pull_port        -     @1011
+#       VGA_input_monitor           VGA_input_monitor             -     @1029
+#         an_port                   uvm_analysis_port             -     @1046
+#       VGA_input_seqr              uvm_sequencer                 -     @895 
+#         rsp_export                uvm_analysis_export           -     @902 
+#         seq_item_export           uvm_seq_item_pull_imp         -     @996 
+#         arbitration_queue         array                         0     -    
+#         lock_queue                array                         0     -    
+#         num_last_reqs             integral                      32    'd1  
+#         num_last_rsps             integral                      32    'd1  
+#     VGA_output_agent_h            VGA_output_agent              -     @510 
+#       VGA_output_monitor          VGA_output_monitor            -     @1062
+#         an_port                   uvm_analysis_port             -     @1079
+#     cov                           VGA_coverage                  -     @645 
+#       an_port                     uvm_analysis_imp              -     @652 
+# ---------------------------------------------------------------------------
+# 
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 1005 ns Started: 995 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 8045 ns Started: 995 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 8055 ns Started: 8045 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 9005 ns Started: 8045 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 9015 ns Started: 9005 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 16055 ns Started: 9005 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 16065 ns Started: 16055 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 17015 ns Started: 16055 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 17025 ns Started: 17015 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 24065 ns Started: 17015 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 24075 ns Started: 24065 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 25025 ns Started: 24065 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 25035 ns Started: 25025 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 32075 ns Started: 25025 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 32085 ns Started: 32075 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 33035 ns Started: 32075 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 33045 ns Started: 33035 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 40085 ns Started: 33035 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 40095 ns Started: 40085 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 41045 ns Started: 40085 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 41055 ns Started: 41045 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 48095 ns Started: 41045 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 48105 ns Started: 48095 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 49055 ns Started: 48095 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 49065 ns Started: 49055 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 56105 ns Started: 49055 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 56115 ns Started: 56105 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 57065 ns Started: 56105 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 57075 ns Started: 57065 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 64115 ns Started: 57065 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 64125 ns Started: 64115 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 65075 ns Started: 64115 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 65085 ns Started: 65075 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 72125 ns Started: 65075 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 72135 ns Started: 72125 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 73085 ns Started: 72125 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 73095 ns Started: 73085 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 80135 ns Started: 73085 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 80145 ns Started: 80135 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 81095 ns Started: 80135 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 81105 ns Started: 81095 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 88145 ns Started: 81095 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 88155 ns Started: 88145 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 89105 ns Started: 88145 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 89115 ns Started: 89105 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 96155 ns Started: 89105 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 96165 ns Started: 96155 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 97115 ns Started: 96155 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 97125 ns Started: 97115 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 104165 ns Started: 97115 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 104175 ns Started: 104165 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 105125 ns Started: 104165 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 105135 ns Started: 105125 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 112175 ns Started: 105125 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 112185 ns Started: 112175 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 113135 ns Started: 112175 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 113145 ns Started: 113135 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 120185 ns Started: 113135 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 120195 ns Started: 120185 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 121145 ns Started: 120185 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 121155 ns Started: 121145 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 128195 ns Started: 121145 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 128205 ns Started: 128195 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 129155 ns Started: 128195 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 129165 ns Started: 129155 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 136205 ns Started: 129155 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 136215 ns Started: 136205 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 137165 ns Started: 136205 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 137175 ns Started: 137165 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 144215 ns Started: 137165 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 144225 ns Started: 144215 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 145175 ns Started: 144215 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 145185 ns Started: 145175 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 152225 ns Started: 145175 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 152235 ns Started: 152225 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 153185 ns Started: 152225 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 153195 ns Started: 153185 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 160235 ns Started: 153185 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 160245 ns Started: 160235 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 161195 ns Started: 160235 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 161205 ns Started: 161195 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 168245 ns Started: 161195 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 168255 ns Started: 168245 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 169205 ns Started: 168245 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 169215 ns Started: 169205 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 176255 ns Started: 169205 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 176265 ns Started: 176255 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 177215 ns Started: 176255 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 177225 ns Started: 177215 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 184265 ns Started: 177215 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 184275 ns Started: 184265 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 185225 ns Started: 184265 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 185235 ns Started: 185225 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 192275 ns Started: 185225 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 192285 ns Started: 192275 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 193235 ns Started: 192275 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 193245 ns Started: 193235 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 200285 ns Started: 193235 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 200295 ns Started: 200285 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 201245 ns Started: 200285 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 201255 ns Started: 201245 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 208295 ns Started: 201245 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 208305 ns Started: 208295 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 209255 ns Started: 208295 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 209265 ns Started: 209255 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 216305 ns Started: 209255 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 216315 ns Started: 216305 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 217265 ns Started: 216305 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 217275 ns Started: 217265 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 224315 ns Started: 217265 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 224325 ns Started: 224315 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 225275 ns Started: 224315 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 225285 ns Started: 225275 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 232325 ns Started: 225275 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 232335 ns Started: 232325 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 233285 ns Started: 232325 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 233295 ns Started: 233285 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 240335 ns Started: 233285 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 240345 ns Started: 240335 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 241295 ns Started: 240335 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 241305 ns Started: 241295 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 248345 ns Started: 241295 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 248355 ns Started: 248345 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 249305 ns Started: 248345 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 249315 ns Started: 249305 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 256355 ns Started: 249305 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 256365 ns Started: 256355 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 257315 ns Started: 256355 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 257325 ns Started: 257315 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 264365 ns Started: 257315 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 264375 ns Started: 264365 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 265325 ns Started: 264365 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 265335 ns Started: 265325 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 272375 ns Started: 265325 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 272385 ns Started: 272375 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 273335 ns Started: 272375 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 273345 ns Started: 273335 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 280385 ns Started: 273335 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 280395 ns Started: 280385 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 281345 ns Started: 280385 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 281355 ns Started: 281345 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 288395 ns Started: 281345 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 288405 ns Started: 288395 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 289355 ns Started: 288395 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 289365 ns Started: 289355 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 296405 ns Started: 289355 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 296415 ns Started: 296405 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 297365 ns Started: 296405 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 297375 ns Started: 297365 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 304415 ns Started: 297365 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 304425 ns Started: 304415 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 305375 ns Started: 304415 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 305385 ns Started: 305375 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 312425 ns Started: 305375 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 312435 ns Started: 312425 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 313385 ns Started: 312425 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 313395 ns Started: 313385 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 320435 ns Started: 313385 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 320445 ns Started: 320435 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 321395 ns Started: 320435 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 321405 ns Started: 321395 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 328445 ns Started: 321395 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 328455 ns Started: 328445 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 329405 ns Started: 328445 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 329415 ns Started: 329405 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 336455 ns Started: 329405 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 336465 ns Started: 336455 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 337415 ns Started: 336455 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 337425 ns Started: 337415 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 344465 ns Started: 337415 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 344475 ns Started: 344465 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 345425 ns Started: 344465 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 345435 ns Started: 345425 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 352475 ns Started: 345425 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 352485 ns Started: 352475 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 353435 ns Started: 352475 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 353445 ns Started: 353435 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 360485 ns Started: 353435 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 360495 ns Started: 360485 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 361445 ns Started: 360485 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 361455 ns Started: 361445 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 368495 ns Started: 361445 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 368505 ns Started: 368495 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 369455 ns Started: 368495 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 369465 ns Started: 369455 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 376505 ns Started: 369455 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 376515 ns Started: 376505 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 377465 ns Started: 376505 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 377475 ns Started: 377465 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 384515 ns Started: 377465 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 384525 ns Started: 384515 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 385475 ns Started: 384515 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 385485 ns Started: 385475 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 392525 ns Started: 385475 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 392535 ns Started: 392525 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 393485 ns Started: 392525 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 393495 ns Started: 393485 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 400535 ns Started: 393485 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 400545 ns Started: 400535 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 401495 ns Started: 400535 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 401505 ns Started: 401495 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 408545 ns Started: 401495 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 408555 ns Started: 408545 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 409505 ns Started: 408545 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 409515 ns Started: 409505 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 416555 ns Started: 409505 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 416565 ns Started: 416555 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 417515 ns Started: 416555 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 417525 ns Started: 417515 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 424565 ns Started: 417515 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 424575 ns Started: 424565 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 425525 ns Started: 424565 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 425535 ns Started: 425525 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 432575 ns Started: 425525 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 432585 ns Started: 432575 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 433535 ns Started: 432575 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 433545 ns Started: 433535 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 440585 ns Started: 433535 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 440595 ns Started: 440585 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 441545 ns Started: 440585 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 441555 ns Started: 441545 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 448595 ns Started: 441545 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 448605 ns Started: 448595 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 449555 ns Started: 448595 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 449565 ns Started: 449555 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 456605 ns Started: 449555 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 456615 ns Started: 456605 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 457565 ns Started: 456605 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 457575 ns Started: 457565 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 464615 ns Started: 457565 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 464625 ns Started: 464615 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 465575 ns Started: 464615 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 465585 ns Started: 465575 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 472625 ns Started: 465575 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 472635 ns Started: 472625 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 473585 ns Started: 472625 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 473595 ns Started: 473585 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 480635 ns Started: 473585 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 480645 ns Started: 480635 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 481595 ns Started: 480635 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 481605 ns Started: 481595 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 488645 ns Started: 481595 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 488655 ns Started: 488645 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 489605 ns Started: 488645 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 489615 ns Started: 489605 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 496655 ns Started: 489605 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 496665 ns Started: 496655 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 497615 ns Started: 496655 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 497625 ns Started: 497615 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 504665 ns Started: 497615 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 504675 ns Started: 504665 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 505625 ns Started: 504665 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 505635 ns Started: 505625 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 512675 ns Started: 505625 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 512685 ns Started: 512675 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 513635 ns Started: 512675 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 513645 ns Started: 513635 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 520685 ns Started: 513635 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 520695 ns Started: 520685 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 521645 ns Started: 520685 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 521655 ns Started: 521645 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 528695 ns Started: 521645 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 528705 ns Started: 528695 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 529655 ns Started: 528695 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 529665 ns Started: 529655 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 536705 ns Started: 529655 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 536715 ns Started: 536705 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 537665 ns Started: 536705 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 537675 ns Started: 537665 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 544715 ns Started: 537665 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 544725 ns Started: 544715 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 545675 ns Started: 544715 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 545685 ns Started: 545675 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 552725 ns Started: 545675 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 552735 ns Started: 552725 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 553685 ns Started: 552725 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 553695 ns Started: 553685 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 560735 ns Started: 553685 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 560745 ns Started: 560735 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 561695 ns Started: 560735 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 561705 ns Started: 561695 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 568745 ns Started: 561695 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 568755 ns Started: 568745 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 569705 ns Started: 568745 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 569715 ns Started: 569705 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 576755 ns Started: 569705 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 576765 ns Started: 576755 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 577715 ns Started: 576755 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 577725 ns Started: 577715 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 584765 ns Started: 577715 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 584775 ns Started: 584765 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 585725 ns Started: 584765 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 585735 ns Started: 585725 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 592775 ns Started: 585725 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 592785 ns Started: 592775 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 593735 ns Started: 592775 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 593745 ns Started: 593735 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 600785 ns Started: 593735 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 600795 ns Started: 600785 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 601745 ns Started: 600785 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 601755 ns Started: 601745 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 608795 ns Started: 601745 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 608805 ns Started: 608795 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 609755 ns Started: 608795 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 609765 ns Started: 609755 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 616805 ns Started: 609755 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 616815 ns Started: 616805 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 617765 ns Started: 616805 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 617775 ns Started: 617765 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 624815 ns Started: 617765 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 624825 ns Started: 624815 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 625775 ns Started: 624815 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 625785 ns Started: 625775 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 632825 ns Started: 625775 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 632835 ns Started: 632825 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 633785 ns Started: 632825 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 633795 ns Started: 633785 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 640835 ns Started: 633785 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 640845 ns Started: 640835 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 641795 ns Started: 640835 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 641805 ns Started: 641795 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 648845 ns Started: 641795 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 648855 ns Started: 648845 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 649805 ns Started: 648845 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 649815 ns Started: 649805 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 656855 ns Started: 649805 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 656865 ns Started: 656855 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 657815 ns Started: 656855 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 657825 ns Started: 657815 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 664865 ns Started: 657815 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 664875 ns Started: 664865 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 665825 ns Started: 664865 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 665835 ns Started: 665825 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 672875 ns Started: 665825 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 672885 ns Started: 672875 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 673835 ns Started: 672875 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 673845 ns Started: 673835 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 680885 ns Started: 673835 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 680895 ns Started: 680885 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 681845 ns Started: 680885 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 681855 ns Started: 681845 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 688895 ns Started: 681845 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 688905 ns Started: 688895 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 689855 ns Started: 688895 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 689865 ns Started: 689855 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 696905 ns Started: 689855 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 696915 ns Started: 696905 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 697865 ns Started: 696905 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 697875 ns Started: 697865 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 704915 ns Started: 697865 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 704925 ns Started: 704915 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 705875 ns Started: 704915 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 705885 ns Started: 705875 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 712925 ns Started: 705875 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 712935 ns Started: 712925 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 713885 ns Started: 712925 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 713895 ns Started: 713885 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 720935 ns Started: 713885 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 720945 ns Started: 720935 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 721895 ns Started: 720935 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 721905 ns Started: 721895 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 728945 ns Started: 721895 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 728955 ns Started: 728945 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 729905 ns Started: 728945 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 729915 ns Started: 729905 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 736955 ns Started: 729905 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 736965 ns Started: 736955 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 737915 ns Started: 736955 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 737925 ns Started: 737915 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 744965 ns Started: 737915 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 744975 ns Started: 744965 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 745925 ns Started: 744965 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 745935 ns Started: 745925 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 752975 ns Started: 745925 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 752985 ns Started: 752975 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 753935 ns Started: 752975 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 753945 ns Started: 753935 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 760985 ns Started: 753935 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 760995 ns Started: 760985 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 761945 ns Started: 760985 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 761955 ns Started: 761945 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 768995 ns Started: 761945 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 769005 ns Started: 768995 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 769955 ns Started: 768995 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 769965 ns Started: 769955 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 777005 ns Started: 769955 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 777015 ns Started: 777005 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 777965 ns Started: 777005 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 777975 ns Started: 777965 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 785015 ns Started: 777965 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 785025 ns Started: 785015 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 785975 ns Started: 785015 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 785985 ns Started: 785975 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 793025 ns Started: 785975 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 793035 ns Started: 793025 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS: ASSERTION 1: POS_HS!
+#    Time: 793985 ns Started: 793025 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_1_POS_HS File: testbench/VGA/assertion_VGA.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 793995 ns Started: 793985 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS: ASSERTION 2: NEG_HS!
+#    Time: 801035 ns Started: 793985 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_2_NEG_HS File: testbench/VGA/assertion_VGA.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA: ASSERTION 3: INACTIVE_DATA!
+#    Time: 801045 ns Started: 801035 ns  Scope: testbench_VGA.VGA_DUT.ass_VGA.ASSERTION_3_INACTIVE_DATA File: testbench/VGA/assertion_VGA.sv Line: 55
+# UVM_INFO testbench/VGA/test/environment/coverage/VGA_coverage.svh(35) @ 801135: uvm_test_top.env.cov [cov] VGA coverage:  100.00%
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    3
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [RNTST]     1
+# [UVMTOP]     1
+# [cov]     1
+# ** Note: $finish    : /opt/questa/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 801135 ns  Iteration: 96  Instance: /testbench_VGA
+# Saving coverage database on exit...
+# End time: 21:50:56 on Jun 21,2024, Elapsed time: 0:00:12
+# Errors: 0, Warnings: 4

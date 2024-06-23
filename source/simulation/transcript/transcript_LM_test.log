@@ -1,0 +1,616 @@
+# vsim -c -voptargs="+acc" "+UVM_TESTNAME=LM_test" "+UVM_VERBOSITY=LOW" -wlf simulation/wave/wave_LM_test.wlf work.testbench_LM -do "log -r /*; coverage save -onexit simulation/ucdb/ucdb_LM_test.ucdb; run -all; quit -f; exit" 
+# Start time: 21:40:53 on Jun 21,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# //  Questa Sim-64
+# //  Version 10.7c linux_x86_64 Aug 17 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.item_pack(fast)
+# Loading work.LM_coverage_pack(fast)
+# Loading work.CM_output_VIF(fast)
+# Loading work.UART_output_VIF(fast)
+# Loading work.LM_agent_pack(fast)
+# Loading work.LM_VIF(fast)
+# Loading work.LM_sequence_pack(fast)
+# Loading work.LM_environment_pack(fast)
+# Loading work.LM_test_pack(fast)
+# Loading work.testbench_LM_sv_unit(fast)
+# Loading work.testbench_LM(fast)
+# Loading work.LM_VIF_sv_unit(fast)
+# Loading work.LM_VIF(fast)
+# Loading work.UART_output_VIF_sv_unit(fast)
+# Loading work.UART_output_VIF(fast)
+# Loading work.CM_output_VIF_sv_unit(fast)
+# Loading work.CM_output_VIF(fast)
+# Loading work.LM(fast)
+# Loading work.LM_decoder(fast)
+# Loading work.LM_decoder(fast__1)
+# Loading work.LM_decoder(fast__2)
+# Loading work.assertion_LM(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading /opt/questa/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so
+# log -r /*
+#  coverage save -onexit simulation/ucdb/ucdb_LM_test.ucdb
+#  run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test LM_test...
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# ----------------------------------------------------------------------
+# Name                        Type                           Size  Value
+# ----------------------------------------------------------------------
+# uvm_test_top                LM_test                        -     @483 
+#   env                       LM_environment                 -     @494 
+#     CM_output_agent_h       CM_output_agent                -     @523 
+#       CM_output_driver      CM_output_driver               -     @692 
+#         rsp_port            uvm_analysis_port              -     @707 
+#         seq_item_port       uvm_seq_item_pull_port         -     @699 
+#       CM_output_monitor     CM_output_monitor              -     @717 
+#         an_port             uvm_analysis_port              -     @734 
+#       CONF_output_seqr      uvm_sequencer                  -     @583 
+#         rsp_export          uvm_analysis_export            -     @590 
+#         seq_item_export     uvm_seq_item_pull_imp          -     @684 
+#         arbitration_queue   array                          0     -    
+#         lock_queue          array                          0     -    
+#         num_last_reqs       integral                       32    'd1  
+#         num_last_rsps       integral                       32    'd1  
+#     LM_agent_h              LM_agent                       -     @510 
+#       LM_monitor            LM_monitor                     -     @750 
+#         an_port             uvm_analysis_port              -     @767 
+#     UART_output_agent_h     UART_output_agent              -     @530 
+#       UART_output_driver    UART_output_driver             -     @888 
+#         rsp_port            uvm_analysis_port              -     @903 
+#         seq_item_port       uvm_seq_item_pull_port         -     @895 
+#       UART_output_monitor   UART_output_monitor            -     @913 
+#         an_port             uvm_analysis_port              -     @930 
+#       UART_output_seqr      uvm_sequencer                  -     @779 
+#         rsp_export          uvm_analysis_export            -     @786 
+#         seq_item_export     uvm_seq_item_pull_imp          -     @880 
+#         arbitration_queue   array                          0     -    
+#         lock_queue          array                          0     -    
+#         num_last_reqs       integral                       32    'd1  
+#         num_last_rsps       integral                       32    'd1  
+#     cov                     LM_coverage                    -     @537 
+#       an_port_LM            uvm_analysis_imp_LM            -     @544 
+#       an_port_LM_CM_output  uvm_analysis_imp_LM_CM_output  -     @560 
+#       an_port_UART          uvm_analysis_imp_UART          -     @552 
+# ----------------------------------------------------------------------
+# 
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 5 ns Started: 5 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 5 ns Started: 5 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 15 ns Started: 15 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 25 ns Started: 25 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 25 ns Started: 25 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 35 ns Started: 35 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR: ASSERTION 2: WRITE_UART_ERROR!
+#    Time: 35 ns Started: 25 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR File: testbench/LM/assertion_LM.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR: ASSERTION 1: WRITE_CM_ERROR!
+#    Time: 35 ns Started: 25 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR File: testbench/LM/assertion_LM.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 35 ns Started: 35 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 45 ns Started: 45 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR: ASSERTION 2: WRITE_UART_ERROR!
+#    Time: 45 ns Started: 35 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR File: testbench/LM/assertion_LM.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR: ASSERTION 1: WRITE_CM_ERROR!
+#    Time: 45 ns Started: 35 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR File: testbench/LM/assertion_LM.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 45 ns Started: 45 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR: ASSERTION 2: WRITE_UART_ERROR!
+#    Time: 55 ns Started: 45 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR File: testbench/LM/assertion_LM.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 55 ns Started: 55 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR: ASSERTION 1: WRITE_CM_ERROR!
+#    Time: 55 ns Started: 45 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR File: testbench/LM/assertion_LM.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 55 ns Started: 55 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR: ASSERTION 2: WRITE_UART_ERROR!
+#    Time: 65 ns Started: 55 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR File: testbench/LM/assertion_LM.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 65 ns Started: 65 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 65 ns Started: 65 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR: ASSERTION 2: WRITE_UART_ERROR!
+#    Time: 75 ns Started: 65 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR File: testbench/LM/assertion_LM.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 75 ns Started: 75 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 75 ns Started: 75 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR: ASSERTION 2: WRITE_UART_ERROR!
+#    Time: 85 ns Started: 75 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR File: testbench/LM/assertion_LM.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 85 ns Started: 85 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 85 ns Started: 85 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR: ASSERTION 1: WRITE_CM_ERROR!
+#    Time: 95 ns Started: 85 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR File: testbench/LM/assertion_LM.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 95 ns Started: 95 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 95 ns Started: 95 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR: ASSERTION 2: WRITE_UART_ERROR!
+#    Time: 105 ns Started: 95 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR File: testbench/LM/assertion_LM.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR: ASSERTION 1: WRITE_CM_ERROR!
+#    Time: 105 ns Started: 95 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR File: testbench/LM/assertion_LM.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 105 ns Started: 105 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 105 ns Started: 105 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR: ASSERTION 1: WRITE_CM_ERROR!
+#    Time: 115 ns Started: 105 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR File: testbench/LM/assertion_LM.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 115 ns Started: 115 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 115 ns Started: 115 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR: ASSERTION 1: WRITE_CM_ERROR!
+#    Time: 125 ns Started: 115 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR File: testbench/LM/assertion_LM.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 125 ns Started: 125 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 125 ns Started: 125 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 135 ns Started: 135 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 135 ns Started: 135 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 145 ns Started: 145 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 145 ns Started: 145 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR: ASSERTION 2: WRITE_UART_ERROR!
+#    Time: 155 ns Started: 145 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR File: testbench/LM/assertion_LM.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 155 ns Started: 155 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 155 ns Started: 155 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 165 ns Started: 165 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 165 ns Started: 165 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 175 ns Started: 175 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 175 ns Started: 175 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR: ASSERTION 2: WRITE_UART_ERROR!
+#    Time: 185 ns Started: 175 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR File: testbench/LM/assertion_LM.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 185 ns Started: 185 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 185 ns Started: 185 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 195 ns Started: 195 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 195 ns Started: 195 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 205 ns Started: 205 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 205 ns Started: 205 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 215 ns Started: 215 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 215 ns Started: 215 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR: ASSERTION 2: WRITE_UART_ERROR!
+#    Time: 225 ns Started: 215 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR File: testbench/LM/assertion_LM.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 225 ns Started: 225 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 225 ns Started: 225 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 235 ns Started: 235 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 235 ns Started: 235 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR: ASSERTION 2: WRITE_UART_ERROR!
+#    Time: 245 ns Started: 235 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR File: testbench/LM/assertion_LM.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR: ASSERTION 1: WRITE_CM_ERROR!
+#    Time: 245 ns Started: 235 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR File: testbench/LM/assertion_LM.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 245 ns Started: 245 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 245 ns Started: 245 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR: ASSERTION 1: WRITE_CM_ERROR!
+#    Time: 255 ns Started: 245 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR File: testbench/LM/assertion_LM.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 255 ns Started: 255 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 255 ns Started: 255 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR: ASSERTION 2: WRITE_UART_ERROR!
+#    Time: 265 ns Started: 255 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR File: testbench/LM/assertion_LM.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR: ASSERTION 1: WRITE_CM_ERROR!
+#    Time: 265 ns Started: 255 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR File: testbench/LM/assertion_LM.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 265 ns Started: 265 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 265 ns Started: 265 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 275 ns Started: 275 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 275 ns Started: 275 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 285 ns Started: 285 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 285 ns Started: 285 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR: ASSERTION 1: WRITE_CM_ERROR!
+#    Time: 295 ns Started: 285 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR File: testbench/LM/assertion_LM.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 295 ns Started: 295 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 295 ns Started: 295 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR: ASSERTION 2: WRITE_UART_ERROR!
+#    Time: 305 ns Started: 295 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR File: testbench/LM/assertion_LM.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 305 ns Started: 305 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 305 ns Started: 305 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 315 ns Started: 315 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 315 ns Started: 315 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR: ASSERTION 1: WRITE_CM_ERROR!
+#    Time: 325 ns Started: 315 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR File: testbench/LM/assertion_LM.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 325 ns Started: 325 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 325 ns Started: 325 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 335 ns Started: 335 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 335 ns Started: 335 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR: ASSERTION 2: WRITE_UART_ERROR!
+#    Time: 345 ns Started: 335 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR File: testbench/LM/assertion_LM.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 345 ns Started: 345 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 345 ns Started: 345 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR: ASSERTION 2: WRITE_UART_ERROR!
+#    Time: 355 ns Started: 345 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR File: testbench/LM/assertion_LM.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 355 ns Started: 355 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 355 ns Started: 355 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR: ASSERTION 1: WRITE_CM_ERROR!
+#    Time: 365 ns Started: 355 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR File: testbench/LM/assertion_LM.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR: ASSERTION 2: WRITE_UART_ERROR!
+#    Time: 365 ns Started: 355 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR File: testbench/LM/assertion_LM.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 365 ns Started: 365 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 365 ns Started: 365 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR: ASSERTION 2: WRITE_UART_ERROR!
+#    Time: 375 ns Started: 365 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR File: testbench/LM/assertion_LM.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 375 ns Started: 375 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 375 ns Started: 375 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 385 ns Started: 385 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 385 ns Started: 385 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR: ASSERTION 2: WRITE_UART_ERROR!
+#    Time: 395 ns Started: 385 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR File: testbench/LM/assertion_LM.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR: ASSERTION 1: WRITE_CM_ERROR!
+#    Time: 395 ns Started: 385 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR File: testbench/LM/assertion_LM.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 395 ns Started: 395 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 395 ns Started: 395 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR: ASSERTION 2: WRITE_UART_ERROR!
+#    Time: 405 ns Started: 395 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR File: testbench/LM/assertion_LM.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 405 ns Started: 405 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 405 ns Started: 405 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR: ASSERTION 1: WRITE_CM_ERROR!
+#    Time: 415 ns Started: 405 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR File: testbench/LM/assertion_LM.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR: ASSERTION 2: WRITE_UART_ERROR!
+#    Time: 415 ns Started: 405 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR File: testbench/LM/assertion_LM.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 415 ns Started: 415 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 415 ns Started: 415 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR: ASSERTION 1: WRITE_CM_ERROR!
+#    Time: 425 ns Started: 415 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR File: testbench/LM/assertion_LM.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR: ASSERTION 2: WRITE_UART_ERROR!
+#    Time: 425 ns Started: 415 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR File: testbench/LM/assertion_LM.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 425 ns Started: 425 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 425 ns Started: 425 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR: ASSERTION 2: WRITE_UART_ERROR!
+#    Time: 435 ns Started: 425 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR File: testbench/LM/assertion_LM.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 435 ns Started: 435 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 435 ns Started: 435 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR: ASSERTION 2: WRITE_UART_ERROR!
+#    Time: 445 ns Started: 435 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR File: testbench/LM/assertion_LM.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 445 ns Started: 445 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 445 ns Started: 445 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR: ASSERTION 1: WRITE_CM_ERROR!
+#    Time: 455 ns Started: 445 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR File: testbench/LM/assertion_LM.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR: ASSERTION 2: WRITE_UART_ERROR!
+#    Time: 455 ns Started: 445 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR File: testbench/LM/assertion_LM.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 455 ns Started: 455 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 455 ns Started: 455 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR: ASSERTION 1: WRITE_CM_ERROR!
+#    Time: 465 ns Started: 455 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR File: testbench/LM/assertion_LM.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 465 ns Started: 465 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 465 ns Started: 465 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 475 ns Started: 475 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 475 ns Started: 475 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR: ASSERTION 2: WRITE_UART_ERROR!
+#    Time: 485 ns Started: 475 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR File: testbench/LM/assertion_LM.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 485 ns Started: 485 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 485 ns Started: 485 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR: ASSERTION 2: WRITE_UART_ERROR!
+#    Time: 495 ns Started: 485 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR File: testbench/LM/assertion_LM.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 495 ns Started: 495 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 495 ns Started: 495 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR: ASSERTION 1: WRITE_CM_ERROR!
+#    Time: 505 ns Started: 495 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR File: testbench/LM/assertion_LM.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 505 ns Started: 505 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 505 ns Started: 505 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 515 ns Started: 515 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 515 ns Started: 515 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR: ASSERTION 2: WRITE_UART_ERROR!
+#    Time: 525 ns Started: 515 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR File: testbench/LM/assertion_LM.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR: ASSERTION 1: WRITE_CM_ERROR!
+#    Time: 525 ns Started: 515 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR File: testbench/LM/assertion_LM.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 525 ns Started: 525 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 525 ns Started: 525 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 535 ns Started: 535 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 535 ns Started: 535 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR: ASSERTION 1: WRITE_CM_ERROR!
+#    Time: 545 ns Started: 535 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR File: testbench/LM/assertion_LM.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 545 ns Started: 545 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 545 ns Started: 545 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 555 ns Started: 555 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 555 ns Started: 555 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 565 ns Started: 565 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 565 ns Started: 565 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR: ASSERTION 2: WRITE_UART_ERROR!
+#    Time: 575 ns Started: 565 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR File: testbench/LM/assertion_LM.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 575 ns Started: 575 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 575 ns Started: 575 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR: ASSERTION 1: WRITE_CM_ERROR!
+#    Time: 585 ns Started: 575 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR File: testbench/LM/assertion_LM.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 585 ns Started: 585 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 585 ns Started: 585 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR: ASSERTION 1: WRITE_CM_ERROR!
+#    Time: 595 ns Started: 585 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR File: testbench/LM/assertion_LM.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 595 ns Started: 595 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 595 ns Started: 595 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR: ASSERTION 2: WRITE_UART_ERROR!
+#    Time: 605 ns Started: 595 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR File: testbench/LM/assertion_LM.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR: ASSERTION 1: WRITE_CM_ERROR!
+#    Time: 605 ns Started: 595 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR File: testbench/LM/assertion_LM.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 605 ns Started: 605 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 605 ns Started: 605 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 615 ns Started: 615 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 615 ns Started: 615 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR: ASSERTION 2: WRITE_UART_ERROR!
+#    Time: 625 ns Started: 615 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR File: testbench/LM/assertion_LM.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 625 ns Started: 625 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 625 ns Started: 625 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 635 ns Started: 635 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 635 ns Started: 635 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR: ASSERTION 1: WRITE_CM_ERROR!
+#    Time: 645 ns Started: 635 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR File: testbench/LM/assertion_LM.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 645 ns Started: 645 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 645 ns Started: 645 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR: ASSERTION 2: WRITE_UART_ERROR!
+#    Time: 655 ns Started: 645 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR File: testbench/LM/assertion_LM.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 655 ns Started: 655 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 655 ns Started: 655 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR: ASSERTION 2: WRITE_UART_ERROR!
+#    Time: 665 ns Started: 655 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR File: testbench/LM/assertion_LM.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 665 ns Started: 665 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 665 ns Started: 665 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR: ASSERTION 1: WRITE_CM_ERROR!
+#    Time: 675 ns Started: 665 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR File: testbench/LM/assertion_LM.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR: ASSERTION 2: WRITE_UART_ERROR!
+#    Time: 675 ns Started: 665 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR File: testbench/LM/assertion_LM.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 675 ns Started: 675 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 675 ns Started: 675 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR: ASSERTION 1: WRITE_CM_ERROR!
+#    Time: 685 ns Started: 675 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR File: testbench/LM/assertion_LM.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 685 ns Started: 685 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 685 ns Started: 685 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR: ASSERTION 2: WRITE_UART_ERROR!
+#    Time: 695 ns Started: 685 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_2_WRITE_UART_ERROR File: testbench/LM/assertion_LM.sv Line: 52
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR: ASSERTION 1: WRITE_CM_ERROR!
+#    Time: 695 ns Started: 685 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR File: testbench/LM/assertion_LM.sv Line: 49
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH: ASSERTION 5: WRITE_SWITCH!
+#    Time: 695 ns Started: 695 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_5_WRITE_SWITCH File: testbench/LM/assertion_LM.sv Line: 61
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET: ASSERTION 4: WRITE_RESET!
+#    Time: 695 ns Started: 695 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_4_WRITE_RESET File: testbench/LM/assertion_LM.sv Line: 58
+# ** Error: ERROR ASSERTION 1: WRITE_CM_ERROR!
+#    Time: 705 ns Started: 695 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_1_WRITE_CM_ERROR File: testbench/LM/assertion_LM.sv Line: 50
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA: ASSERTION 3: WRITE_UART_DATA!
+#    Time: 715 ns Started: 705 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA File: testbench/LM/assertion_LM.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA: ASSERTION 3: WRITE_UART_DATA!
+#    Time: 755 ns Started: 745 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA File: testbench/LM/assertion_LM.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA: ASSERTION 3: WRITE_UART_DATA!
+#    Time: 775 ns Started: 765 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA File: testbench/LM/assertion_LM.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA: ASSERTION 3: WRITE_UART_DATA!
+#    Time: 785 ns Started: 775 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA File: testbench/LM/assertion_LM.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA: ASSERTION 3: WRITE_UART_DATA!
+#    Time: 815 ns Started: 805 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA File: testbench/LM/assertion_LM.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA: ASSERTION 3: WRITE_UART_DATA!
+#    Time: 825 ns Started: 815 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA File: testbench/LM/assertion_LM.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA: ASSERTION 3: WRITE_UART_DATA!
+#    Time: 835 ns Started: 825 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA File: testbench/LM/assertion_LM.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA: ASSERTION 3: WRITE_UART_DATA!
+#    Time: 845 ns Started: 835 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA File: testbench/LM/assertion_LM.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA: ASSERTION 3: WRITE_UART_DATA!
+#    Time: 855 ns Started: 845 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA File: testbench/LM/assertion_LM.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA: ASSERTION 3: WRITE_UART_DATA!
+#    Time: 885 ns Started: 875 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA File: testbench/LM/assertion_LM.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA: ASSERTION 3: WRITE_UART_DATA!
+#    Time: 895 ns Started: 885 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA File: testbench/LM/assertion_LM.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA: ASSERTION 3: WRITE_UART_DATA!
+#    Time: 925 ns Started: 915 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA File: testbench/LM/assertion_LM.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA: ASSERTION 3: WRITE_UART_DATA!
+#    Time: 955 ns Started: 945 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA File: testbench/LM/assertion_LM.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA: ASSERTION 3: WRITE_UART_DATA!
+#    Time: 965 ns Started: 955 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA File: testbench/LM/assertion_LM.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA: ASSERTION 3: WRITE_UART_DATA!
+#    Time: 975 ns Started: 965 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA File: testbench/LM/assertion_LM.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA: ASSERTION 3: WRITE_UART_DATA!
+#    Time: 1015 ns Started: 1005 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA File: testbench/LM/assertion_LM.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA: ASSERTION 3: WRITE_UART_DATA!
+#    Time: 1075 ns Started: 1065 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA File: testbench/LM/assertion_LM.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA: ASSERTION 3: WRITE_UART_DATA!
+#    Time: 1085 ns Started: 1075 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA File: testbench/LM/assertion_LM.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA: ASSERTION 3: WRITE_UART_DATA!
+#    Time: 1135 ns Started: 1125 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA File: testbench/LM/assertion_LM.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA: ASSERTION 3: WRITE_UART_DATA!
+#    Time: 1155 ns Started: 1145 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA File: testbench/LM/assertion_LM.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA: ASSERTION 3: WRITE_UART_DATA!
+#    Time: 1165 ns Started: 1155 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA File: testbench/LM/assertion_LM.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA: ASSERTION 3: WRITE_UART_DATA!
+#    Time: 1185 ns Started: 1175 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA File: testbench/LM/assertion_LM.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA: ASSERTION 3: WRITE_UART_DATA!
+#    Time: 1215 ns Started: 1205 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA File: testbench/LM/assertion_LM.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA: ASSERTION 3: WRITE_UART_DATA!
+#    Time: 1225 ns Started: 1215 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA File: testbench/LM/assertion_LM.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA: ASSERTION 3: WRITE_UART_DATA!
+#    Time: 1275 ns Started: 1265 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA File: testbench/LM/assertion_LM.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA: ASSERTION 3: WRITE_UART_DATA!
+#    Time: 1295 ns Started: 1285 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA File: testbench/LM/assertion_LM.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA: ASSERTION 3: WRITE_UART_DATA!
+#    Time: 1305 ns Started: 1295 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA File: testbench/LM/assertion_LM.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA: ASSERTION 3: WRITE_UART_DATA!
+#    Time: 1315 ns Started: 1305 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA File: testbench/LM/assertion_LM.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA: ASSERTION 3: WRITE_UART_DATA!
+#    Time: 1325 ns Started: 1315 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA File: testbench/LM/assertion_LM.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA: ASSERTION 3: WRITE_UART_DATA!
+#    Time: 1385 ns Started: 1375 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA File: testbench/LM/assertion_LM.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA: ASSERTION 3: WRITE_UART_DATA!
+#    Time: 1395 ns Started: 1385 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA File: testbench/LM/assertion_LM.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA: ASSERTION 3: WRITE_UART_DATA!
+#    Time: 1405 ns Started: 1395 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA File: testbench/LM/assertion_LM.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA: ASSERTION 3: WRITE_UART_DATA!
+#    Time: 1435 ns Started: 1425 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA File: testbench/LM/assertion_LM.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA: ASSERTION 3: WRITE_UART_DATA!
+#    Time: 1445 ns Started: 1435 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA File: testbench/LM/assertion_LM.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA: ASSERTION 3: WRITE_UART_DATA!
+#    Time: 1455 ns Started: 1445 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA File: testbench/LM/assertion_LM.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA: ASSERTION 3: WRITE_UART_DATA!
+#    Time: 1465 ns Started: 1455 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA File: testbench/LM/assertion_LM.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA: ASSERTION 3: WRITE_UART_DATA!
+#    Time: 1475 ns Started: 1465 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA File: testbench/LM/assertion_LM.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA: ASSERTION 3: WRITE_UART_DATA!
+#    Time: 1485 ns Started: 1475 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA File: testbench/LM/assertion_LM.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA: ASSERTION 3: WRITE_UART_DATA!
+#    Time: 1495 ns Started: 1485 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA File: testbench/LM/assertion_LM.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA: ASSERTION 3: WRITE_UART_DATA!
+#    Time: 1505 ns Started: 1495 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA File: testbench/LM/assertion_LM.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA: ASSERTION 3: WRITE_UART_DATA!
+#    Time: 1515 ns Started: 1505 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA File: testbench/LM/assertion_LM.sv Line: 55
+# ** Info: PASS ASSERTION: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA: ASSERTION 3: WRITE_UART_DATA!
+#    Time: 1525 ns Started: 1515 ns  Scope: testbench_LM.LM_DUT.ass_LM.ASSERTION_3_WRITE_UART_DATA File: testbench/LM/assertion_LM.sv Line: 55
+# UVM_INFO testbench/LM/test/environment/coverage/LM_coverage.svh(65) @ 1535: uvm_test_top.env.cov [cov] LM coverage:        100.00%
+# UVM_INFO testbench/LM/test/environment/coverage/LM_coverage.svh(66) @ 1535: uvm_test_top.env.cov [cov] UART coverage:      80.95%
+# UVM_INFO testbench/LM/test/environment/coverage/LM_coverage.svh(67) @ 1535: uvm_test_top.env.cov [cov] CM output coverage: 100.00%
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    5
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [RNTST]     1
+# [UVMTOP]     1
+# [cov]     3
+# ** Note: $finish    : /opt/questa/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 1535 ns  Iteration: 96  Instance: /testbench_LM
+# Saving coverage database on exit...
+# End time: 21:41:00 on Jun 21,2024, Elapsed time: 0:00:07
+# Errors: 1, Warnings: 0

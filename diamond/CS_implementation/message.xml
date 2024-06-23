@@ -1,0 +1,1687 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Bitgen">
+        <Message>
+            <ID>1081328</ID>
+            <Severity>Warning</Severity>
+        </Message>
+        <Message>
+            <ID>1009992</ID>
+            <Severity>Info</Severity>
+            <Dynamic> SW_XO3D_SECURITY_ENCRYPTION *IS* controlled by se5c00.acd ###</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic> SW_XO3D_SECURITY_ENCRYPTION license_securityIP NONE</Dynamic>
+        </Message>
+    </Task>
+    <Task name="IBIS">
+        <Message>
+            <ID>1191031</ID>
+            <Severity>Info</Severity>
+        </Message>
+    </Task>
+    <Task name="Map">
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_project.lpf(5): Semantic error in &quot;LOCATE COMP &quot;rst&quot; SITE &quot;B3&quot; ;&quot;: </Dynamic>
+            <Dynamic>rst</Dynamic>
+            <Navigation>C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_project.lpf</Navigation>
+            <Navigation>5</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_project.lpf(47): Semantic error in &quot;IOBUF PORT &quot;rst&quot; PULLMODE=UP IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
+            <Dynamic>rst</Dynamic>
+            <Navigation>C:/Users/Denisa/Desktop/GITHUB/licenta_sistem_digital/diamond/CS_project.lpf</Navigation>
+            <Navigation>47</Navigation>
+        </Message>
+    </Task>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cd.v(16): </Dynamic>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CD_params.v</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cd.v</Navigation>
+            <Navigation>16</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cd.v(34): </Dynamic>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cd.v</Navigation>
+            <Navigation>34</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v(1): </Dynamic>
+            <Dynamic>CD</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v(2): </Dynamic>
+            <Dynamic>CD</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v</Navigation>
+            <Navigation>2</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v(3): </Dynamic>
+            <Dynamic>CD</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v</Navigation>
+            <Navigation>3</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v(4): </Dynamic>
+            <Dynamic>CD</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v(5): </Dynamic>
+            <Dynamic>CD</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v</Navigation>
+            <Navigation>5</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v(6): </Dynamic>
+            <Dynamic>CD</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v</Navigation>
+            <Navigation>6</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v(8): </Dynamic>
+            <Dynamic>CD</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v(9): </Dynamic>
+            <Dynamic>CD</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v</Navigation>
+            <Navigation>9</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v(10): </Dynamic>
+            <Dynamic>CD</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v</Navigation>
+            <Navigation>10</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v(12): </Dynamic>
+            <Dynamic>CD</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v</Navigation>
+            <Navigation>12</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v(13): </Dynamic>
+            <Dynamic>CD</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cd_config.v(14): </Dynamic>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CD_params.v</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cd_config.v</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cd_config.v(29): </Dynamic>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cd_config.v</Navigation>
+            <Navigation>29</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cd_config.v(30): </Dynamic>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cd_config.v</Navigation>
+            <Navigation>30</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(1): </Dynamic>
+            <Dynamic>CD_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(2): </Dynamic>
+            <Dynamic>CD_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>2</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(3): </Dynamic>
+            <Dynamic>CD_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>3</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(4): </Dynamic>
+            <Dynamic>CD_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(6): </Dynamic>
+            <Dynamic>CD_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>6</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(7): </Dynamic>
+            <Dynamic>CD_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>7</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(8): </Dynamic>
+            <Dynamic>CD_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(10): </Dynamic>
+            <Dynamic>CD_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>10</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(11): </Dynamic>
+            <Dynamic>CD_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>11</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(13): </Dynamic>
+            <Dynamic>CD_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(14): </Dynamic>
+            <Dynamic>CD_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(15): </Dynamic>
+            <Dynamic>CD_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>15</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(16): </Dynamic>
+            <Dynamic>CD_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>16</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(17): </Dynamic>
+            <Dynamic>CD_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>17</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(18): </Dynamic>
+            <Dynamic>CD_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(20): </Dynamic>
+            <Dynamic>CD_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>20</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(21): </Dynamic>
+            <Dynamic>CD_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>21</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(22): </Dynamic>
+            <Dynamic>CD_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>22</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v(1): </Dynamic>
+            <Dynamic>CD_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v(2): </Dynamic>
+            <Dynamic>CD_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v</Navigation>
+            <Navigation>2</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v(3): </Dynamic>
+            <Dynamic>CD_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v</Navigation>
+            <Navigation>3</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v(4): </Dynamic>
+            <Dynamic>CD_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v(5): </Dynamic>
+            <Dynamic>CD_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v</Navigation>
+            <Navigation>5</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v(6): </Dynamic>
+            <Dynamic>CD_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v</Navigation>
+            <Navigation>6</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v(8): </Dynamic>
+            <Dynamic>CD_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v(9): </Dynamic>
+            <Dynamic>CD_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v</Navigation>
+            <Navigation>9</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v(10): </Dynamic>
+            <Dynamic>CD_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v</Navigation>
+            <Navigation>10</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v(12): </Dynamic>
+            <Dynamic>CD_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v</Navigation>
+            <Navigation>12</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v(13): </Dynamic>
+            <Dynamic>CD_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CLK_values.v</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cd_counter.v(11): </Dynamic>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CD_params.v</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cd_counter.v</Navigation>
+            <Navigation>11</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm.v(3): </Dynamic>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CM_Width_Parameters.v</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm.v</Navigation>
+            <Navigation>3</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm_assign_data.v(5): </Dynamic>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CM_Width_Parameters.v</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm_assign_data.v</Navigation>
+            <Navigation>5</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm_assign_data.v(6): </Dynamic>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CM_Parameters.v</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm_assign_data.v</Navigation>
+            <Navigation>6</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm_assign_data.v(7): </Dynamic>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CM_Addr_Parameters.v</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm_assign_data.v</Navigation>
+            <Navigation>7</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm_config_manager.v(4): </Dynamic>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CM_Width_Parameters.v</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm_config_manager.v</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm_config_manager.v(5): </Dynamic>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CM_Addr_Parameters.v</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm_config_manager.v</Navigation>
+            <Navigation>5</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm_config_manager.v(6): </Dynamic>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CM_Parameters.v</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm_config_manager.v</Navigation>
+            <Navigation>6</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm_counter.v(4): </Dynamic>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CM_Width_Parameters.v</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm_counter.v</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cs.v(4): </Dynamic>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/LM_params.v</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cs.v</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/lm.v(11): </Dynamic>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/LM_params.v</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/lm.v</Navigation>
+            <Navigation>11</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/lm_decoder.v(12): </Dynamic>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/LM_params.v</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/lm_decoder.v</Navigation>
+            <Navigation>12</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart.v(14): </Dynamic>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/UART_params.v</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart.v</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart.v(35): </Dynamic>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart.v</Navigation>
+            <Navigation>35</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(1): </Dynamic>
+            <Dynamic>UART</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(2): </Dynamic>
+            <Dynamic>UART</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>2</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(3): </Dynamic>
+            <Dynamic>UART</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>3</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(4): </Dynamic>
+            <Dynamic>UART</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(6): </Dynamic>
+            <Dynamic>UART</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>6</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(7): </Dynamic>
+            <Dynamic>UART</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>7</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(8): </Dynamic>
+            <Dynamic>UART</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(10): </Dynamic>
+            <Dynamic>UART</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>10</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(11): </Dynamic>
+            <Dynamic>UART</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>11</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(13): </Dynamic>
+            <Dynamic>UART</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(14): </Dynamic>
+            <Dynamic>UART</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(15): </Dynamic>
+            <Dynamic>UART</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>15</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(16): </Dynamic>
+            <Dynamic>UART</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>16</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(17): </Dynamic>
+            <Dynamic>UART</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>17</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(18): </Dynamic>
+            <Dynamic>UART</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(20): </Dynamic>
+            <Dynamic>UART</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>20</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(21): </Dynamic>
+            <Dynamic>UART</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>21</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(22): </Dynamic>
+            <Dynamic>UART</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>22</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_config.v(16): </Dynamic>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/UART_params.v</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_config.v</Navigation>
+            <Navigation>16</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_config.v(30): </Dynamic>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_config.v</Navigation>
+            <Navigation>30</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(1): </Dynamic>
+            <Dynamic>UART_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(2): </Dynamic>
+            <Dynamic>UART_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>2</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(3): </Dynamic>
+            <Dynamic>UART_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>3</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(4): </Dynamic>
+            <Dynamic>UART_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(6): </Dynamic>
+            <Dynamic>UART_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>6</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(7): </Dynamic>
+            <Dynamic>UART_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>7</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(8): </Dynamic>
+            <Dynamic>UART_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(10): </Dynamic>
+            <Dynamic>UART_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>10</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(11): </Dynamic>
+            <Dynamic>UART_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>11</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(13): </Dynamic>
+            <Dynamic>UART_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(14): </Dynamic>
+            <Dynamic>UART_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(15): </Dynamic>
+            <Dynamic>UART_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>15</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(16): </Dynamic>
+            <Dynamic>UART_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>16</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(17): </Dynamic>
+            <Dynamic>UART_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>17</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(18): </Dynamic>
+            <Dynamic>UART_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(20): </Dynamic>
+            <Dynamic>UART_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>20</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(21): </Dynamic>
+            <Dynamic>UART_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>21</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(22): </Dynamic>
+            <Dynamic>UART_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>22</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_sampler.v(12): </Dynamic>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/UART_params.v</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_sampler.v</Navigation>
+            <Navigation>12</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_state.v(26): </Dynamic>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/UART_params.v</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_state.v</Navigation>
+            <Navigation>26</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_state.v(44): </Dynamic>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_state.v</Navigation>
+            <Navigation>44</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_state.v(45): </Dynamic>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_state.v</Navigation>
+            <Navigation>45</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(1): </Dynamic>
+            <Dynamic>UART_state</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(2): </Dynamic>
+            <Dynamic>UART_state</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>2</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(3): </Dynamic>
+            <Dynamic>UART_state</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>3</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(4): </Dynamic>
+            <Dynamic>UART_state</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(6): </Dynamic>
+            <Dynamic>UART_state</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>6</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(7): </Dynamic>
+            <Dynamic>UART_state</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>7</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(8): </Dynamic>
+            <Dynamic>UART_state</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(10): </Dynamic>
+            <Dynamic>UART_state</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>10</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(11): </Dynamic>
+            <Dynamic>UART_state</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>11</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(13): </Dynamic>
+            <Dynamic>UART_state</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(14): </Dynamic>
+            <Dynamic>UART_state</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(15): </Dynamic>
+            <Dynamic>UART_state</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>15</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(16): </Dynamic>
+            <Dynamic>UART_state</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>16</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(17): </Dynamic>
+            <Dynamic>UART_state</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>17</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(18): </Dynamic>
+            <Dynamic>UART_state</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(20): </Dynamic>
+            <Dynamic>UART_state</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>20</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(21): </Dynamic>
+            <Dynamic>UART_state</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>21</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v(22): </Dynamic>
+            <Dynamic>UART_state</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_params.v</Navigation>
+            <Navigation>22</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v(1): </Dynamic>
+            <Dynamic>UART_state</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v(4): </Dynamic>
+            <Dynamic>UART_state</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v(5): </Dynamic>
+            <Dynamic>UART_state</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v</Navigation>
+            <Navigation>5</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v(6): </Dynamic>
+            <Dynamic>UART_state</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v</Navigation>
+            <Navigation>6</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v(9): </Dynamic>
+            <Dynamic>UART_state</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v</Navigation>
+            <Navigation>9</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v(11): </Dynamic>
+            <Dynamic>UART_state</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v</Navigation>
+            <Navigation>11</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v(12): </Dynamic>
+            <Dynamic>UART_state</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v</Navigation>
+            <Navigation>12</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v(13): </Dynamic>
+            <Dynamic>UART_state</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v(14): </Dynamic>
+            <Dynamic>UART_state</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v(16): </Dynamic>
+            <Dynamic>UART_state</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v</Navigation>
+            <Navigation>16</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v(17): </Dynamic>
+            <Dynamic>UART_state</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v</Navigation>
+            <Navigation>17</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v(18): </Dynamic>
+            <Dynamic>UART_state</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v(19): </Dynamic>
+            <Dynamic>UART_state</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v</Navigation>
+            <Navigation>19</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v(21): </Dynamic>
+            <Dynamic>UART_state</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v</Navigation>
+            <Navigation>21</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v(23): </Dynamic>
+            <Dynamic>UART_state</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v</Navigation>
+            <Navigation>23</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v(24): </Dynamic>
+            <Dynamic>UART_state</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v</Navigation>
+            <Navigation>24</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v(25): </Dynamic>
+            <Dynamic>UART_state</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v</Navigation>
+            <Navigation>25</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v(26): </Dynamic>
+            <Dynamic>UART_state</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/CS_errors.v</Navigation>
+            <Navigation>26</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_state.v(49): </Dynamic>
+            <Dynamic>UART_state</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_state.v</Navigation>
+            <Navigation>49</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_state.v(50): </Dynamic>
+            <Dynamic>UART_state</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_state.v</Navigation>
+            <Navigation>50</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_state.v(51): </Dynamic>
+            <Dynamic>UART_state</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_state.v</Navigation>
+            <Navigation>51</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_state.v(52): </Dynamic>
+            <Dynamic>UART_state</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_state.v</Navigation>
+            <Navigation>52</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_state.v(53): </Dynamic>
+            <Dynamic>UART_state</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_state.v</Navigation>
+            <Navigation>53</Navigation>
+        </Message>
+        <Message>
+            <ID>35901199</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_state.v(54): </Dynamic>
+            <Dynamic>UART_state</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_state.v</Navigation>
+            <Navigation>54</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/vga.v(13): </Dynamic>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/VGA_Width_Parameters.v</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/vga.v</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/vga_assign_color.v(9): </Dynamic>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/VGA_Width_Parameters.v</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/vga_assign_color.v</Navigation>
+            <Navigation>9</Navigation>
+        </Message>
+        <Message>
+            <ID>35901295</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/vga_config.v(19): </Dynamic>
+            <Dynamic>ACTIVE</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/vga_config.v</Navigation>
+            <Navigation>19</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/vga_config.v(22): </Dynamic>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/VGA_Width_Parameters.v</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/vga_config.v</Navigation>
+            <Navigation>22</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/vga_config.v(23): </Dynamic>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/VGA_Parameters.v</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/vga_config.v</Navigation>
+            <Navigation>23</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/vga_config.v(24): </Dynamic>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/VGA_Addr_Parameters.v</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/vga_config.v</Navigation>
+            <Navigation>24</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/vga_counter.v(12): </Dynamic>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/VGA_Width_Parameters.v</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/vga_counter.v</Navigation>
+            <Navigation>12</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cs.v(3): </Dynamic>
+            <Dynamic>CS</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cs.v</Navigation>
+            <Navigation>3</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cd.v(15): </Dynamic>
+            <Dynamic>CD</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cd.v</Navigation>
+            <Navigation>15</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cd_counter.v(10): </Dynamic>
+            <Dynamic>CD_counter(WIDTH=32)</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cd_counter.v</Navigation>
+            <Navigation>10</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cd_counter.v(10): </Dynamic>
+            <Dynamic>CD_counter(WIDTH=24)</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cd_counter.v</Navigation>
+            <Navigation>10</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cd_counter.v(26): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>24</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cd_counter.v</Navigation>
+            <Navigation>26</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cd_config.v(13): </Dynamic>
+            <Dynamic>CD_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cd_config.v</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/db.v(3): </Dynamic>
+            <Dynamic>DB</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/db.v</Navigation>
+            <Navigation>3</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/db_debouncer.v(3): </Dynamic>
+            <Dynamic>DB_debouncer</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/db_debouncer.v</Navigation>
+            <Navigation>3</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/db_debouncer.v(33): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/db_debouncer.v</Navigation>
+            <Navigation>33</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart.v(13): </Dynamic>
+            <Dynamic>UART</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart.v</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_config.v(15): </Dynamic>
+            <Dynamic>UART_config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_config.v</Navigation>
+            <Navigation>15</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_state.v(25): </Dynamic>
+            <Dynamic>UART_state</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_state.v</Navigation>
+            <Navigation>25</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_state.v(119): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>3</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_state.v</Navigation>
+            <Navigation>119</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_state.v(125): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>2</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_state.v</Navigation>
+            <Navigation>125</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_state.v(162): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>2</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_state.v</Navigation>
+            <Navigation>162</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_sampler.v(11): </Dynamic>
+            <Dynamic>UART_sampler</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_sampler.v</Navigation>
+            <Navigation>11</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_sampler.v(63): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_sampler.v</Navigation>
+            <Navigation>63</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_sampler.v(73): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_sampler.v</Navigation>
+            <Navigation>73</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_sampler.v(74): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/uart_sampler.v</Navigation>
+            <Navigation>74</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/sync_reg.v(3): </Dynamic>
+            <Dynamic>Sync_Reg(SIZE=8)</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/sync_reg.v</Navigation>
+            <Navigation>3</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm.v(2): </Dynamic>
+            <Dynamic>CM</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm.v</Navigation>
+            <Navigation>2</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm_config_manager.v(3): </Dynamic>
+            <Dynamic>CM_Config_Manager</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm_config_manager.v</Navigation>
+            <Navigation>3</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm_config_manager.v(135): </Dynamic>
+            <Dynamic>2</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm_config_manager.v</Navigation>
+            <Navigation>135</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm_assign_data.v(4): </Dynamic>
+            <Dynamic>CM_Assign_Data</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm_assign_data.v</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm_counter.v(3): </Dynamic>
+            <Dynamic>CM_Counter</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm_counter.v</Navigation>
+            <Navigation>3</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/vga.v(12): </Dynamic>
+            <Dynamic>VGA</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/vga.v</Navigation>
+            <Navigation>12</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/vga_config.v(21): </Dynamic>
+            <Dynamic>VGA_Config</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/vga_config.v</Navigation>
+            <Navigation>21</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/VGA_Addr_Parameters.v(2): </Dynamic>
+            <Dynamic>10</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/VGA_Addr_Parameters.v</Navigation>
+            <Navigation>2</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/VGA_Addr_Parameters.v(3): </Dynamic>
+            <Dynamic>10</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/VGA_Addr_Parameters.v</Navigation>
+            <Navigation>3</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/VGA_Addr_Parameters.v(4): </Dynamic>
+            <Dynamic>10</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/VGA_Addr_Parameters.v</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/VGA_Addr_Parameters.v(7): </Dynamic>
+            <Dynamic>10</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/VGA_Addr_Parameters.v</Navigation>
+            <Navigation>7</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/VGA_Addr_Parameters.v(8): </Dynamic>
+            <Dynamic>7</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/VGA_Addr_Parameters.v</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/vga_counter.v(11): </Dynamic>
+            <Dynamic>VGA_Counter</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/vga_counter.v</Navigation>
+            <Navigation>11</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/vga_counter.v(44): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>12</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/vga_counter.v</Navigation>
+            <Navigation>44</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/vga_assign_color.v(8): </Dynamic>
+            <Dynamic>VGA_Assign_color</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/vga_assign_color.v</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/sync_reg.v(3): </Dynamic>
+            <Dynamic>Sync_Reg(SIZE=2)</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/sync_reg.v</Navigation>
+            <Navigation>3</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/sync_reg.v(3): </Dynamic>
+            <Dynamic>Sync_Reg</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/sync_reg.v</Navigation>
+            <Navigation>3</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/lm.v(10): </Dynamic>
+            <Dynamic>LM</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/lm.v</Navigation>
+            <Navigation>10</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/lm_decoder.v(11): </Dynamic>
+            <Dynamic>LM_decoder(WIDTH=8)</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/lm_decoder.v</Navigation>
+            <Navigation>11</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/lm_decoder.v(11): </Dynamic>
+            <Dynamic>LM_decoder(WIDTH=2)</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/lm_decoder.v</Navigation>
+            <Navigation>11</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/lm_decoder.v(11): </Dynamic>
+            <Dynamic>LM_decoder(WIDTH=4)</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/lm_decoder.v</Navigation>
+            <Navigation>11</Navigation>
+        </Message>
+        <Message>
+            <ID>35001774</ID>
+            <Severity>Info</Severity>
+            <Dynamic>\uart/UART_STATE/state_reg</Dynamic>
+            <Dynamic>one-hot</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm_assign_data.v(91): </Dynamic>
+            <Dynamic>\cm/assignCM/VGA_Notification_reg_i0_i2</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm_assign_data.v</Navigation>
+            <Navigation>91</Navigation>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cd_config.v(49): </Dynamic>
+            <Dynamic>\cd/CLOCK_DIVIDER_CONFIG/resolution_reg_i0_i31</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cd_config.v</Navigation>
+            <Navigation>49</Navigation>
+        </Message>
+        <Message>
+            <ID>35935014</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm_assign_data.v(91): </Dynamic>
+            <Dynamic>\cm/assignCM/H_BackPorch_reg_i0_i0</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm_assign_data.v</Navigation>
+            <Navigation>91</Navigation>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm_config_manager.v(64): </Dynamic>
+            <Dynamic>\cm/configCM/Config_Error_reg_i3</Dynamic>
+            <Navigation>c:/users/denisa/desktop/github/licenta_sistem_digital/diamond/cs_implementation/source/cm_config_manager.v</Navigation>
+            <Navigation>64</Navigation>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>61061045</ID>
+            <Severity>Warning</Severity>
+        </Message>
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=clk_VGA loads=10 clock_loads=5
+   Signal=clk_DB loads=12 clock_loads=6
+   Signal=clk_LM loads=13 clock_loads=4
+   Signal=c_data_1_derived_1 loads=5 clock_loads=1
+   Signal=cm/configCM/State_nxt_2__N_488 loads=3 clock_loads=3</Dynamic>
+        </Message>
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=clk_VGA loads=10 clock_loads=5
+   Signal=clk_DB loads=12 clock_loads=6
+   Signal=clk_LM loads=13 clock_loads=4
+   Signal=c_data_1_derived_1 loads=5 clock_loads=1
+   Signal=cm/configCM/State_nxt_2__N_488 loads=3 clock_loads=3</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Jedecgen">
+        <Message>
+            <ID>1081328</ID>
+            <Severity>Warning</Severity>
+        </Message>
+        <Message>
+            <ID>1009992</ID>
+            <Severity>Info</Severity>
+            <Dynamic> SW_XO3D_SECURITY_ENCRYPTION *IS* controlled by se5c00.acd ###</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic> SW_XO3D_SECURITY_ENCRYPTION license_securityIP NONE</Dynamic>
+        </Message>
+    </Task>
+    <Task name="TimingSimFileVlg">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>

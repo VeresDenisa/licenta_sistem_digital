@@ -1,0 +1,330 @@
+---------------------------------------------------
+Report for cell CS
+   Instance path: CS
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     511.00        100.0
+                                  LUT4	     526.00        100.0
+                                 IOBUF	         30        100.0
+                                PFUREG	        609        100.0
+                                RIPPLE	        239        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                                   VGA	          1        24.7
+                                    LM	          1         1.1
+                                  UART	          1         6.3
+                      Sync_Reg(SIZE=2)	          1         0.5
+                   Sync_Reg(SIZE=8)_U7	          1         1.2
+                      Sync_Reg(SIZE=8)	          1         1.5
+                              Sync_Reg	          1         0.8
+                                    DB	          1         1.4
+                                    CM	          1        28.3
+                                    CD	          1        23.3
+---------------------------------------------------
+Report for cell DB
+   Instance path: CS/db
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       7.33         1.4
+                                  LUT4	      12.00         2.3
+                                PFUREG	         16         2.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                          DB_debouncer	          1         0.4
+                       DB_debouncer_U3	          1         0.4
+                       DB_debouncer_U2	          1         0.4
+                       DB_debouncer_U1	          1         0.4
+---------------------------------------------------
+Report for cell DB_debouncer
+   Instance path: CS/db/DB_VS
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.83         0.4
+                                  LUT4	       3.00         0.6
+                                PFUREG	          4         0.7
+---------------------------------------------------
+Report for cell DB_debouncer_U1
+   Instance path: CS/db/DB_HS
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.83         0.4
+                                  LUT4	       3.00         0.6
+                                PFUREG	          4         0.7
+---------------------------------------------------
+Report for cell DB_debouncer_U2
+   Instance path: CS/db/DB_DF_VGA
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.83         0.4
+                                  LUT4	       3.00         0.6
+                                PFUREG	          4         0.7
+---------------------------------------------------
+Report for cell DB_debouncer_U3
+   Instance path: CS/db/DB_DF_UART
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.83         0.4
+                                  LUT4	       3.00         0.6
+                                PFUREG	          4         0.7
+---------------------------------------------------
+Report for cell Sync_Reg(SIZE=8)_U7
+   Instance path: CS/FIFO_UART_CM
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       5.92         1.2
+                                  LUT4	       4.00         0.8
+                                PFUREG	         18         3.0
+---------------------------------------------------
+Report for cell Sync_Reg(SIZE=2)
+   Instance path: CS/FIFO_UART_error
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       2.42         0.5
+                                  LUT4	       2.00         0.4
+                                PFUREG	          6         1.0
+---------------------------------------------------
+Report for cell UART
+   Instance path: CS/uart
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      32.08         6.3
+                                  LUT4	      60.00        11.4
+                                PFUREG	         43         7.1
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                          UART_sampler	          1         2.5
+                            UART_state	          1         3.4
+                           UART_config	          1         0.4
+---------------------------------------------------
+Report for cell UART_state
+   Instance path: CS/uart/UART_STATE
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      17.25         3.4
+                                  LUT4	      30.00         5.7
+                                PFUREG	         25         4.1
+---------------------------------------------------
+Report for cell UART_config
+   Instance path: CS/uart/UART_CONFIG
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       2.17         0.4
+                                  LUT4	       3.00         0.6
+                                PFUREG	          3         0.5
+---------------------------------------------------
+Report for cell UART_sampler
+   Instance path: CS/uart/SAMPLER
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      12.67         2.5
+                                  LUT4	      27.00         5.1
+                                PFUREG	         15         2.5
+---------------------------------------------------
+Report for cell VGA
+   Instance path: CS/vga
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     126.08        24.7
+                                  LUT4	     100.00        19.0
+                                PFUREG	        181        29.7
+                                RIPPLE	         42        17.6
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                      VGA_Assign_color	          1         4.1
+                           VGA_Counter	          1         4.0
+                        VGA_Counter_U0	          1         4.0
+                            VGA_Config	          1        12.5
+---------------------------------------------------
+Report for cell VGA_Config
+   Instance path: CS/vga/config1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      63.83        12.5
+                                  LUT4	      60.00        11.4
+                                PFUREG	        154        25.3
+---------------------------------------------------
+Report for cell VGA_Assign_color
+   Instance path: CS/vga/assgncolor
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      20.92         4.1
+                                  LUT4	      14.00         2.7
+                                PFUREG	          1         0.2
+                                RIPPLE	         14         5.9
+---------------------------------------------------
+Report for cell VGA_Counter
+   Instance path: CS/vga/CounterV
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      20.67         4.0
+                                  LUT4	      13.00         2.5
+                                PFUREG	         13         2.1
+                                RIPPLE	         14         5.9
+---------------------------------------------------
+Report for cell VGA_Counter_U0
+   Instance path: CS/vga/CounterH
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      20.67         4.0
+                                  LUT4	      13.00         2.5
+                                PFUREG	         13         2.1
+                                RIPPLE	         14         5.9
+---------------------------------------------------
+Report for cell Sync_Reg
+   Instance path: CS/FIFO_CM_error
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       4.00         0.8
+                                  LUT4	       4.00         0.8
+                                PFUREG	         10         1.6
+---------------------------------------------------
+Report for cell Sync_Reg(SIZE=8)
+   Instance path: CS/FIFO_UART_info
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       7.42         1.5
+                                  LUT4	       4.00         0.8
+                                PFUREG	         18         3.0
+---------------------------------------------------
+Report for cell LM
+   Instance path: CS/lm
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       5.75         1.1
+                                  LUT4	       7.00         1.3
+                                PFUREG	         14         2.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                   LM_decoder(WIDTH=4)	          1         0.2
+                   LM_decoder(WIDTH=8)	          1         0.5
+                   LM_decoder(WIDTH=2)	          1         0.1
+---------------------------------------------------
+Report for cell LM_decoder(WIDTH=8)
+   Instance path: CS/lm/UART_info
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       2.50         0.5
+                                PFUREG	          8         1.3
+---------------------------------------------------
+Report for cell LM_decoder(WIDTH=2)
+   Instance path: CS/lm/UART_error
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.1
+                                PFUREG	          2         0.3
+---------------------------------------------------
+Report for cell LM_decoder(WIDTH=4)
+   Instance path: CS/lm/CM_error
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       1.00         0.2
+                                PFUREG	          4         0.7
+---------------------------------------------------
+Report for cell CM
+   Instance path: CS/cm
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     144.75        28.3
+                                  LUT4	     159.00        30.2
+                                PFUREG	        167        27.4
+                                RIPPLE	         59        24.7
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                        CM_Assign_Data	          1         9.6
+                            CM_Counter	          1         4.9
+                         CM_Counter_U4	          1         4.7
+                     CM_Config_Manager	          1         9.1
+---------------------------------------------------
+Report for cell CM_Counter
+   Instance path: CS/cm/counterV
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      25.00         4.9
+                                  LUT4	       2.00         0.4
+                                PFUREG	         21         3.4
+                                RIPPLE	         24        10.0
+---------------------------------------------------
+Report for cell CM_Counter_U4
+   Instance path: CS/cm/counterH
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      24.00         4.7
+                                  LUT4	       2.00         0.4
+                                PFUREG	         21         3.4
+                                RIPPLE	         23         9.6
+---------------------------------------------------
+Report for cell CM_Config_Manager
+   Instance path: CS/cm/configCM
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      46.58         9.1
+                                  LUT4	      91.00        17.3
+                                PFUREG	         50         8.2
+---------------------------------------------------
+Report for cell CM_Assign_Data
+   Instance path: CS/cm/assignCM
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      49.17         9.6
+                                  LUT4	      64.00        12.2
+                                PFUREG	         75        12.3
+                                RIPPLE	         12         5.0
+---------------------------------------------------
+Report for cell CD
+   Instance path: CS/cd
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     119.00        23.3
+                                  LUT4	      56.00        10.6
+                                PFUREG	        136        22.3
+                                RIPPLE	        119        49.8
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                  CD_counter(WIDTH=32)	          1         9.7
+               CD_counter(WIDTH=32)_U6	          1         4.6
+               CD_counter(WIDTH=32)_U5	          1         4.4
+                             CD_config	          1         2.1
+                  CD_counter(WIDTH=24)	          1         2.5
+---------------------------------------------------
+Report for cell CD_counter(WIDTH=32)
+   Instance path: CS/cd/CNT_VGA
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      49.33         9.7
+                                  LUT4	      33.00         6.3
+                                PFUREG	         33         5.4
+                                RIPPLE	         34        14.2
+---------------------------------------------------
+Report for cell CD_counter(WIDTH=24)
+   Instance path: CS/cd/CNT_UART
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      12.83         2.5
+                                PFUREG	         25         4.1
+                                RIPPLE	         19         7.9
+---------------------------------------------------
+Report for cell CD_counter(WIDTH=32)_U5
+   Instance path: CS/cd/CNT_LM
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      22.50         4.4
+                                  LUT4	       1.00         0.2
+                                PFUREG	         33         5.4
+                                RIPPLE	         32        13.4
+---------------------------------------------------
+Report for cell CD_counter(WIDTH=32)_U6
+   Instance path: CS/cd/CNT_DB
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      23.67         4.6
+                                  LUT4	       1.00         0.2
+                                PFUREG	         33         5.4
+                                RIPPLE	         34        14.2
+---------------------------------------------------
+Report for cell CD_config
+   Instance path: CS/cd/CLOCK_DIVIDER_CONFIG
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      10.67         2.1
+                                  LUT4	      21.00         4.0
+                                PFUREG	         12         2.0
